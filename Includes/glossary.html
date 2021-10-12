@@ -1,0 +1,53 @@
+﻿<!-- Glossary Actions -->
+<div id="glossaryActions">
+    <!-- Lang Select -->
+    <div id="glossary-lang">
+        <input type="checkbox" name="glossaryLanguageToggle" class="bootstrap-switch" data-on-label="EN" data-off-label="HJ" />
+    </div>
+    <!-- Search Bar -->
+    <div id="glossary-search-bar" class="text-center">
+        <div id="glossarySearchbar">
+            <input onkeyup='doGlossarySearch();' type="text" name="searchGlossary" class="form-control" id="searchGlossary" aria-describedby="glossarySearchIcon" placeholder="Search Glossary" autocomplete="off" value="" />
+            <label id="glossarySearchIcon" for="searchBook" aria-label="Search Icon"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 64 64"><path d="M44.3 27.1c0-4.7-1.7-8.8-5.1-12.2 -3.4-3.4-7.4-5.1-12.2-5.1s-8.8 1.7-12.2 5.1 -5.1 7.4-5.1 12.2 1.7 8.8 5.1 12.2 7.4 5.1 12.2 5.1 8.8-1.7 12.2-5.1C42.6 35.9 44.3 31.8 44.3 27.1zM64 59.1c0 1.3-0.5 2.5-1.5 3.5 -1 1-2.1 1.5-3.5 1.5 -1.4 0-2.5-0.5-3.5-1.5L42.4 49.4c-4.6 3.2-9.7 4.8-15.3 4.8 -3.7 0-7.2-0.7-10.5-2.1s-6.2-3.3-8.7-5.8 -4.3-5.3-5.8-8.7S0 30.7 0 27.1s0.7-7.2 2.1-10.5 3.3-6.2 5.8-8.7 5.3-4.3 8.7-5.8S23.4 0 27.1 0s7.2 0.7 10.5 2.1 6.2 3.3 8.7 5.8 4.3 5.3 5.8 8.7 2.1 6.9 2.1 10.5c0 5.6-1.6 10.8-4.8 15.3l13.2 13.2C63.5 56.6 64 57.7 64 59.1z"/></svg></label>
+            <button type="button" class="close" aria-label="Reset Search" id="resetGlossary" onclick="InitGlossary();"><span aria-hidden="true">&times;</span></button>
+        </div>
+    </div>
+    <!-- Excel Button -->
+    <div id="glossary-excel">
+        <button class="btn" aria-label="Export to excel" onclick="createGlossaryExcel();">
+                <img src="Includes/excel.svg" class="excel-icon" alt="Excel icon">
+        </button>
+    </div>
+</div>
+<!-- Glossary Listing -->
+<div id="glossaryListing">
+    <!-- Loading Screen -->
+    <div id="glossaryLoader">
+        <div id="glossaryLoaderSpinner">
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <div id="nav">
+        <ul><!-- content dynamically generated --></ul>
+    </div>
+    <!-- Listing -->
+    <div id="glossary"><!-- content dynamically generated --></div>
+</div>
+<script type="text/javascript">
+    // Language Toggle
+    $('input[name="glossaryLanguageToggle"]').each(function () {
+        $this = $(this);
+        data_on_label = $this.data('on-label') || '';
+        data_off_label = $this.data('off-label') || '';
+
+        $this.bootstrapSwitch({
+            onText: data_on_label,
+            offText: data_off_label
+        });
+    });
+    // Language Keyboard
+    var myInput = document.getElementById('searchGlossary');
+    if (!myInput.VKI_attached) VKI_attach(myInput);
+</script>

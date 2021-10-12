@@ -1,0 +1,198 @@
+﻿<?xml version = "1.0"?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+  <general>
+    <identifier>
+      <catalog>ATIA</catalog>
+      <entry>TBD</entry>
+    </identifier>
+    <title>
+      <string language="en">U.S. Army CASCOM 92F10 Flash Rebuild</string>
+    </title>
+    <description>
+      <string language="en">U.S. Army CASCOM 92F10 Flash Rebuild</string>
+    </description>
+    <aggregationLevel>
+      <source>LOMv1.0</source>
+      <value>3</value>
+    </aggregationLevel>
+    <keyword>
+      <string language="en">U.S. Army</string>
+    </keyword>
+    <keyword>
+      <string language="en">CASCOM</string>
+    </keyword>
+    <keyword>
+      <string language="en">92F10</string>
+    </keyword>
+  </general>
+  <lifeCycle>
+    <version>
+      <string language="en">1.0</string>
+    </version>
+    <status>
+      <source>LOMv1.0</source>
+      <value>final</value>
+    </status>
+    <contribute>
+      <role>
+        <source>LOMv1.0</source>
+        <value>publisher</value>
+      </role>
+      <entity>
+        BEGIN:VCARD
+        VERSION:1.0.0N:U.S. Army
+        ORG:U.S. Army Training Support Center (ATSC)
+        ADR:DOM;Fort Eustis, VA 23604
+        ATTN:Amanda Reid, Contracting Officer Representative;
+        EMAIL;INTERNET:amanda.m.reid.civ@mail.mil
+        END:VCARD
+      </entity>
+      <date>
+        <dateTime>2016-11-22</dateTime>
+      </date>
+    </contribute>
+  </lifeCycle>
+  <metaMetadata>
+    <identifier>
+      <catalog>TBD</catalog>
+      <entry>TBD</entry>
+    </identifier>
+    <metadataSchema>LOMv1.0</metadataSchema>
+    <metadataSchema>SCORM_CAM_v1.3</metadataSchema>
+    <metadataSchema>ADLv1.0</metadataSchema>
+  </metaMetadata>
+  <technical>
+    <format>text/html</format>
+    <format>text/plain</format>
+    <format>image/gif</format>
+    <format>image/jpeg</format>
+    <format>application/pdf</format>
+    <format>application/x-shockwave-flash</format>
+  </technical>
+  <rights>
+    <cost>
+      <source>LOMv1.0</source>
+      <value>no</value>
+    </cost>
+    <copyrightAndOtherRestrictions>
+      <source>LOMv1.0</source>
+      <value>no</value>
+    </copyrightAndOtherRestrictions>
+  </rights>
+  <classification>
+    <purpose>
+      <source>LOMv1.0</source>
+      <value>discipline</value>
+    </purpose>
+    <description>
+      <string language="en">U.S. Army CASCOM 92F10 Flash Rebuild</string>
+    </description>
+    <keyword>
+      <string language="en">U.S. Army</string>
+    </keyword>
+    <keyword>
+      <string language="en">CASCOM</string>
+    </keyword>
+    <keyword>
+      <string language="en">92F10</string>
+    </keyword>
+  </classification>
+  <classification>
+    <purpose>
+      <source>LOMv1.0</source>
+      <value>discipline</value>
+    </purpose>
+    <description>
+      <string language="en">U.S. Army CASCOM 92F10 Flash Rebuild</string>
+    </description>
+    <keyword>
+      <string language="en">U.S. Army</string>
+    </keyword>
+    <keyword>
+      <string language="en">CASCOM</string>
+    </keyword>
+    <keyword>
+      <string language="en">92F10</string>
+    </keyword>
+  </classification>
+  <classification>
+    <purpose>
+      <source>LOMv1.0</source>
+      <value>discipline</value>
+    </purpose>
+    <description>
+      <string language="en">U.S. Army CASCOM 92F10 Flash Rebuild</string>
+    </description>
+    <keyword>
+      <string language="en">U.S. Army</string>
+    </keyword>
+    <keyword>
+      <string language="en">CASCOM</string>
+    </keyword>
+    <keyword>
+      <string language="en">92F10</string>
+    </keyword>
+  </classification>
+  <classification>
+    <purpose>
+      <source>LOMv1.0</source>
+      <value>educational objective</value>
+    </purpose>
+    <description>
+      <string language="en">U.S. Army CASCOM 92F10 Flash Rebuild</string>
+    </description>
+    <keyword>
+      <string language="en">U.S. Army</string>
+    </keyword>
+    <keyword>
+      <string language="en">CASCOM</string>
+    </keyword>
+    <keyword>
+      <string language="en">92F10</string>
+    </keyword>
+  </classification>
+  <classification>
+    <purpose>
+      <source>LOMv1.0</source>
+      <value>educational objective</value>
+    </purpose>
+    <description>
+      <string language="en">U.S. Army CASCOM 92F10 Flash Rebuild</string>
+    </description>
+    <keyword>
+      <string language="en">U.S. Army</string>
+    </keyword>
+    <keyword>
+      <string language="en">CASCOM</string>
+    </keyword>
+    <keyword>
+      <string language="en">92F10</string>
+    </keyword>
+  </classification>
+  <classification>
+    <purpose>
+      <source>LOMv1.0</source>
+      <value>accessibility restrictions</value>
+    </purpose>
+    <description>
+      <string language="en">Not 508 Compliant</string>
+    </description>
+    <keyword>
+      <string language="en">508</string>
+    </keyword>
+
+  </classification>
+  <classification>
+    <purpose>
+      <source>LOMv1.0</source>
+      <value>security level</value>
+    </purpose>
+    <description>
+      <string language="en">Public Domain</string>
+    </description>
+    <keyword>
+      <string language="en">508</string>
+    </keyword>
+
+  </classification>
+</lom>
