@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Main</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+var thiswindow;
+var count = 0;
+
+// Zoom code
+var _zoom = false;
+var maxWidth = screen.width;
+var maxHeight = screen.height;
+var _zoomScale = 0.85;  // 0.85 at 1024x768 scales to around 871 x 653
+
+
+function loadWin(){
+
+    thiswindow = window.open("index.html", "cw", "height=" + maxHeight + "px,width=" + maxWidth + "px,status=0,toolbars=0, resizable=1, scrollbars=1");
+thiswindow.moveTo(0,0);
+}
+
+function unloadWin(){
+	if(count>=500 || thiswindow.closed){
+		return true;
+	}
+	else{
+		thiswindow.close();
+		count = count + 1;
+		unloadWin();
+		return false;
+	}
+}
+//window.open('index-cw.html', 'cw');
+</script>
+<style>
+body{
+	margin: 0;
+}
+
+#wrapper{
+	background: #000000;
+	background: -webkit-linear-gradient(to top, #000000, #222222);
+	background: linear-gradient(to top, #000000, #222222);
+	color: #ffffff;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#launch-message{
+	width: calc(100% - 30px);
+	max-width: 575.98px;
+	margin: 60px auto 30px;
+	text-align: center; 
+	padding: 0px 15px;
+}
+
+#launch-message img{
+	max-width: 75px;
+	margin-bottom: 15px;
+}
+
+#sco-status h1{
+	font-size: 1.5em;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+#sco-status p{
+	font-size: 16px;
+	text-align: left;
+}
+</style>
+</head>
+<body onLoad="loadWin()" onBeforeUnload="unloadWin();">
+	<div id="wrapper">
+		<div id="launch-message">
+			<img src="assets/media/framework/Logo.png" alt="DLI logo" title="Defense Language Institute" class="img-fluid"/>
+			<div id="sco-status">
+				<h1>The courseware will launch in a new window</h1>
+				<p>By default, this browser may block pop-ups from automatically showing up on your screen. To properly view this courseware you will have to enable your browser to allow pop ups.</p>
+				<p>This window establishes communication between the courseware and the LMS.  Please use the navigational buttons within the lesson to navigate throughout the courseware, or select another lesson from the LMS Table of Contents.</p>
+				<p>When you have finished the lesson, this window will refresh and to confirm your session has saved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
