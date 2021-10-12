@@ -1,0 +1,3308 @@
+/*
+ * --------------------------------------------------------------------------
+ *   templates.js - v1.0
+ *   author: Potawatomi Training
+ *   created: 5/25/2021
+ *   last edited: 5/25/2021
+ *   Copyright 2021, Potawatomi Training, All rights reserved.
+ * --------------------------------------------------------------------------
+ */
+/*
+* ------------------------------------------------------------------------
+* Randomize divs
+* ------------------------------------------------------------------------
+*/
+(function($) {
+    $.fn.randomize = function(childElem) {
+      return this.each(function() {
+          var $this = $(this);
+          var elems = $this.children(childElem);
+    
+          elems.sort(function() { return (Math.round(Math.random())-0.5); });  
+    
+          $this.detach(childElem);  
+    
+          for(var i=0; i < elems.length; i++)
+            $this.append(elems[i]);      
+    
+      });    
+    }
+})(jQuery);
+// shuffle items (use array for objects)
+function shuffle(array) {
+    var currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+}
+/*
+* ------------------------------------------------------------------------
+* get window size
+* ------------------------------------------------------------------------
+*/
+function checkWindowSize(){
+    //get window width
+    let windowWidth = window.innerWidth;
+    // check if we are on a mobile device or not format
+    if (windowWidth >= 992){
+        return 'desktop';
+    } else {
+        return 'mobile';
+    }
+}
+/*
+* ------------------------------------------------------------------------
+* Background Images
+* ------------------------------------------------------------------------
+*/
+function addBackgroundImage(image){
+    // get page frame
+    let pageFrame = document.getElementById('page_frame_container');
+    // add bg class
+    pageFrame.classList.add('imgBG');
+    // add bg css to page frame
+    pageFrame.style.backgroundImage = "url(\"" + image.url + "\")";
+}
+/*
+* ------------------------------------------------------------------------
+* Layout
+* ------------------------------------------------------------------------
+*/
+function buildColumns(layout){
+    // get layout items
+    let layoutArray = layout.split("-");
+    // get the page frame
+    let pageFrame = document.getElementById('page_frame');
+    // Build out the DOM elements
+    // add the container
+    let structure = document.createElement('div');
+    structure.classList.add('container-fluid');
+    // add a row
+    let row = document.createElement('div');
+    row.classList.add('row');
+    structure.appendChild(row);
+    // build out first column / row
+    let element1 = document.createElement('div');
+    element1.classList.add('col-12', 'py-3');
+    row.appendChild(element1);
+    // check to see if the layout is full
+    if(layout == 'full'){
+        structure.classList.remove('container-fluid');
+        structure.classList.add('container');
+        element1.classList.add('full');
+        element1.id = 'full-row';
+        // build wrapper for column 1
+        let colWrapper1 = document.createElement('div');
+        colWrapper1.id = 'column-wrapper-1';
+        colWrapper1.classList.add('d-flex', 'align-items-center', 'column-wrapper');
+        element1.appendChild(colWrapper1);
+    } else {
+        // build out second column / row
+        let element2 = document.createElement('div');
+        element2.classList.add('col-12', 'py-3');
+        row.appendChild(element2);
+        // setup the heights of the divs
+        function setHeight(layout, graphic){
+            // eval if we are on desktop
+            let windowSize = checkWindowSize();
+            let windowHeight = window.innerHeight - 145;
+            let oneThird = (windowHeight / 3) + 'px';
+            let twoThirds = (windowHeight * (2 / 3)) + 'px';
+            let half = (windowHeight / 2) + 'px';
+            // determine if the graphic is top or bottom
+            if (windowSize === 'desktop'){    
+                if (graphic == 'top'){
+                    // set height for thirds or half
+                    if(layout == 'third'){
+                        element1.style.height = oneThird;
+                        element2.style.height = twoThirds;
+                    } else {
+                        element1.style.height = half;
+                        element2.style.height = half;
+                    }
+                } else {
+                    // set height for thirds or half
+                    if(layout == 'third'){
+                        element1.style.height = twoThirds;
+                        element2.style.height = oneThird;
+                    } else {
+                        element1.style.height = half;
+                        element2.style.height = half;
+                    }
+                }
+            } else {
+                element1.style.height = null;
+                element2.style.height = null;
+            }
+        }
+
+        // decide which element is smaller
+        if (layoutArray[1] == "top"){
+            element1.classList.add('third');
+            element1.id = 'top-row';
+            element2.classList.add('two-thirds');
+            element2.id = 'bottom-row';
+            // setup height on load
+            setHeight("third","top");
+            // add height sizing
+            window.addEventListener('resize', function(event){
+                setHeight("third","top");
+            });
+        } else if (layoutArray[1] == 'bottom') {
+            element1.classList.add('two-thirds');
+            element1.id = 'top-row';
+            element2.classList.add('third');
+            element2.id = 'bottom-row';
+            // setup height on load
+            setHeight("third","bottom");
+            // add height sizing
+            window.addEventListener('resize', function(event){
+                setHeight("third","bottom");
+            });
+        } else if (layoutArray[1] == 'left'){
+            element1.classList.add('col-lg-4');
+            element1.id = 'left-column';
+            element2.classList.add('col-lg-8');
+            element2.id = 'right-column';
+        } else if (layoutArray[1] == 'right'){
+            element1.classList.add('col-lg-8');
+            element1.id = 'left-column';
+            element2.classList.add('col-lg-4');
+            element2.id = 'right-column';
+        }
+        // determine if layout is halves
+        else if (layoutArray[0] == 'half'){
+            // determine if layout is vertical
+            if (layoutArray[1] == "vertical") {
+                element1.classList.add('half');
+                element1.id = 'top-row';
+                element2.classList.add('half');
+                element2.id = 'bottom-row';
+                // setup height on load
+                setHeight("half","top");
+                // add height sizing
+                window.addEventListener('resize', function(event){
+                    setHeight("third","top");
+                });
+            }
+            // determine if layout is horizontal
+            else if (layoutArray[1] == 'horizontal') {
+                element1.classList.add('col-lg-6', 'd-flex', 'justify-content-center', 'align-items-center');
+                element1.id = 'left-column';
+                element2.classList.add('col-lg-6', 'd-flex', 'justify-content-center', 'align-items-center');
+                element2.id = 'right-column';
+            }
+        }
+        // build wrapper for column 1
+        let colWrapper1 = document.createElement('div');
+        colWrapper1.id = 'column-wrapper-1';
+        colWrapper1.classList.add('d-flex', 'align-items-center', 'column-wrapper');
+        element1.appendChild(colWrapper1);
+        // build wrapper for column 2
+        let colWrapper2 = document.createElement('div');
+        colWrapper2.id = 'column-wrapper-2';
+        colWrapper2.classList.add('d-flex', 'align-items-center', 'column-wrapper');
+        element2.appendChild(colWrapper2);
+    }
+    // return the columns
+    return structure;
+}
+
+// Builds out eMentor Icon used in several templates
+function buildEmentor(data){
+    // build out ementor image
+    let ementor = document.createElement('img');
+    ementor.classList.add('instructor', 'img-fluid');
+    ementor.src = data.graphic.url;
+    ementor.alt = data.graphic.alt;
+
+    return ementor;
+}
+/*
+* ------------------------------------------------------------------------
+* Build out text content
+* ------------------------------------------------------------------------
+*/
+function buildTextContent(data){
+    // create wrapper for text
+    let text = document.createElement('div');
+    text.classList.add('text-content');
+    // loop through content and build out each element
+    data.forEach(function(item, i){
+        // create element
+        let element;
+        element = document.createElement(item.tag);
+        switch(item.tag) {
+            case 'ul':
+                item.content.forEach(function(list, l){
+                    // create an list item
+                    let listItem = document.createElement('li');
+                    listItem.innerHTML = list;
+                    // append the list item
+                    element.appendChild(listItem);
+                });
+                break;
+            case 'ol':
+                item.content.forEach(function(list, l){
+                    // create an list item
+                    let listItem = document.createElement('li');
+                    listItem.innerHTML = list;
+                    // append the list item
+                    element.appendChild(listItem);
+                });
+                break;
+            case 'question':
+                element.innerHTML = "Question Goes Here"
+            default:
+                element.innerHTML = item.content;
+        }
+        // append element to text wrappper
+        text.appendChild(element);
+    });
+    // return text content
+    return text;
+}
+/*
+* ------------------------------------------------------------------------
+* Build buttons
+* ------------------------------------------------------------------------
+*/
+// back button for branching
+function createBackButton(){
+    let back = document.createElement('button');
+    back.id = 'backBtn';
+    back.type = 'button';
+    back.classList.add('btn','btn-primary');
+    back.innerHTML = 'Back';
+    // return the button
+    return back;
+}
+// submit button for questions
+function createSubmitButton(){
+    let submit = document.createElement('button');
+    submit.id = 'submitBtn';
+    submit.type = 'button';
+    submit.classList.add('btn','btn-primary');
+    submit.innerHTML = 'Submit';
+    // return the button
+    return submit;
+}
+/*
+* ------------------------------------------------------------------------
+* Build Question Card
+* ------------------------------------------------------------------------
+*/
+function buildQuestion(data){
+    // build card container
+    let card = document.createElement('div');
+    card.classList.add('card', 'question');
+    // build question feedback
+    let feedback = document.createElement('div');
+    feedback.classList.add('question-feedback');
+    card.appendChild(feedback);
+    // add the card header (page title)
+    let header = document.createElement('div');
+    header.classList.add('card-header', 'question-prompt');
+    let headerLabel = document.createElement('div');
+    headerLabel.classList.add('question-label', 'text-muted');
+    headerLabel.innerHTML = 'Statement:';
+    header.appendChild(headerLabel);
+    let headerText = document.createElement('div');
+    headerText.classList.add('question-text');
+    headerText.innerHTML = data.prompt;
+    header.appendChild(headerText);
+    card.appendChild(header);
+    // add the bulk of the content
+    let body = document.createElement('div');
+    body.classList.add('card-body', 'question-response', 'p-0');
+    // letter array for labels
+    var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+    // TRUE FALSE
+    if(data.type == 'tf'){
+        // wrap the t/f buttons
+        let content = document.createElement('div');
+        content.classList.add('row', 'wrapperTF');
+        // build true btn
+        let btnTrue = document.createElement('div');
+        btnTrue.classList.add('btnTF', 'col-6');
+        btnTrue.id = "btnTrue";
+        btnTrue.innerHTML = "<span>True</span>";
+        content.appendChild(btnTrue);
+        // build false btn
+        let btnFalse = document.createElement('div');
+        btnFalse.classList.add('btnTF', 'col-6');
+        btnFalse.id = "btnFalse";
+        btnFalse.innerHTML = "<span>False</span>";
+        content.appendChild(btnFalse);
+        btnTrue.onclick = function(){
+            btnTrue.classList.add('active');
+            btnFalse.classList.remove('active');
+        };
+        btnFalse.onclick = function(){
+            btnFalse.classList.add('active');
+            btnTrue.classList.remove('active');
+        }
+        // set answer
+        qAnswer = data.answer;
+        qOptions = ["True", "False"];
+        // append to card body
+        body.appendChild(content);
+    } else if (data.type == 'mc'){
+        // wrap the responses
+        let content = document.createElement('div');
+        content.classList.add('list-group');
+        // loop through array and build lures
+        $.each(data.alternatives, function (t, text) {
+            // build button
+            let lure = document.createElement('button');
+            lure.setAttribute("data-toggle", "button");
+            lure.setAttribute("aria-pressed", "false");
+            lure.id = t + "_mc";
+            lure.classList.add("questionDistractor", "list-group-item", "list-group-item-action");
+            // add label
+            let label = document.createElement('div');
+            label.classList.add('answerLetter');
+            label.innerHTML = '<span>' + letters[t] + '</span>';
+            lure.appendChild(label);
+            // add text
+            let lureText = document.createElement('div');
+            lureText.classList.add('answerText');
+            lureText.innerHTML = text;
+            lure.appendChild(lureText);
+            // add lure to content
+            content.appendChild(lure);
+        });
+        // set answer
+        qAnswer = data.answers[0];
+        qOptions = data.alternatives;
+        // append to card body
+        body.appendChild(content);
+    } 
+    // add body content
+    card.appendChild(body);
+    // return the card html
+    return card;
+}
+/*
+* ------------------------------------------------------------------------
+* Build out question feedback
+* ------------------------------------------------------------------------
+*/
+function buildFeedback(result, correct, incorrect, quiz){
+    // add alert
+    let alert = document.createElement("div");
+    // add alert class and add feedback
+    if (result == true){
+        // add correct class
+        alert.className = "alert alert-success";
+        // add correct feedback
+        alert.appendChild(document.createTextNode(correct));
+    } else if (result == false){
+        // add incorrect class
+        alert.className = "alert alert-danger";
+        // add correct feedback
+        alert.appendChild(document.createTextNode(incorrect));
+    } else {
+        // add incorrect class
+        alert.className = "alert alert-warning";
+        // add correct feedback
+        alert.appendChild(document.createTextNode("Please answer the question completely."));
+    }
+    // add dismiss button
+    let dismiss = document.createElement('button');
+    dismiss.type = 'button';
+    dismiss.classList.add('close');
+    dismiss.setAttribute('data-dismiss', 'alert');
+    dismiss.setAttribute('aria-label', 'close');
+    dismiss.innerHTML ='<span aria-hidden="true">&times;</span>';
+    alert.appendChild(dismiss);
+    // update feedback
+    return alert;
+}
+/*
+* ------------------------------------------------------------------------
+* Build Question Card
+* ------------------------------------------------------------------------
+*/
+function buildQuestionCard(data){
+    // build card container
+    let card = document.createElement('div');
+    card.classList.add('card', 'question');
+    // build question feedback
+    let feedback = document.createElement('div');
+    feedback.id = 'question-feedback';
+    card.appendChild(feedback);
+    // add the card header (page title)
+    let header = document.createElement('div');
+    header.id = 'question-header';
+    header.classList.add('card-header', 'question-prompt');
+    header.innerHTML = data.content.prompt;
+    card.appendChild(header);
+    // add the bulk of the content
+    let body = document.createElement('div');
+    body.id = 'question-body';
+    body.classList.add('card-body', 'question-response', 'p-0');
+    // add body content
+    card.appendChild(body);
+    // Build out footer
+    let footer = document.createElement('div');
+    footer.id = 'question-footer';
+    footer.classList.add('card-footer', 'd-flex', 'justify-content-end', 'question-footer');
+    card.appendChild(footer);
+    // build back button
+    let back = document.createElement('button');
+    back.id = 'backBtn';
+    back.type = 'button';
+    back.classList.add('btn','btn-secondary', 'footer-btn');
+    back.innerHTML = 'Back';
+    back.onclick = function(){
+        prevPage(data.id);
+    };
+    footer.appendChild(back);
+    // build submit button
+    let submit = document.createElement('button');
+    submit.id = 'question-submit';
+    submit.type = 'button';
+    submit.classList.add('btn','btn-warning', 'footer-btn');
+    submit.innerHTML = 'Submit';
+    footer.appendChild(submit);
+    // return card to the page
+    return card;
+}
+/*
+* ------------------------------------------------------------------------
+* Build Content Card
+* ------------------------------------------------------------------------
+*/
+function buildContentCard(data, footer){
+    // build card container
+    let card = document.createElement('div');
+    card.classList.add('card', 'content-card', 'w-100');
+    // add the bulk of the content
+    let body = document.createElement('div');
+    body.id = 'content-card-body';
+    body.classList.add('card-body');
+    // add card content
+    let card_content = buildTextContent(data)
+    body.appendChild(card_content);
+    // add body content
+    card.appendChild(body);
+    if (footer){
+        // Build out footer
+        let footer = document.createElement('div');
+        footer.id = 'content-card-footer';
+        footer.classList.add('card-footer', 'd-flex', 'justify-content-center');
+        card.appendChild(footer);
+    }
+    // return card to the page
+    return card;
+}
+/*
+* ------------------------------------------------------------------------
+* Animated Images
+* ------------------------------------------------------------------------
+*/
+function buildAnimatedImages(data){
+    // create div to wrap our sorting fun
+    let imageGrid = document.createElement('div');
+    imageGrid.id = "image-grid";
+    imageGrid.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-wrap');
+    // set the timing interal to one, will increase with loop
+    let timing = 1;
+    // loop through array and build lures(options)
+    data.items.forEach(function(item, i){
+        let gridItem = document.createElement('div');
+        gridItem.classList.add('col-12', 'col-sm-6');
+        // add item to grid
+        imageGrid.appendChild(gridItem);
+        // build image
+        let gridImage = document.createElement('img');
+        gridImage.classList.add('img-fluid');
+        gridImage.src = item.content.url;
+        gridImage.alt = item.content.alt;
+        // add image to item
+        gridItem.appendChild(gridImage);
+        // get the audio player
+        let audio = document.getElementById('narrationAudio');
+        // need to add timing feature
+
+        // declare interval for animation
+        let interval = timing * 500;
+        // set time to have item show on screen
+        setTimeout(function(){
+            gridImage.classList.add('active')
+        }, interval);
+        // up the timing to stagger the appearance
+        timing++;
+    });
+    // send the images back
+    return imageGrid;
+}
+/*
+* ------------------------------------------------------------------------
+* eMentor element
+* ------------------------------------------------------------------------
+*/
+class eMentor {
+    // set up data
+    constructor(data){
+        this.src = data.graphic.url;
+        this.alt = data.graphic.alt;
+        this.text = buildTextContent(data.text);
+    }
+    // build card
+    build(){
+        // set up card wapper
+        let card = document.createElement('div');
+        card.classList.add('card');
+        // create row
+        let row = document.createElement('div');
+        row.classList.add('row', 'no-gutters');
+        card.appendChild(row);
+        // image content
+        let col1 = document.createElement('div');
+        col1.classList.add('col-md-4');
+        row.appendChild(col1);
+        // add image
+        let image = document.createElement('img');
+        image.classList.add('ementor-img', 'img-fluid');
+        image.src = this.src;
+        image.alt = this.alt;
+        col1.appendChild(image);
+        // text content
+        let col2 = document.createElement('div');
+        col2.classList.add('col-md-8');
+        row.appendChild(col2);
+        // card body
+        let card_body = document.createElement('div');
+        card_body.classList.add('card-body', 'd-flex', 'align-items-center');
+        card_body.appendChild(this.text);
+        col2.appendChild(card_body);
+        // return the card
+        return card;
+    }
+}
+/*
+* ------------------------------------------------------------------------
+* Full screen background
+* ------------------------------------------------------------------------
+*/
+function buildFullScreenBGImage(pageData)
+{
+    var html = "";
+    html += '<div id="bgImage" style="background-image: url(' + pageData.content.image.url + ');" role="img" aria-label="' + content.image.desc + '" title="' + content.image.title + '"></div>';
+    $('#page_frame').html(html);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 0: Module Introduction 
+* ------------------------------------------------------------------------
+*/
+function buildIntro(pageData){
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // set up bg effect
+    let left = document.getElementById('left-column');
+    left.classList.add('title-third');
+    left.style.backgroundImage = "url('" + pageData.content.title_background+ "')";
+    // get left column
+    let leftCol = document.getElementById('column-wrapper-1');
+    // build ementor
+    let title = document.createElement('h1');
+    title.id = 'module-title';
+    title.classList.add('animate__animated','animate__fadeInLeft')
+    title.innerHTML = pageData.content.title_text 
+    // append ementor
+    leftCol.appendChild(title);
+    // get right column
+    let rightCol = document.getElementById('column-wrapper-2');
+    // create div to wrap our sorting fun
+    let imageGrid = document.createElement('div');
+    imageGrid.id = "image-grid";
+    imageGrid.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-wrap');
+    rightCol.appendChild(imageGrid);
+    // set the timing interal to one, will increase with loop
+    let timing = 1;
+    // loop through array and build lures(options)
+    pageData.content.images.forEach(function(image, i){
+        let gridItem = document.createElement('div');
+        gridItem.classList.add('col-12', 'col-sm-6');
+        // add item to grid
+        imageGrid.appendChild(gridItem);
+        // build image
+        let gridImage = document.createElement('img');
+        gridImage.classList.add('img-fluid');
+        gridImage.src = image.url;
+        gridImage.alt = image.alt;
+        // add image to item
+        gridItem.appendChild(gridImage);
+        // declare interval for animation
+        let interval = timing * 500;
+        // set time to have item show on screen
+        setTimeout(function(){
+            gridImage.classList.add('active')
+        }, interval);
+        // up the timing to stagger the appearance
+        timing++;
+    });
+}
+/*
+* ------------------------------------------------------------------------
+* Template 1: Misson page
+* ------------------------------------------------------------------------
+*/
+function buildMission(pageData){
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // change the background color
+    document.getElementById('top-row').style.backgroundColor = "black";
+    // get top row
+    let topRow = document.getElementById('column-wrapper-1');
+    topRow.classList.add('column-wrapper', 'justify-content-center');
+    // add mission graphic
+    let graphic = document.createElement('img');
+    graphic.id = 'mission-img';
+    graphic.classList.add('img-fluid','animate__animated','animate__fadeInDown');
+    graphic.src = pageData.content.graphics[0].url;
+    graphic.alt = pageData.content.graphics[0].alt;
+    // append graphic
+    topRow.appendChild(graphic);
+    // get bottom row
+    let bottomRow = document.getElementById('column-wrapper-2');
+    // add container wrapper
+    let container = document.createElement('div');
+    container.classList.add('container');
+    bottomRow.appendChild(container);
+    // build card
+    let card = buildContentCard(pageData.content.text_elements, false);
+    card.classList.add('animate__animated','animate__fadeInUp');
+    container.appendChild(card);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 2: Branching Page
+* ------------------------------------------------------------------------
+*/
+function buildBranching(pageData) {
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get left column
+    let leftCol = document.getElementById('left-column');
+    // set up background image
+    leftCol.style.backgroundImage = "url('" + pageData.content.images[0].url + "')";
+    leftCol.style.backgroundPosition = 'center';
+    leftCol.style.backgroundSize = 'cover';
+    // get right column
+    let rightCol = document.getElementById('column-wrapper-2');
+    rightCol.classList.add('branching-content');
+    // add list group
+    branchList = document.createElement('div');
+    branchList.classList.add('list-group');
+    branchList.id = 'branching-list';
+    rightCol.appendChild(branchList);
+    // Add introduction text
+    let branchText = document.createElement('div');
+    branchText.classList.add('text-block', 'branch-in-progress', 'w-100', 'mb-3', 'p-3', 'bg-white');
+    branchList.appendChild(branchText);
+    let branchTextContent = document.createElement('p');
+    branchTextContent.classList.add('mb-0');
+    branchTextContent.innerHTML = pageData.content.text;
+    branchText.appendChild(branchTextContent);
+    // add content for branching menus
+    // loop through cobjectives to build them out
+    pageData.content.menu_items.forEach(function(item, i){
+        // create a button
+        let button = document.createElement('button');
+        button.classList.add('list-group-item','list-group-item-action', 'btn-block');
+        button.type = 'button';
+        button.innerHTML = item.title;
+        // add click event for branching
+        button.addEventListener('click', function(event) {
+            getPageData(item.location);    
+        });
+        // add button to list
+        branchList.appendChild(button);
+    });
+}
+/*
+* ------------------------------------------------------------------------
+* Template 2: Animated Images Branching Page
+* ------------------------------------------------------------------------
+*/
+function buildAnimatedBranching(pageData) {
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get left column
+    let leftCol = document.getElementById('column-wrapper-1');
+    // set up animated images
+    let images = buildAnimatedImages(pageData.content.animation);
+    leftCol.appendChild(images);
+    // get right column
+    let rightCol = document.getElementById('column-wrapper-2');
+    rightCol.classList.add('branching-content');
+    // add list group
+    branchList = document.createElement('div');
+    branchList.classList.add('list-group');
+    branchList.id = 'branching-list';
+    rightCol.appendChild(branchList);
+    // Add introduction text
+    let branchText = document.createElement('div');
+    branchText.classList.add('text-block', 'branch-in-progress', 'w-100', 'mb-3', 'p-3', 'bg-white');
+    branchList.appendChild(branchText);
+    let branchTextContent = document.createElement('p');
+    branchTextContent.classList.add('mb-0');
+    branchTextContent.innerHTML = pageData.content.text;
+    branchText.appendChild(branchTextContent);
+    // add content for branching menus
+    // loop through cobjectives to build them out
+    pageData.content.menu_items.forEach(function(item, i){
+        // create a button
+        let button = document.createElement('button');
+        button.classList.add('list-group-item','list-group-item-action','btn-block');
+        button.type = 'button';
+        button.innerHTML = item.title;
+        // add click event for branching
+        button.addEventListener('click', function(event) {
+            getPageData(item.location);    
+        });
+        // add button to list
+        branchList.appendChild(button);
+    });
+}
+/*
+* ------------------------------------------------------------------------
+* Template 3: Objectives
+* ------------------------------------------------------------------------
+*/
+function buildObjectives(pageData){
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get full row
+    let fullRow = document.getElementById('column-wrapper-1');
+    // add another row
+    let objectives_wrap = document.createElement('div');
+    objectives_wrap.classList.add('row', 'justify-content-center');
+    fullRow.appendChild(objectives_wrap);
+    // loop through cobjectives to build them out
+    pageData.content.objectives.forEach(function(obj, o){
+        let obj_wrap = document.createElement('div');
+        obj_wrap.classList.add('col-12', 'col-sm-6', 'col-md-4');
+        // build out objective wrapper
+        let objective = document.createElement('div');
+        objective.classList.add('card','objective', obj.type, 'animate__animated','animate__fadeInDown');
+        objective.style.setProperty('animation-delay', (o * 0.5) + 's');
+        obj_wrap.appendChild(objective);
+        // add image
+        let obj_img = document.createElement('img');
+        obj_img.classList.add('card-img-top');
+        obj_img.src = obj.image.url;
+        obj_img.alt = obj.image.alt;
+        objective.appendChild(obj_img);
+        // add card body
+        let obj_body = document.createElement('div');
+        obj_body.classList.add('card-body');
+        objective.appendChild(obj_body);
+        // add title text
+        let obj_title = document.createElement('h6');
+        obj_title.classList.add('card-title', 'text-center');
+        obj_title.innerHTML = obj.title;
+        obj_body.appendChild(obj_title);
+        // add hr tag
+        obj_body.appendChild(document.createElement('hr'));
+        // add description text
+        let obj_desc = document.createElement('p');
+        obj_desc.innerHTML = obj.description;
+        obj_body.appendChild(obj_desc);
+        // add action text
+        let obj_action = document.createElement('p');
+        obj_action.classList.add('m-0');
+        obj_action.innerHTML = '<strong>Action</strong>: ' + obj.action;
+        obj_body.appendChild(obj_action);
+        // add conditions text
+        let obj_conditions = document.createElement('p');
+        obj_conditions.classList.add('m-0');
+        obj_conditions.innerHTML = '<strong>Conditions</strong>: ' + obj.conditions;
+        obj_body.appendChild(obj_conditions);
+        // add standard text
+        let obj_standard = document.createElement('p');
+        obj_standard.classList.add('m-0');
+        obj_standard.innerHTML = '<strong>Standard</strong>: ' + obj.standard;
+        obj_body.appendChild(obj_standard);
+        // add objective to full row
+        objectives_wrap.appendChild(obj_wrap);
+    });
+}
+/*
+* ------------------------------------------------------------------------
+* Template 4: 1/3 layout for static content
+* ------------------------------------------------------------------------
+*/
+function writeThirdStatic(pageData){
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    let layoutArray = pageData.layout.split("-");
+    let col1;
+    let col2;
+    // assess if its horizontal or veritcal
+    if (layoutArray[1] == "left" || layoutArray[1] == "right"){
+        // get left column
+        col1 = document.getElementById('left-column');
+        // get right column
+        col2 = document.getElementById('right-column');
+    } else {
+        // get left column
+        col1 = document.getElementById('top-row');
+        // get right column
+        col2 = document.getElementById('bottom-row');
+    }
+    // set up background image
+    col1.style.backgroundImage = "url('" + pageData.content.images[0].url + "')";
+    col1.style.backgroundPosition = 'center';
+    col1.style.backgroundSize = 'cover';
+    // get right column
+    let text = buildContentCard(pageData.content.text_elements, false);
+    // get wrapper div
+    let col2_wrapper = document.getElementById('column-wrapper-2');
+    // append text content to the bottom row
+    col2_wrapper.appendChild(text);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 5: 1/2 layout for static content
+* ------------------------------------------------------------------------
+*/
+function buildHalfStatic(pageData){
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    let layoutArray = pageData.layout.split("-");
+    let col1;
+    let col2;
+    // assess if its horizontal or veritcal
+    if (layoutArray[1] == "horizontal"){
+        // get left column
+        col1 = document.getElementById('left-column');
+        // get right column
+        col2 = document.getElementById('right-column');
+    } else {
+        // get left column
+        col1 = document.getElementById('top-row');
+        // get right column
+        col2 = document.getElementById('bottom-row');
+    }
+    // set up background image
+    col1.style.backgroundImage = "url('" + pageData.content.images[0].url + "')";
+    col1.style.backgroundPosition = 'center';
+    col1.style.backgroundSize = 'cover';
+    // build out text content
+    let text = buildContentCard(pageData.content.text_elements, false);
+    // get wrapper div
+    let col2_wrapper = document.getElementById('column-wrapper-2');
+    // append text content to the bottom row
+    col2_wrapper.appendChild(text);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 6: full layout for static content
+* ------------------------------------------------------------------------
+*/
+function buildFullStatic(pageData){
+    // what are we working from
+    console.log(pageData);
+    // add bg
+    addBackgroundImage(pageData.content.background);
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get full row
+    let fullRow = document.getElementById('column-wrapper-1');
+    fullRow.classList.add('full-column');
+    // build out text content
+    let text = buildContentCard(pageData.content.text_elements, false);
+    // append text content to the bottom row
+    fullRow.appendChild(text);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 7: full layout for static content with ementor
+* ------------------------------------------------------------------------
+*/
+function buildFullNarrationEMentor(pageData){
+    // what are we working from
+    console.log(pageData);
+
+    let layout = buildColumns(pageData.layout);
+
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+
+    // get left column wrapper
+    let col1Wrapper = document.getElementById('column-wrapper-1');
+    //let col1Wrapper = document.getElementById('top-row');
+    // add the ementor
+    let ementor = new eMentor(pageData.content.ementors[0]);
+
+    col1Wrapper.appendChild(ementor.build());
+
+    
+    let col2 = document.getElementById('right-column');
+    //let col2 = document.getElementById('bottom-row')
+    // set up background image
+    col2.style.backgroundImage = "url('" + pageData.content.images[0].url + "')";
+    col2.style.backgroundPosition = 'center';
+    col2.style.backgroundSize = 'cover';
+}
+/*
+* ------------------------------------------------------------------------
+* Template 7.1: Image Carousel
+* ------------------------------------------------------------------------
+*/
+function buildImageCarousel(pageData){
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    let layoutArray = pageData.layout.split("-");
+    let col1;
+    let col2;
+    // assess if its horizontal or veritcal
+    if (layoutArray[1] == "left" || layoutArray[1] == "right"){
+        // get left column
+        col1 = document.getElementById('left-column');
+        // get right column
+        col2 = document.getElementById('right-column');
+    } else {
+        // get left column
+        col1 = document.getElementById('top-row');
+        // get right column
+        col2 = document.getElementById('bottom-row');
+    }
+    // get left column wrapper
+    let col1Wrapper = document.getElementById('column-wrapper-1');
+    // create Image carousel
+    let textSlides = document.createElement('div');
+    textSlides.id = 'text-carousel';
+    textSlides.classList.add('carousel', 'slide');
+    textSlides.dataset.interval = 'false';
+    textSlides.dataset.ride = "false";
+    textSlides.dataset.wrap = 'false';
+    col1Wrapper.appendChild(textSlides);
+    // add inner container
+    let textSlides_inner = document.createElement('div');
+    textSlides_inner.classList.add('carousel-inner');
+    textSlides.appendChild(textSlides_inner);
+    // get right column wrapper
+    let col2Wrapper = document.getElementById('column-wrapper-2');
+    // create Image carousel
+    let carousel = document.createElement('div');
+    carousel.id = 'image-carousel';
+    carousel.classList.add('carousel', 'slide');
+    carousel.dataset.interval = 'false';
+    carousel.dataset.ride = "false";
+    carousel.dataset.wrap = 'false';
+    col2Wrapper.appendChild(carousel);
+    // add inner container
+    let inner = document.createElement('div');
+    inner.classList.add('carousel-inner');
+    carousel.appendChild(inner);
+    // Create carousel controls
+    let prev = document.createElement('a');
+    prev.href = '#image-carousel';
+    prev.role = 'button';
+    prev.classList.add('carousel-control-prev');
+    prev.dataset.slide = "prev";
+    carousel.appendChild(prev);
+    // add both spans
+    let prev_icon = document.createElement('span');
+    prev_icon.classList.add('carousel-control-prev-icon');
+    prev_icon.setAttribute("aria-hidden", "true");
+    prev.appendChild(prev_icon);
+    let prev_label = document.createElement('span');
+    prev_label.classList.add('sr-only');
+    prev_label.innerHTML = 'Previous';
+    prev.appendChild(prev_label);
+    // Create carousel controls
+    let next = document.createElement('a');
+    next.href = '#image-carousel';
+    next.role = 'button';
+    next.classList.add('carousel-control-next');
+    next.dataset.slide = "next";
+    carousel.appendChild(next);
+    // add both spans
+    let next_icon = document.createElement('span');
+    next_icon.classList.add('carousel-control-next-icon');
+    next_icon.setAttribute("aria-hidden", "true");
+    next.appendChild(next_icon);
+    let next_label = document.createElement('span');
+    next_label.classList.add('sr-only');
+    next_label.innerHTML = 'Next';
+    next.appendChild(next_label);
+    // add slides
+    pageData.content.slides.forEach(function(item, i){
+        // add slide text
+        let text_slide = document.createElement('div');
+        text_slide.id = "text-slide-" + i
+        text_slide.classList.add("carousel-item");
+        // add title
+        let text_slide_title = document.createElement('h6');
+        text_slide_title.innerHTML = item.title;
+        text_slide.appendChild(text_slide_title);
+        // add content
+        let text_slide_body = buildTextContent(item.content);
+        text_slide.appendChild(text_slide_body); 
+        // build slide
+        let slide = document.createElement('div');
+        slide.classList.add("carousel-item");
+        if(i == 0){
+            text_slide.classList.add("active");
+            slide.classList.add("active");
+        }
+        // add image
+        let slide_img = document.createElement('img');
+        slide_img.classList.add('d-block','w-100');
+        slide_img.src = item.url;
+        slide_img.alt = item.alt;
+        // add image to slide
+        slide.appendChild(slide_img);
+        // add slide to carousel inner
+        inner.appendChild(slide);
+        // add text slides
+        textSlides_inner.appendChild(text_slide);
+    });
+    // get image carousel
+    let imgSlides = document.getElementById('image-carousel')
+    // sync caoursels
+    $('#image-carousel').on('slide.bs.carousel', function (event) {
+        var to = $(event.relatedTarget).index();
+        $('#text-carousel').carousel(to);
+    });
+}
+/*
+* ------------------------------------------------------------------------
+* Template 7.2: Narrated Image Carousel
+* ------------------------------------------------------------------------
+*/
+function buildNarratedImageCarousel(pageData){
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    let layoutArray = pageData.layout.split("-");
+    let col1;
+    let col2;
+    // assess if its horizontal or veritcal
+    if (layoutArray[1] == "left" || layoutArray[1] == "right"){
+        // get left column
+        col1 = document.getElementById('left-column');
+        // get right column
+        col2 = document.getElementById('right-column');
+    } else {
+        // get left column
+        col1 = document.getElementById('top-row');
+        // get right column
+        col2 = document.getElementById('bottom-row');
+    }
+    // get left column wrapper
+    let col1Wrapper = document.getElementById('column-wrapper-1');
+    // add ementor
+    let ementor = new eMentor(pageData.content.ementors[0]);
+
+    col1Wrapper.appendChild(ementor.build());
+
+    // get right column wrapper
+    let col2Wrapper = document.getElementById('column-wrapper-2');
+    // create Image carousel
+    let carousel = document.createElement('div');
+    carousel.id = 'image-carousel';
+    carousel.classList.add('carousel', 'slide');
+    carousel.dataset.interval = 'false';
+    carousel.dataset.ride = "false";
+    carousel.dataset.wrap = 'false';
+    col2Wrapper.appendChild(carousel);
+    // add inner container
+    let inner = document.createElement('div');
+    inner.classList.add('carousel-inner');
+    carousel.appendChild(inner);
+    // Create carousel controls
+    // let prev = document.createElement('a');
+    // prev.href = '#image-carousel';
+    // prev.role = 'button';
+    // prev.classList.add('carousel-control-prev');
+    // prev.dataset.slide = "prev";
+    // carousel.appendChild(prev);
+    // // add both spans
+    // let prev_icon = document.createElement('span');
+    // prev_icon.classList.add('carousel-control-prev-icon');
+    // prev_icon.setAttribute("aria-hidden", "true");
+    // prev.appendChild(prev_icon);
+    // let prev_label = document.createElement('span');
+    // prev_label.classList.add('sr-only');
+    // prev_label.innerHTML = 'Previous';
+    // prev.appendChild(prev_label);
+    // // Create carousel controls
+    // let next = document.createElement('a');
+    // next.href = '#image-carousel';
+    // next.role = 'button';
+    // next.classList.add('carousel-control-next');
+    // next.dataset.slide = "next";
+    // carousel.appendChild(next);
+    // // add both spans
+    // let next_icon = document.createElement('span');
+    // next_icon.classList.add('carousel-control-next-icon');
+    // next_icon.setAttribute("aria-hidden", "true");
+    // next.appendChild(next_icon);
+    // let next_label = document.createElement('span');
+    // next_label.classList.add('sr-only');
+    // next_label.innerHTML = 'Next';
+    // next.appendChild(next_label);
+
+    let times = [];
+
+    // add slides
+    pageData.content.slides.forEach(function(item, i){
+        
+        // build slide
+        let slide = document.createElement('div');
+        slide.classList.add("carousel-item");
+        if(i == 0){
+            slide.classList.add("active");
+        }
+        // add image
+        let slide_img = document.createElement('img');
+        slide_img.classList.add('d-block','w-100');
+        slide_img.src = item.url;
+        slide_img.alt = item.alt;
+        // add time to array
+        times.push(item.timing);
+        // add image to slide
+        slide.appendChild(slide_img);
+        // add slide to carousel inner
+        inner.appendChild(slide);
+        // 
+       
+        
+    });
+
+    console.log(times);
+
+    let audio = document.getElementById('narrationAudio');
+    audio.ontimeupdate = function(){
+        if (pageData.id == currentPageId){
+            console.log(audio.currentTime);
+            times.forEach(function(time, t){
+                if (Math.round(audio.currentTime) == parseInt(time)){
+                    console.log(time)
+                    $('#image-carousel').carousel(t);
+                }
+            })
+        } else {
+
+        }
+
+    }
+
+
+
+
+
+
+}
+/*
+* ------------------------------------------------------------------------
+* Template 8: Hotspot
+* ------------------------------------------------------------------------
+*/
+function buildFullHotSpot(pageData){
+    // what are we working from
+    console.log(pageData);
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get full row
+    let fullRow = document.getElementById('column-wrapper-1');
+    fullRow.classList.add('full-column');
+    // build ementor
+    let text = buildTextContent(pageData.content.text_elements);
+    // append ementor
+    // fullRow.appendChild(text);
+    // create div to hold the hot spot
+    let hotspot = document.createElement('div');
+    hotspot.classList.add('w-100')
+    hotspot.id = "hotspot";
+    fullRow.appendChild(hotspot);
+
+    let hotspot_img = document.createElement('img');
+    hotspot_img.classList.add('img-fluid', 'w-100');
+    hotspot_img.id = 'hotspot-img';
+    hotspot_img.src = pageData.content.hotspot.image.url;
+    hotspot_img.alt = pageData.content.hotspot.image.alt;
+    hotspot_img.setAttribute('usemap','#hotspot_map');
+    hotspot.appendChild(hotspot_img);
+    // create map div
+    // let hotspot_map = document.createElement('map');
+    // hotspot_map.name = "hotspot_map";
+    // hotspot.appendChild(hotspot_map);
+    // create modal
+    let modal = document.createElement('div');
+    modal.classList.add('modal','fade');
+    modal.id = "hotspot-modal";
+    modal.setAttribute('tabindex', '-1');
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-labelledby', 'hotspot-modal--label');
+    modal.setAttribute('aria-hidden', 'true');
+    // modal dialog
+    let dialog = document.createElement('div');
+    dialog.classList.add('modal-dialog', 'modal-dialog-centered');
+    dialog.setAttribute('role', 'document');
+    modal.appendChild(dialog);
+    // modal content
+    let modalContent = document.createElement('div');
+    modalContent.classList.add('modal-content');
+    dialog.appendChild(modalContent);
+    // modal header
+    let modalHeader = document.createElement('div');
+    modalHeader.classList.add('modal-header');
+    modalContent.appendChild(modalHeader);
+    // title
+    var modalTitle = document.createElement('h5');
+    modalTitle.id = "hotspot-modal--label";
+    modalTitle.innerHTML = "Hotspot Content!";
+    modalHeader.appendChild(modalTitle);
+    // close
+    let modalClose = document.createElement('button');
+    modalClose.classList.add('close');
+    modalClose.type = 'button';
+    modalClose.setAttribute('data-dismiss', 'modal');
+    modalClose.setAttribute('aria-label', 'Close');
+    modalClose.innerHTML = '<span aria-hidden="true">&times;</span>';
+    modalHeader.appendChild(modalClose);
+    // modal Body
+    let modalBody = document.createElement('div');
+    modalBody.classList.add('modal-body');
+    modalContent.appendChild(modalBody);
+    // append modal to page frame
+    page.append(modal);
+    // create hotspot array
+    let hotspot_zones = [];
+    // build hotspots
+    pageData.content.hotspot.items.forEach(function(element, index){
+        let hotspot_item = document.createElement('div');
+        hotspot_item.classList.add('zone', element.shape);
+        // add shape class
+        hotspot_item.id = "zone-" + index;
+        // add modal interactions
+        hotspot_item.dataset.toggle = "modal";
+        hotspot_item.dataset.target = "#hotspot-modal";
+        // add click event
+        hotspot_item.addEventListener("click", function(){
+            modalTitle.innerHTML = element.title;
+            modalBody.innerHTML = '';
+            modalBody.appendChild(buildTextContent(element.body));
+        });
+        // send coords to array
+        hotspot_zones.push(element.coords);
+        // append hotspot item to hotspot
+        hotspot.appendChild(hotspot_item);
+    });
+    // eval width and height of all items
+    setTimeout(function(){
+        checkImageItems(hotspot_zones, "hotspot-img");
+        window.onresize = function(event) {
+            checkImageItems(hotspot_zones, "hotspot-img");
+        };
+    }, 200);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 9: Drag and drop
+* ------------------------------------------------------------------------
+*/
+function buildFullDragDrop(pageData){
+    // what are we working from
+    console.log(pageData);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 10: Full Tiles
+* ------------------------------------------------------------------------
+*/
+function buildFullTiles(pageData){
+    console.log(pageData);
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    let layoutArray = pageData.layout.split("-");
+    let col1;
+    let col2;
+    // assess if its horizontal or veritcal
+    if (layoutArray[1] == "left" || layoutArray[1] == "right"){
+        // get left column
+        col1 = document.getElementById('left-column');
+        // get right column
+        col2 = document.getElementById('right-column');
+    } else {
+        // get left column
+        col1 = document.getElementById('top-row');
+        // get right column
+        col2 = document.getElementById('bottom-row');
+    }
+    // get left column wrapper
+    let col1Wapper = document.getElementById('column-wrapper-1');
+    // add the ementor
+    let ementor = new eMentor(pageData.content.ementors[0]);
+    col1Wapper.appendChild(ementor.build());
+    // get the right column wrapper
+    let col2Wrapper = document.getElementById('column-wrapper-2');
+    // create div to wrap our sorting fun
+    let tileGrid = document.createElement('div');
+    tileGrid.id = "tile-grid";
+    tileGrid.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-wrap');
+    col2Wrapper.appendChild(tileGrid);
+    // loop through array and build lures(options)
+    pageData.content.tiles.forEach(function(item, i){
+        // tile wrapper
+        let tileWrapper = document.createElement('div');
+        tileWrapper.classList.add('col-12', 'col-sm-6', 'col-md-4', 'mb-4');
+        // add item to grid
+        tileGrid.appendChild(tileWrapper);
+        // build the tile
+        let tile = document.createElement('div');
+        tile.classList.add('tile');
+        tile.id = 'tile-' + i;
+        // add item to grid
+        tileWrapper.appendChild(tile);
+        // add the front of the care
+        let tileFront = document.createElement('div');
+        tileFront.classList.add('tile-front');
+        tile.appendChild(tileFront);
+        // build image
+        let tileImage = document.createElement('img');
+        // tileImage.classList.add('img-fluid');
+        tileImage.src = item.front.url;
+        tileImage.alt = item.front.alt;
+        // add image to item
+        tileFront.appendChild(tileImage);
+        // add the back of the tile
+        let tileBack = document.createElement('div');
+        tileBack.classList.add('tile-back', 'd-flex', 'justify-content-center', 'align-items-center');
+        tile.appendChild(tileBack);
+        // add content
+        tileBack.appendChild(buildTextContent(item.back))
+    });
+
+    function getTileSize(){
+        // get initial tile
+        let initialTile = document.getElementById('tile-0');
+        console.log(initialTile.offsetWidth);
+        // get all the tiles
+        let allTiles = document.getElementsByClassName('tile');
+        // loop through the tiles
+        for(var t=0; t < allTiles.length; t++){
+            allTiles[t].style.height = initialTile.offsetWidth + 'px';
+        };
+    }
+
+    // setup height on load
+    getTileSize();
+    // add height sizing
+    window.addEventListener('resize', function(event){
+        getTileSize();
+    });
+
+    // click event for selection
+    $('.tile').click(function(){
+        // if button is not active evaluate
+        if (!$(this).hasClass('active')){
+            // remove active class
+            $('.tile.active').removeClass("active");
+            // add class to current
+            $(this).addClass("active");
+        } else {
+            // remove active class
+            $('.tile.active').removeClass("active");
+        }
+    });
+
+}
+/*
+* ------------------------------------------------------------------------
+* Template 10.5: Full Tiles Select
+* ------------------------------------------------------------------------
+*/
+function buildFullTilesSelect(pageData){
+    console.log(pageData);
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    let layoutArray = pageData.layout.split("-");
+    let col1;
+    let col2;
+    // assess if its horizontal or veritcal
+    if (layoutArray[1] == "left" || layoutArray[1] == "right"){
+        // get left column
+        col1 = document.getElementById('left-column');
+        // get right column
+        col2 = document.getElementById('right-column');
+    } else {
+        // get left column
+        col1 = document.getElementById('top-row');
+        // get right column
+        col2 = document.getElementById('bottom-row');
+    }
+    // get left column wrapper
+    let col1Wrapper = document.getElementById('column-wrapper-1');
+    // clear out user selections
+    userSelections = [];
+    answerKey = []
+    // build out the statement list
+    let statements = document.createElement('div');
+    statements.classList.add('list-group');
+    statements.id = "statement-list";
+    col1Wrapper.appendChild(statements);
+    // build out statements
+    pageData.content.statements.forEach(function(statment, s){
+        // create list item
+        let statementItem = document.createElement('button');
+        statementItem.classList.add('list-group-item', 'list-group-item-action', 'btn-block','d-flex','align-items-center','statement-list-item');
+        statementItem.id = "statement-list-item-" + s;
+        statementItem.setAttribute("role", "button");
+        // add a spot in the userSelections array
+        userSelections.push("");
+        answerKey.push(statment.answer);
+        // create badge for indication
+        let badge = document.createElement('div');
+        badge.classList.add('badge','badge-secondary','badge-pill', 'mr-3',);
+        badge.innerHTML = s + 1;
+        statementItem.appendChild(badge);
+        // create item text
+        let statementText = document.createElement('div');
+        statementText.innerHTML = statment.text;
+        statementItem.appendChild(statementText);
+        // when the user selects a statement
+        statementItem.addEventListener("click", function(){
+            selectedNode = statementItem;
+            // enable selection mode
+            selectNode(selectionGroup1, s);
+        });
+        // append to the list
+        statements.appendChild(statementItem);
+    });
+    console.log(answerKey);
+    // update selection variables
+    selectionGroup1 = statements.childNodes;
+    // get the right column wrapper
+    let col2Wrapper = document.getElementById('column-wrapper-2');
+    // create div to wrap our sorting fun
+    let tileGrid = document.createElement('div');
+    tileGrid.id = "tile-grid";
+    tileGrid.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-wrap');
+    col2Wrapper.appendChild(tileGrid);
+    // loop through array and build lures(options)
+    pageData.content.tiles.forEach(function(item, i){
+        // tile wrapper
+        let tileWrapper = document.createElement('div');
+        tileWrapper.classList.add('col-12', 'col-sm-6', 'col-md-4', 'mb-4');
+        // add item to grid
+        tileGrid.appendChild(tileWrapper);
+        // build the tile
+        let tile = document.createElement('div');
+        tile.classList.add('tile');
+        tile.id = 'tile-' + i;
+        // add item to grid
+        tileWrapper.appendChild(tile);
+        // add badge for if selection is made
+        let tileBadge = document.createElement('div');
+        tileBadge.classList.add('badge','badge-primary','badge-pill');
+        tile.appendChild(tileBadge);
+        // add the front of the care
+        let tileFront = document.createElement('div');
+        tileFront.classList.add('tile-front');
+        tile.appendChild(tileFront);
+        // build image
+        let tileImage = document.createElement('img');
+        // tileImage.classList.add('img-fluid');
+        tileImage.src = item.front.url;
+        tileImage.alt = item.front.alt;
+        // add image to item
+        tileFront.appendChild(tileImage);
+        // add the back of the tile
+        let tileBack = document.createElement('div');
+        tileBack.classList.add('tile-back', 'd-flex', 'justify-content-center', 'align-items-center');
+        tile.appendChild(tileBack);
+        // when the user selects a tile
+        tile.addEventListener("click", function(){
+            selectedNode = tile;
+            // enable selection mode
+            selectNode(selectionGroup2, i);
+        });
+
+        // add content
+        tileBack.appendChild(buildTextContent(item.back))
+    });
+    // update selection variables
+    selectionGroup2 = document.querySelectorAll(".tile");
+
+    function getTileSize(){
+        // get initial tile
+        let initialTile = document.getElementById('tile-0');
+        console.log(initialTile.offsetWidth);
+        // get all the tiles
+        let allTiles = document.getElementsByClassName('tile');
+        // loop through the tiles
+        for(var t=0; t < allTiles.length; t++){
+            allTiles[t].style.height = initialTile.offsetWidth + 'px';
+        };
+    }
+    // setup height on load
+    getTileSize();
+    // add height sizing
+    window.addEventListener('resize', function(event){
+        getTileSize();
+    });
+}
+var selectedNode;
+var initialSelection = null;
+var initialSelectionGroup = null;
+var intialSelectionNumber = null;
+var selectionGroup1;
+var selectionGroup2;
+var userSelections = [];
+// node selection function
+function selectNode(group, number){
+    // check if it is the intial selection 
+    if (initialSelection == null || Array.from(group).some(({classList}) => classList.contains('active'))){
+        // add active class to the selected item
+        for (let n = 0; n < group.length; n++) {
+            group[n].classList.remove('active');
+        }
+        // add active class to selected node
+        selectedNode.classList.add('active');
+        // update intial selection
+        initialSelection = selectedNode;
+        // keep the initial element number for selection array
+        initialSelectionNumber = number;
+    }
+    // logic for second selection
+    else {
+        // update classes
+        initialSelection.classList.add('submitted');
+        initialSelection.classList.remove('active');
+        selectedNode.classList.add('submitted');
+        // check where the label should come from and apply to the other
+        if (group == selectionGroup2){
+            // check to see if it has been paired already
+            for (let u = 0; u < userSelections.length; u++) {
+                if (userSelections[u] === number){
+                    console.log(userSelections[u]);
+                    console.log(number);
+                }
+            }
+            // update the badge
+            selectedNode.childNodes[0].innerHTML = initialSelection.childNodes[0].innerHTML;
+            // update 
+            userSelections[initialSelectionNumber] = number;
+        } else {
+            initialSelection.childNodes[0].innerHTML = selectedNode.childNodes[0].innerHTML;
+            userSelections[number] = initialSelectionNumber;
+        } 
+        // set intial node back to null
+        initialSelection = null;
+    }
+}
+// leaving node selection
+function exitNodeSelection(id, selClass){
+    // get node list
+    let selectionGroup1 = document.getElementsByClassName(selClass);
+    // enable statements
+    for (let n = 0; n < selectionGroup1.length; n++) {
+        selectionGroup1[n].classList.remove('active');
+        if (n != id){
+            selectionGroup1[n].disabled = false;
+        } else {
+            selectionGroup1[n].classList.add('bg-success');
+        }
+    }
+    // get tile list
+    let tileList = document.getElementsByClassName('tile');
+    // loop through tiles to set up on click event
+    for (let t = 0; t < tileList.length; t++) {
+        tileList[t].onclick = function(){
+            return false;
+        }
+    }
+}
+/*
+* ------------------------------------------------------------------------
+* Template 11: Listing
+* ------------------------------------------------------------------------
+*/
+function buildListing(pageData){
+    // what are we working from
+    console.log(pageData);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 12: Cards
+* ------------------------------------------------------------------------
+*/
+function buildCards(pageData){
+    // what are we working from
+    console.log(pageData);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 13: True/False
+* ------------------------------------------------------------------------
+*/
+function buildWheelTF(pageData){
+    // what are we working from
+    console.log(pageData);
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get full row
+    let fullRow = document.getElementById('column-wrapper-1');
+    fullRow.classList.add('full-column');
+    // content wrap
+    let content = document.createElement('div');
+    content.id = 'content-wrap';
+    content.classList.add('w-100');
+    fullRow.appendChild(content);
+    // build out the carousel
+    let carousel = document.createElement('div');
+    carousel.id = 'question-carousel';
+    carousel.classList.add('carousel', 'slide', 'w-100');
+    carousel.dataset.interval = 'false';
+    carousel.dataset.ride = "false";
+    carousel.dataset.wrap = 'true';
+    content.appendChild(carousel);
+    // add inner container
+    let inner = document.createElement('div');
+    inner.classList.add('carousel-inner');
+    carousel.appendChild(inner);
+    // setup array for slides to be randomized
+    let slides = [];
+
+    let userResponses = [];
+    let answerKey = [];
+    // add content
+    pageData.content.questions.forEach(function(element, index){
+        // build slide
+        let slide = document.createElement('div');
+        slide.classList.add("carousel-item");
+        slide.id = 'question-' + index;
+        // build question card
+        let question = buildQuestion(element);
+        question.classList.add('w-100');
+        slide.appendChild(question);
+        // add slide to slide array
+        slides.push(slide);
+        // push answer and stub in user responses
+        answerKey.push(element.answer);
+        userResponses.push("");
+    });
+    console.log(slides);
+    // randomize questions
+    shuffle(slides);
+    console.log(slides);
+    // add slide to carousel inner
+    slides.forEach(function(item, index){
+        if(index == 0){
+            item.classList.add("active");
+        }
+        console.log(item.id)
+
+        inner.appendChild(item);
+    });
+    let spinnerWrap = document.createElement('div');
+    spinnerWrap.id = 'tf-spin';
+    spinnerWrap.classList.add('animate__animated','animate__fadeInUp', 'active');
+    let spinner = document.createElement('div');
+    spinner.id = 'tf-spin-spinner';
+    spinner.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" aria-label="question-spinner" focusable="false" viewBox="0 0 200 200"><g><path class="spin-item" d="M95,20.17V0.12C83.87,0.67,73.22,3.04,63.33,6.94c-1.51,0.6-3.01,1.23-4.49,1.9c-3.69,1.67-7.26,3.56-10.7,5.64c-1.37,0.84-2.73,1.7-4.06,2.6c-3.33,2.25-6.51,4.69-9.53,7.31c-1.81,1.57-3.57,3.21-5.27,4.9c-1.13,1.13-2.24,2.29-3.31,3.47c-0.54,0.59-1.07,1.19-1.59,1.8c-1.05,1.21-2.07,2.44-3.06,3.7c-0.49,0.63-0.98,1.27-1.46,1.91c-0.96,1.28-1.89,2.59-2.79,3.92c-2.7,3.99-5.11,8.19-7.22,12.56c-1.05,2.19-2.03,4.42-2.92,6.69c-0.3,0.76-0.59,1.52-0.87,2.28c-0.56,1.53-1.09,3.08-1.57,4.65C2.05,78.14,0.55,86.43,0.12,95h20.05C22.66,54.87,54.87,22.66,95,20.17z"/><path class="spin-item" d="M20.17,105H0.12c2.52,51.25,43.63,92.35,94.88,94.88v-20.05C54.87,177.34,22.66,145.13,20.17,105z"/><path class="spin-item" d="M105,179.83v20.05c51.25-2.52,92.35-43.63,94.88-94.88h-20.05C177.34,145.13,145.13,177.34,105,179.83z"/><path class="spin-item" d="M179.83,95h20.05c-0.42-8.57-1.92-16.86-4.37-24.74c-0.49-1.57-1.01-3.11-1.57-4.65c-0.28-0.77-0.57-1.53-0.87-2.28c-0.9-2.27-1.87-4.5-2.92-6.69c-2.11-4.37-4.52-8.57-7.22-12.56c-0.9-1.33-1.83-2.64-2.79-3.92c-0.48-0.64-0.97-1.28-1.46-1.91c-0.99-1.26-2.01-2.49-3.06-3.7c-0.52-0.6-1.05-1.2-1.59-1.8c-1.08-1.18-2.18-2.34-3.31-3.47c-1.7-1.7-3.45-3.33-5.27-4.9c-3.02-2.62-6.21-5.06-9.53-7.31c-1.33-0.9-2.68-1.77-4.06-2.6c-3.44-2.09-7.01-3.97-10.7-5.64c-1.48-0.67-2.97-1.3-4.49-1.9c-9.88-3.9-20.54-6.26-31.67-6.81v20.05C145.13,22.66,177.34,54.87,179.83,95z"/></g></svg>';
+    spinnerWrap.appendChild(spinner);
+    let spinnerBtn = document.createElement('button');
+    spinnerBtn.id = 'spinBtn';
+    spinnerBtn.type = 'button';
+    spinnerBtn.classList.add('btn','btn-primary');
+    spinnerBtn.innerHTML = 'Spin';
+    spinnerBtn.onclick = function(){spin()};
+    spinnerWrap.appendChild(spinnerBtn);
+    content.appendChild(spinnerWrap);
+    // add submit button
+    let submit = createSubmitButton();
+    submit.classList.add('d-none','mx-auto', 'my-3');
+    content.appendChild(submit);
+    submit.onclick = function(){questionResponse()};
+    // add extra spin button
+    let spinnerBtn2 = document.createElement('button');
+    spinnerBtn2.id = 'spinBtn2';
+    spinnerBtn2.type = 'button';
+    spinnerBtn2.classList.add('btn','btn-primary', 'd-none', 'mx-auto', 'my-3');
+    spinnerBtn2.innerHTML = 'Spin';
+    spinnerBtn2.onclick = function(){respin()};
+    content.appendChild(spinnerBtn2);
+
+    question = 0;
+    rotation = 765;
+
+    console.log(slides[question].id);
+    
+
+
+
+    function spin(){
+        spinner.style.transform = 'rotate(' + rotation + 'deg)';
+        rotation = rotation + 810;
+        if (question != 0){
+            $('#question-carousel').carousel('next');
+        }
+        setTimeout(function(){
+            $(".spin-item:nth-child(" + (question + 1) + ")").addClass('active');
+            carousel.classList.remove('animate__fadeOutUp');
+            spinnerWrap.classList.remove('animate__animated','animate__fadeInUp');
+            setTimeout(function(){
+                spinnerWrap.classList.add('animate__animated','animate__fadeOutDown');
+                setTimeout(function(){
+                    spinnerWrap.classList.remove('active');
+                    carousel.classList.add('animate__animated','animate__fadeInDown', 'active');
+                    submit.classList.remove('d-none');
+                    submit.classList.add('animate__animated','animate__fadeInDown','d-block');
+                }, 750);
+            }, 1000);
+        }, 3000);  
+    }
+
+    function respin(){
+        // send the carousel outta here
+        carousel.classList.remove('animate__fadeInDown');
+        carousel.classList.add('animate__fadeOutUp');
+        spinnerBtn2.classList.add('animate__animated','animate__fadeOutUp');
+        setTimeout(function(){
+            carousel.classList.remove('active');
+            spinnerBtn2.classList.remove('animate__animated','animate__fadeOutUp', 'd-block');
+            spinnerBtn2.classList.add('d-none');
+        }, 750);
+        // show me the money!... uhh I mean spinner
+        spinnerWrap.classList.remove('animate__fadeOutDown');
+        spinnerWrap.classList.add('active','animate__fadeInUp');
+        // call for the spin
+        setTimeout(function(){
+            spin();
+        }, 750);
+    }
+
+    function questionResponse(){
+        // eval by using the true btn
+        let trueBtn = document.getElementById(slides[question].id).getElementsByClassName("btnTF")[0];
+        // check if which button was active
+        if (trueBtn.classList.contains('active')){
+            userResponses[question] = 1;
+        } else {
+            userResponses[question] = 0;
+        }
+        let result = '';
+        // evaluate against the answer key
+        if(userResponses[question] == answerKey[question]){
+            // show correct feedback
+            result = true;
+        } else {
+            // show incorrect feedback
+            result = false;
+        }
+        console.log(result);
+        let feedback = buildFeedback(result, pageData.content.correct, pageData.content.incorrect);
+        console.log(feedback);
+        let questionValidation = document.getElementById(slides[question].id).getElementsByClassName("question-feedback")[0];
+        questionValidation.appendChild(feedback);
+        question++;
+        submit.classList.remove('d-block');
+        submit.classList.add('d-none');
+        if (question != slides.length){
+            spinnerBtn2.classList.remove('d-none','animate__animated','animate__fadeOutUp');
+            spinnerBtn2.classList.add('d-block');
+        } else {
+            console.log('final feedback')
+        }
+    }
+
+    function showFeedback(){
+
+    }
+
+
+
+
+
+    
+
+
+
+
+
+
+    // if (userResponses[pageData.quiz] === "" || pageData.quiz == undefined){
+    //     // click event for selection
+    //     $('.btnTF').click(function(){
+    //         // if button is not active evaluate
+    //         if (!$(this).hasClass('active')){
+    //             // remove active class
+    //             $('.btnTF.active').removeClass("active");
+    //             // add class to current
+    //             $(this).addClass("active");
+    //             // evaluate selection
+    //             btnId = $(this).attr('id');
+    //             // determine which value to eval
+    //             if (btnId == "btnTrue"){
+    //                 btnVal = 1;
+    //             } else {
+    //                 btnVal = 0;
+    //             }
+    //             // eval if submitted answer is correct
+    //             if (btnVal == pageData.content.answers[0]){
+    //                 qCorrect = true;
+    //             } else {
+    //                 qCorrect = false;
+    //             }
+    //         }
+    //     });
+    // } else {
+    //     $('.question').addClass('submitted');
+    //     // remove click event from lure
+    //     $('.btnTF').unbind('click');
+    //     if (userResponses[pageData.quiz] == 1){
+    //         $('#btnTrue').addClass('active');
+    //     } else{
+    //         $('#btnFalse').addClass('active');
+    //     }
+    //     if (review){
+    //         // add review class to question
+    //         $('.question').addClass('review');
+    //     }
+    // }
+    // // click event for selection
+    // $('#submitBtn').click(function(){
+    //     // attempt++;
+    //     // // show feedback
+    //     // buildFeedback(qCorrect, pageData.content.correct, pageData.content.incorrect, pageData.quiz);
+    //     // // additional logic for quiz
+    //     // if (pageData.quiz != undefined && qCorrect != null){
+    //     //     // update attempt
+    //     //     attempt++
+    //     //     // update score array
+    //     //     if (qCorrect == true){
+    //     //         userScore[pageData.quiz] = 1;
+    //     //     } else {
+    //     //         userScore[pageData.quiz] = 0;
+    //     //     }
+    //     //     // store user response
+    //     //     userResponses[pageData.quiz] = btnVal;
+    //     //     // progress to next page
+    //     //     if (attempt > 1 || qCorrect){
+    //     //         setTimeout(function(){ nextPage(pageData.id);}, 1000);
+    //     //     }
+    //     // }
+
+    //     // // attempts for COL KLR
+    //     // if (pageData.quiz == undefined){
+    //     //     // update attempt
+    //     //     attempt++;
+    //     //     /* // store user response
+    //     //     userResponses[pageData.quiz] = btnVal; */
+    //     //     // progress to next page
+    //     //     if (attempt > 1 || qCorrect){
+    //     //         setTimeout(function(){ nextPage(pageData.id);}, 1000); 
+    //     //     }
+    //     // }
+    // });
+}
+/*
+* ------------------------------------------------------------------------
+* Template 14: Graphic Choice
+* ------------------------------------------------------------------------
+*/
+function buildGraphicChoice(pageData){
+    // what are we working from
+    console.log(pageData);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 15: COL Multiple Choice
+* ------------------------------------------------------------------------
+*/
+function buildCOLMultipleChoice(pageData){
+    let qCorrect = null;
+    let btnId;
+    let attempt = 0;
+    // letter array for labels
+    var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get right column
+    let rightCol = document.getElementById('right-column');
+    // build question card
+    let card = buildQuestionCard(pageData);
+    // append to question card to right column
+    rightCol.appendChild(card);
+    // get id for card body
+    let cardBody = document.getElementById('question-body');
+    // loop through array and build lures(options)
+    pageData.content.options.forEach(function(option, o){
+        // build button
+        let lure = document.createElement('button');
+        lure.setAttribute("data-toggle", "button");
+        lure.setAttribute("aria-pressed", "false");
+        lure.id = o + "_mc";
+        lure.classList.add("question-option");
+        // add label
+        let label = document.createElement('div');
+        label.classList.add('question-option--label');
+        label.innerHTML = '<span>' + letters[o] + '</span>';
+        lure.appendChild(label);
+        // add text
+        let lureText = document.createElement('div');
+        lureText.classList.add('question-option--text');
+        lureText.innerHTML = option.text;
+        lure.appendChild(lureText);
+        // add lure to content
+        cardBody.appendChild(lure);
+    });
+    // set answer
+    qOptions = pageData.content.options;
+    // click event for selection
+    $('.question-option').click(function(){
+        // if button is not active evaluate
+        if (!$(this).hasClass('active')){
+            // remove active class
+            $('.question-option.active').removeClass("active");
+            // add class to current
+            $(this).addClass("active");
+            // evaluate selection
+            btnId = $(this).attr('id');
+            // eval if submitted answer is correct
+            if (pageData.content.options[btnId[0]].answer == true){
+                qCorrect = true;
+            } else {
+                qCorrect = false;
+            }
+
+            console.log(qCorrect);
+        }
+    });
+    // click event for selection
+    $('#question-submit').click(function(){
+        // show feedback
+        // buildFeedback(qCorrect, pageData.content.correct, pageData.content.incorrect);
+    });
+}
+/*
+* ------------------------------------------------------------------------
+* Template 16: COL Matching
+* ------------------------------------------------------------------------
+*/
+function buildCOLMatching(pageData){
+    // what are we working from
+    console.log(pageData.content.draggables);
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get left column
+    let leftCol = document.getElementById('left-column');
+    // build ementor
+    let ementor1 = buildEmentor(pageData.content.ementors[0]);
+    // append ementor
+    leftCol.appendChild(ementor1);
+    // get right column
+    let rightCol = document.getElementById('right-column');
+    // create div to wrap our sorting fun
+    let sortWrap = document.createElement('div');
+    sortWrap.id = "sort-wrap";
+    rightCol.appendChild(sortWrap);
+    // create sortable ul element
+    let sortList = document.createElement('ul');
+    sortList.id = "sort-drag";
+    sortList.classList.add('d-flex','flex-wrap','justify-content-start','list-unstyled', 'sort-spot')
+    sortWrap.appendChild(sortList);
+    // Get both containers
+    let sortContainer =  document.querySelectorAll('.sort-spot')
+    // build sortable items
+    pageData.content.draggables.forEach(function(element, index){
+        // create draggable elmements
+        let draggable = document.createElement('li');
+        // draggable.draggable = true;
+        draggable.classList.add('sort-list--item', 'sort-list--item-draggable');
+        draggable.id = 'sort-list--item-' + index;
+        // build out card
+        let dndCard = document.createElement('div');
+        dndCard.classList.add('card');
+        draggable.appendChild(dndCard);
+        // card content
+        let dndCardBody = document.createElement('div');
+        dndCardBody.classList.add("card-body");
+        dndCard.appendChild(dndCardBody);
+        // create number
+        let dndCardLabel = document.createElement('span');
+        dndCardLabel.classList.add('sort-list--item-label');
+        dndCardLabel.innerHTML = index + 1;
+        dndCardBody.appendChild(dndCardLabel);
+        // add text
+        let dndCardText = document.createElement('p');
+        dndCardText.classList.add('sort-list--item-text', 'm-0');
+        dndCardText.innerHTML = element.content;
+        dndCardBody.appendChild(dndCardText);
+        // Add draggable
+        sortList.appendChild(draggable);
+    });
+    // add sorting event
+    const sortable = new Draggable.Sortable(sortContainer, {
+        draggable: '.sort-list--item-draggable'
+    });
+    // Get all options
+    let sortLabels =  document.querySelectorAll('.sort-list--item-label');   
+    // update label
+    sortable.on('sortable:stop', function(){
+        // Get all options (not crazt about the set time out but it is what it is)
+        setTimeout(function(){
+            sortLabels =  document.querySelectorAll('.sort-list--item-label');
+            sortLabels.forEach(function(label, index){                
+                label.innerHTML = index + 1;
+            });
+        }, 100);
+    });
+
+}
+/*
+* ------------------------------------------------------------------------
+* Template 17: COL Drag and Drop
+* ------------------------------------------------------------------------
+*/
+function buildCOLDragDrop(pageData){
+    // what are we working from
+    console.log("COL Drag and Drop");
+    console.log(pageData.content.draggables);
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get right column
+    let rightCol = document.getElementById('full-row');
+    // create div to hold the hot spot
+    let hotspot = document.createElement('div');
+    hotspot.classList.add('dnd');
+    hotspot.id = "hotspot";
+    rightCol.appendChild(hotspot);
+
+    // create div to hold the draggables
+    let dragspot = document.createElement('div');
+    dragspot.classList.add('dnd', 'd-flex');
+    dragspot.id = "dragspot";
+    rightCol.appendChild(dragspot);
+    
+
+    let hotspot_img = document.createElement('img');
+    hotspot_img.classList.add('img-fluid');
+    hotspot_img.id = 'hotspot-img';
+    hotspot_img.src = pageData.content.hotspot.image.url;
+    hotspot_img.alt = pageData.content.hotspot.image.alt;
+    hotspot_img.setAttribute('usemap','#hotspot_map');
+    hotspot.appendChild(hotspot_img);
+    // create hotspot array
+    let hotspot_zones = [];
+    // build hotspots
+    pageData.content.hotspot.droppables.forEach(function(element, index){
+        let hotspot_item = document.createElement('div');
+        hotspot_item.classList.add('zone', element.shape);
+        hotspot_item.id = 'zone-' + index;
+
+        let dragspot_item = document.createElement('div');
+        dragspot_item.classList.add('zone', element.shape, 'draggable-dropzone--occupied');
+        dragspot_item.id = 'origin-' + index;
+
+        // add dropzone number
+        hotspot_item.dataset.dropzone = index + 1;
+        dragspot_item.dataset.dropzone = index + 1;
+        // send coords to array
+        hotspot_zones.push(element.coords);
+        // append hotspot item to hotspot
+        hotspot.appendChild(hotspot_item);
+        dragspot.appendChild(dragspot_item);
+
+        let draggable_item = document.createElement('div');
+        draggable_item.classList.add('draggable', element.shape);
+        dragspot_item.appendChild(draggable_item);
+        
+        let draggable_img = document.createElement('img');
+        draggable_img.src = pageData.content.hotspot.draggables[index].url;
+        draggable_img.alt = pageData.content.hotspot.draggables[index].alt;
+        draggable_item.appendChild(draggable_img);
+
+
+        // dragspot.appendChild(draggable_item);
+
+    });
+
+    console.log("zones:");
+    console.log(hotspot_zones);
+    // eval width and height of all items
+    setTimeout(function(){
+        checkImageItems(hotspot_zones, "hotspot-img");
+        window.onresize = function(event) {
+            checkImageItems(hotspot_zones, "hotspot-img");
+        };
+    }, 100);
+    
+    // Get both containers
+    let dndContainers =  document.querySelectorAll('.dnd');
+    console.log(dndContainers)
+
+
+    const droppable = new Draggable.Droppable(dndContainers, {
+        draggable: '.draggable',
+        dropzone: '.zone',
+        mirror: {
+          constrainDimensions: true,
+        },
+      });
+    
+      let droppableOrigin;
+    
+      // --- Draggable events --- //
+      droppable.on('drag:start', (evt) => {
+        droppableOrigin = evt.originalSource.parentNode.dataset.dropzone;
+      });
+    
+      droppable.on('droppable:dropped', (evt) => {
+        if (droppableOrigin !== evt.dropzone.dataset.dropzone) {
+          evt.cancel();
+        }
+      });
+}
+/*
+* ------------------------------------------------------------------------
+* Template 18: COL True False
+* ------------------------------------------------------------------------
+*/
+function buildCOLTrueFalse(pageData){
+    // what are we working from
+    console.log(pageData);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 19: COL Image Selection
+* ------------------------------------------------------------------------
+*/
+function buildCOLImageSelect(pageData){
+    // what are we working from
+    console.log(pageData);
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get left column
+    let row = document.getElementById('full-row');
+    // create div to wrap our sorting fun
+    let imageGrid = document.createElement('div');
+    imageGrid.id = "image-grid";
+    imageGrid.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-wrap', 'container');
+    row.appendChild(imageGrid);
+
+    // loop through array and build lures(options)
+    pageData.content.options.forEach(function(image, i){
+        let gridItem = document.createElement('div');
+        gridItem.classList.add('col-6');
+        // add item to grid
+        imageGrid.appendChild(gridItem);
+        // create button for selection
+        let gridButton = document.createElement('button');
+        gridButton.type = "button"; 
+        gridButton.classList.add('img-select');
+        gridButton.id = 'img-select-' + i;
+        // add button to item
+        gridItem.appendChild(gridButton);
+        // build image
+        let gridImage = document.createElement('img');
+        gridImage.classList.add('img-fluid');
+        gridImage.src = image.url;
+        gridImage.alt = image.alt;
+        // add image to button
+        gridButton.appendChild(gridImage);
+    });
+
+    // add submit button
+    let submitWrap = document.createElement('div');
+    submitWrap.classList.add('col-12')
+    submitWrap.id = 'submit-row';
+    page.appendChild(submitWrap);
+
+    // create submit button
+
+    // click event for selection
+    $('.img-select').click(function(){
+        console.log('this a click')
+        // if button is not active evaluate
+        if (!$(this).hasClass('active')){
+            // remove active class
+            $('.img-select.active').removeClass("active");
+            // add class to current
+            $(this).addClass("active");
+        }
+    });
+
+
+    
+}
+/*
+* ------------------------------------------------------------------------
+* Template 20: COL Image True False
+* ------------------------------------------------------------------------
+*/
+function buildCOLTrueFalse(pageData){
+    // what are we working from
+    console.log(pageData);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 21: Slide Show witgh questions 
+* ------------------------------------------------------------------------
+*/
+function buildSlideShowWQuestions(pageData){
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get full row
+    let fullRow = document.getElementById('column-wrapper-1');
+    fullRow.classList.add('full-column');
+    // create Image carousel
+    let carousel = document.createElement('div');
+    carousel.id = 'image-carousel';
+    carousel.classList.add('carousel', 'slide', 'mx-auto');
+    carousel.dataset.interval = 'false';
+    carousel.dataset.ride = "false";
+    carousel.dataset.wrap = 'true';
+    fullRow.appendChild(carousel);
+    // add inner container
+    let inner = document.createElement('div');
+    inner.classList.add('carousel-inner');
+    carousel.appendChild(inner);
+    // Create carousel controls
+    let prev = document.createElement('a');
+    prev.href = '#image-carousel';
+    prev.role = 'button';
+    prev.classList.add('carousel-control-prev');
+    prev.dataset.slide = "prev";
+    carousel.appendChild(prev);
+    // add both spans
+    let prev_icon = document.createElement('span');
+    prev_icon.classList.add('carousel-control-prev-icon');
+    prev_icon.setAttribute("aria-hidden", "true");
+    prev.appendChild(prev_icon);
+    let prev_label = document.createElement('span');
+    prev_label.classList.add('sr-only');
+    prev_label.innerHTML = 'Previous';
+    prev.appendChild(prev_label);
+    // Create carousel controls
+    let next = document.createElement('a');
+    next.href = '#image-carousel';
+    next.role = 'button';
+    next.classList.add('carousel-control-next');
+    next.dataset.slide = "next";
+    carousel.appendChild(next);
+    // add both spans
+    let next_icon = document.createElement('span');
+    next_icon.classList.add('carousel-control-next-icon');
+    next_icon.setAttribute("aria-hidden", "true");
+    next.appendChild(next_icon);
+    let next_label = document.createElement('span');
+    next_label.classList.add('sr-only');
+    next_label.innerHTML = 'Next';
+    next.appendChild(next_label);
+
+    // add slides
+    pageData.content.slides.forEach(function(item, i){        
+        // build slide
+        let slide = document.createElement('div');
+        slide.classList.add("carousel-item");
+        if(i == 0){
+            slide.classList.add("active");
+        }
+        // add image
+        let slide_img = document.createElement('img');
+        slide_img.classList.add('d-block','w-100');
+        slide_img.src = item.url;
+        slide_img.alt = item.alt;
+        // add image to slide
+        slide.appendChild(slide_img);
+        // add caption or question
+        if (item.content[0].tag != 'question'){
+            // add question
+            let slide_text = document.createElement('div');
+            slide_text.id = "slide-text-" + i
+            slide_text.classList.add("carousel-caption", "d-none", "d-md-block");
+            // add title
+            // let text_slide_title = document.createElement('h6');
+            // text_slide_title.innerHTML = item.title;
+            // slide_text.appendChild(text_slide_title);
+            // add content
+            let text_slide_body = buildTextContent(item.content);
+            slide_text.appendChild(text_slide_body);
+            // add caption to slide
+            slide.appendChild(slide_text);
+        } else {
+            let question = buildQuestion(item.content[0].content);
+            slide.appendChild(question);
+            // add click event
+            $('.questionDistractor').click(function(){
+                // if button is not active evaluate
+                if (!$(this).hasClass('active')){
+                    // remove active class
+                    $('.questionDistractor.active').removeClass("active");
+                    // add class to current
+                    $(this).addClass("active");
+                    // evaluate selection
+                    btnId = $(this).attr('id');
+                    // eval if submitted answer is correct
+                    if (btnId[0] == pageData.content.answers[0]){
+                        qCorrect = true;
+                    } else {
+                        qCorrect = false;
+                    }
+                }
+            });
+
+
+        }
+
+
+        // add slide to carousel inner
+        inner.appendChild(slide);
+
+        
+    });
+
+    let imgSlides = document.getElementById('image-carousel')
+
+    // sync caoursels
+    $('#image-carousel').on('slide.bs.carousel', function (event) {
+        var to = $(event.relatedTarget).index();
+        $('#text-carousel').carousel(to);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // let qCorrect = null;
+    // let btnId;
+    // let attempt = 0;
+    // // add container
+    // let container = document.createElement('div');
+    // container.classList.add('container-fluid');
+    // // add columns
+    // let columns = buildColumns("third", pageData.image);
+    // container.appendChild(columns);
+    // // add html to the page
+    // $('#page_frame').html(container);
+    // // add content
+    // let content = buildQuestion(pageData);
+    // // append content to right column
+    // $('#right-column').html(content);
+    // if (userResponses[pageData.quiz] === "" || pageData.quiz == undefined){
+    //     // click event for selection
+    //     $('.questionDistractor').click(function(){
+    //         // if button is not active evaluate
+    //         if (!$(this).hasClass('active')){
+    //             // remove active class
+    //             $('.questionDistractor.active').removeClass("active");
+    //             // add class to current
+    //             $(this).addClass("active");
+    //             // evaluate selection
+    //             btnId = $(this).attr('id');
+    //             // eval if submitted answer is correct
+    //             if (btnId[0] == pageData.content.answers[0]){
+    //                 qCorrect = true;
+    //             } else {
+    //                 qCorrect = false;
+    //             }
+    //         }
+    //     });
+    // } else {
+    //     $('.question').addClass('submitted');
+    //     // remove click event from lure
+    //     $('.questionDistractor').unbind('click');
+    //     var questionOptions = document.getElementsByClassName('questionDistractor');
+    //     var activeOption = questionOptions[userResponses[pageData.quiz]];
+    //     activeOption.classList.add('active');
+    //     if (review){
+    //         // add review class to question
+    //         $('.question').addClass('review');
+    //     }
+    // }
+    // // click event for selection
+    // $('#submitBtn').click(function(){
+    //     // show feedback
+    //     //buildFeedback(qCorrect, pageData.content.correct, pageData.content.incorrect, pageData.quiz);
+    //     // additional logic for quiz
+    //     if (pageData.quiz != undefined && qCorrect != null){
+    //         // update attempt
+    //         attempt++
+    //         // update score array
+    //         if (qCorrect == true){
+    //             userScore[pageData.quiz] = 1;
+    //         } else {
+    //             userScore[pageData.quiz] = 0;
+    //         }
+    //         // store user response
+    //         userResponses[pageData.quiz] = parseInt(btnId[0]);
+    //         // progress to next page
+    //         if (attempt > 1 || qCorrect){
+    //             if(qCorrect == false) {
+    //                 buildFeedback(qCorrect, pageData.content.correct, "Incorrect!", pageData.quiz);
+    //             }
+    //             if(qCorrect){
+    //                 buildFeedback(qCorrect, pageData.content.correct, pageData.content.incorrect, pageData.quiz);
+    //             }
+    //             setTimeout(function(){ nextPage(pageData.id);; }, 1000);
+    //         } else {
+    //             buildFeedback(qCorrect, pageData.content.correct, pageData.content.incorrect, pageData.quiz);
+    //         }
+    //     }
+
+    //     // attempts for COL KLR
+    //     if (pageData.quiz == undefined){
+
+    //         // update attempt
+    //         attempt++
+    //         // store user response
+    //         //userResponses[pageData.quiz] = parseInt(btnId[0]); */
+    //         // progress to next page
+    //         if (attempt > 1 || qCorrect){
+    //             if(qCorrect == false) {
+    //                 buildFeedback(qCorrect, pageData.content.correct, "Incorrect!", pageData.quiz);
+    //             }
+    //             if(qCorrect){
+    //                 buildFeedback(qCorrect, pageData.content.correct, pageData.content.incorrect, pageData.quiz);
+    //             }
+    //             setTimeout(function(){ nextPage(pageData.id);; }, 1000);
+    //         } else {
+    //             buildFeedback(qCorrect, pageData.content.correct, pageData.content.incorrect, pageData.quiz);
+    //         }
+    //     }
+
+    // });
+    // // review
+    // if (review){
+    //     if (userScore[pageData.quiz] === 1){
+    //         qCorrect = true;
+    //     } else if (userScore[pageData.quiz] === 0){
+    //         qCorrect = false;
+    //     } else if (userScore[pageData.quiz] === ""){
+    //         qCorrect = null;
+    //     }
+    //     buildFeedback(qCorrect, pageData.content.correct, pageData.content.incorrect, pageData.quiz);
+    // }
+}
+/*
+* ------------------------------------------------------------------------
+* Template 22: Summary 
+* ------------------------------------------------------------------------
+*/
+function buildSummary(pageData){
+    // what are we working from
+    console.log(pageData);
+}
+/*
+* ------------------------------------------------------------------------
+* Template 23: PE
+* ------------------------------------------------------------------------
+*/
+function buildPEMultiStepDragAndDrop(pageData) { //B-04
+    console.log("PE B-4");
+    let allZones = []; //will be used for a multidimensional array of all zones already used
+    let stageNum = 0; //used for setting up and updating page
+    let taskNum = 0; //used for setting up and updating page
+    let hotspotElements = []; //used to track available hotspot items
+    let used_hotspotElements = []; //used to track used hotspot items and compared to available to see if done
+    let hotspot_zones = [];   
+    let recent_element = null; 
+    let narrationAudio = document.getElementById('narrationAudio');
+    let narrationSource = document.getElementById('narrationSource');
+
+    const changeButtonText = function (newText) {
+        $("#continue").innerHTML = newText;
+    }
+
+    const stopAudio = function () {
+        //stop previous audio
+        if(narrationAudio.currentTime > 0 && !narrationAudio.paused) {
+            narrationAudio.pause();
+            narrationAudio.currentTime = 0;
+        }
+    }
+
+    const playAudio = function (audioURL) {
+        if(typeof audioURL !== 'undefined') {
+            // update the source
+            narrationSource.src = audioURL;
+            narrationAudio.load();
+            // play the new narration
+            narrationAudio.play();
+        }
+    }
+
+    const checkTaskComplete = function () {
+        stopAudio();
+
+        console.log("checking if tasks are complete");
+        if(!used_hotspotElements.includes(recent_element)) { //if it's not already put in a target, then assign it. Otherwise it was just moved
+            used_hotspotElements.push(recent_element);
+        }    
+
+        recent_element = null;
+
+        let processComplete = true;
+        hotspotElements.forEach(item => {
+            if(!used_hotspotElements.includes(item)) {
+                processComplete = false;  //ONLY CHECKS IF ALL SLOTS USED, NO CHECK FOR IF CORRECTS SLOTS WHICH COULD BE DONE BASED OFF CLASS!!
+            } 
+        });
+        //return processComplete;
+
+        if(processComplete) {
+            used_hotspotElements = [];
+            taskNum++;
+            
+            updateTasks();
+                
+            // eval width and height of all items
+            resizeFunction();
+        }
+    }
+
+    const updateTasks = function () {
+        //stop previous audio
+        if(narrationAudio.currentTime > 0 && !narrationAudio.paused) {
+            narrationAudio.pause();
+            narrationAudio.currentTime = 0;
+        }
+
+        let task = pageData.content.stages[stageNum].tasks[taskNum];
+        allZones.push(hotspot_zones);
+
+        let elements = []; //used to send info back to main function... may not be needed when all said and done
+        let button_zones = []; //used to store button coords
+    
+        //remove old
+        Array.from(document.getElementsByClassName("draggable")).forEach(
+            function(element, index, array) {
+                element.classList.remove("draggable");
+            }
+        );
+    
+        oldZones = document.querySelectorAll('[id^="zone-"]');
+        oldOrigins = document.querySelectorAll('[id^="origin-"]');
+        oldButtons = document.querySelectorAll('[id^="button-"]');
+        oldZones.forEach(function(element){
+            element.id = "oldTask-"+taskNum+"-"+element.id;
+        });
+        oldOrigins.forEach(function(element){
+            element.id = "oldTask-"+taskNum+"-"+element.id;
+            element.remove();
+        });
+        oldButtons.forEach(function(element){
+            element.id = "oldTask-"+taskNum+"-"+element.id;
+        });
+    
+        document.getElementById("directions").innerHTML = task.promptText;
+    
+        if(task.narration != null) {
+            console.log("has narration");
+        } else {
+            console.log("no narration");
+        }
+
+        if(typeof task.interactable === 'undefined' || task.interactable == null) {
+            //make button visible
+            continueButton.hidden = false;
+            return;
+        }
+    
+        //adds tasks to page
+        task.interactable.forEach(function(element, index){
+            if(element.draggable) {
+                let idModifier = hotspot_zones.length+button_zones.length;
+                element.dropzones.forEach(function(dropElement, dropIndex){
+                    if(dropElement.correct == true) {
+                        //create drag
+                        let dragspot_item = document.createElement('div'); //creates drag object
+                        dragspot_item.classList.add('zone', dropElement.shape, 'draggable-dropzone--occupied'); //adds classes to drag object
+                        dragspot_item.id = 'origin-' + (dropIndex+idModifier); //assings a unique id to drag object
+                
+                        dragspot_item.dataset.dropzone = index + 1;
+                
+                        dragspot.appendChild(dragspot_item);
+                
+                        let draggable_item = document.createElement('div');
+                        draggable_item.classList.add('draggable', dropElement.shape);
+                        dragspot_item.appendChild(draggable_item);
+                
+                        let draggable_img = document.createElement('img');
+                        draggable_img.src = element.url;
+                        draggable_img.alt = element.alt;
+                        draggable_item.appendChild(draggable_img);
+                    }
+            
+                    //create drop
+                    let correctCheck = 'notCorrectDestination';
+                    if(dropElement.correct == true) {
+                        correctCheck = "isCorrectDestination"
+                    }
+                    let hotspot_item = document.createElement('div'); //creates div for drop zone
+                    hotspot_item.classList.add('zone', dropElement.shape, correctCheck); //lets drop zone knw it's class is circle
+                    hotspot_item.id = 'zone-' + (dropIndex+idModifier); //gives drop zone a unique ID
+            
+                    // add dropzone number
+                    hotspot_item.dataset.dropzone = index + 1;
+                    // send coords to array
+                    hotspot_zones.push(dropElement.coords); //pushed to array in order to ensure drop zones are correct size and location
+                    // append hotspot item to hotspot
+                    hotspot.appendChild(hotspot_item);
+                    elements.push(hotspot_item);
+                });
+            } else {
+                console.log("not draggable");
+                let idModifier = hotspot_zones.length+button_zones.length;
+    
+                element.buttons.forEach(function(buttonElement, buttonIndex){
+                    //create button
+                    let correctCheck = 'notCorrectDestination';
+                    if(buttonElement.correct == true) {
+                        correctCheck = "isCorrectDestination"
+                    }
+                    let button_item = document.createElement('button'); //creates div for drop zone
+                    button_item.classList.add('zone', buttonElement.shape, correctCheck); //lets drop zone knw it's class is circle
+                    button_item.id = 'button-' + (buttonIndex+idModifier); //gives drop zone a unique ID
+
+                    let button_img = document.createElement('img');
+                    button_img.src = buttonElement.toggleOffUrl;
+                    button_img.id = 'img-button-' + (buttonIndex+idModifier);
+            
+                    // send coords to array
+                    button_zones.push(buttonElement.coords); //pushed to array in order to ensure drop zones are correct size and location
+                    // append hotspot item to hotspot
+                    hotspot.appendChild(button_item);
+                    button_item.appendChild(button_img);
+                    elements.push(button_item);
+    
+                    button_item.addEventListener("click", selectionMade.bind(this, button_item, buttonElement), false);
+                });
+            }
+        });
+    
+        hotspotElements = elements;
+        hotspot_zones = hotspot_zones;
+        button_zones.forEach(function(element) {
+            hotspot_zones.push(element);
+        });
+    }
+
+    const updateStage = function () {
+        let content = pageData.content;
+        window.onresize = null;
+        Array.from(document.getElementsByClassName("zone")).forEach(
+            function(element) {
+                element.remove();
+            }
+        );
+
+        stopAudio();
+        if(typeof content.stages[stageNum].narration != 'undefined') {
+            playAudio(content.stages[stageNum].narration.url);
+        }
+    
+        if(content.stages[stageNum].template == "briefing") { //if element 0 need to do briefing and audio
+            let oldImage = document.getElementById('hotspot-img');
+            if(oldImage != null) {
+                oldImage.remove(); //remove the image since not needed in this step
+            }
+    
+            //play audio briefing
+            document.getElementById("directions").innerHTML = content.stages[stageNum].narration.cc;
+    
+            return;
+        } else if(content.stages[stageNum].template == "tasking") { //if element setup stage initially for drag and drop stuff
+            //add 
+            let hotspot_img = document.getElementById('hotspot-img');
+            if(typeof hotspot_img === 'undefined' || hotspot_img == null) {
+                hotspot_img = document.createElement('img');
+                hotspot_img.classList.add('img-fluid');
+                hotspot_img.id = 'hotspot-img';
+                hotspot_img.setAttribute('usemap','#hotspot_map');
+                hotspot.appendChild(hotspot_img);
+            }
+            
+            hotspot_img.src = content.stages[stageNum].image.url;
+            hotspot_img.alt = content.stages[stageNum].image.alt;
+        } else if(content.stages[stageNum].template == "conclusion") { 
+            alert("this is last stage and has name conclusion");
+            let oldImage = document.getElementById('hotspot-img');
+            if(oldImage != null) {
+                oldImage.remove(); //remove the image since not needed in this step
+            }
+    
+            //play audio briefing
+            document.getElementById("directions").innerHTML = content.stages[stageNum].narration.cc;
+    
+            return;
+        }
+    
+        updateTasks(); //used in droppable:stop
+    }
+
+    const triggerDialog = function (dialog) {
+        $('#popupModal .modal-body').html(dialog.text);
+        $('#popupModal').modal('show')
+    }
+
+    const selectionMade = function (element, jsonInfo) {
+        stopAudio();
+
+        if(!element.id.includes('oldTask') && !used_hotspotElements.includes(element)) {
+            recent_element = element; //store what was clicked
+
+            //change image
+            document.getElementById("img-" + element.id).src = jsonInfo.toggleOnUrl;
+
+            if(typeof jsonInfo.dialog === 'undefined') { //if no dialog then just check what was clicked
+                checkTaskComplete();
+            } else { //if dialog present then need to show it, it'll be checked when popup closes
+                triggerDialog(jsonInfo.dialog);
+            }
+        }
+    }
+
+    const resizeFunction = function(){
+        setTimeout(function() {
+            checkImageItems(hotspot_zones, "hotspot-img");
+        }, 100);
+        
+        window.onresize = function() {
+            checkImageItems(hotspot_zones, "hotspot-img"); //checks current zones
+            for(var i = 0; i < taskNum; i++) {
+                checkImageItems(allZones[i], "hotspot-img", i+1); //checks past used zones
+            }
+        };
+    }
+
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get right column
+    let rightCol = document.getElementById('full-row');
+    rightCol.innerHTML = "";
+
+    let textField = document.createElement('h1');
+    textField.classList.add('directions');
+    textField.id = "directions";
+    textField.innerHTML = "Basic Directions Here";
+    rightCol.appendChild(textField);
+
+    // create div to hold the hot spot
+    let hotspot = document.createElement('div');
+    hotspot.classList.add('dnd');
+    hotspot.id = "hotspot";
+    rightCol.appendChild(hotspot);
+
+    // create div to hold the draggables
+    let dragspot = document.createElement('div');
+    dragspot.classList.add('dnd', 'd-flex');
+    dragspot.id = "dragspot";
+    rightCol.appendChild(dragspot);
+
+    let continueButton = document.createElement('BUTTON');
+    continueButton.id = "continue";
+    continueButton.innerHTML = "Click to Continue";
+    rightCol.appendChild(continueButton);
+    
+    let popupModal = document.createElement('div');
+    popupModal.classList.add('modal');
+    popupModal.role = 'dialog';
+    popupModal.id = 'popupModal';
+    popupModal.innerHTML = '<div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"></div><div class="modal-body"><p>Text goes here</p></div><div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button></div></div></div>';
+    rightCol.appendChild(popupModal);
+
+    document.getElementById("continue").addEventListener('click', function (){
+        taskNum = 0;
+        stageNum++;
+        updateStage();
+        allZones = [];
+        
+        resizeFunction();
+
+        continueButton.hidden = true;
+    });
+    //continueButton.hidden = true;
+    
+    // setup stage
+    updateStage();
+    
+    // Get both containers
+    let dndContainers =  document.querySelectorAll('.dnd');
+
+    const droppable = new Draggable.Droppable(dndContainers, {
+        draggable: '.draggable',
+        dropzone: '.zone',
+        mirror: {
+            constrainDimensions: true,
+        },
+    });
+
+    let droppableOrigin;
+    let draggableOriginLocation;
+
+    // --- Draggable events --- //
+    droppable.on('drag:start', (evt) => {
+        droppableOrigin = evt.originalSource.parentNode.dataset.dropzone; //stores number of drop zone
+        draggableOriginLocation = evt.originalSource.parentNode; //stores actual drop zone
+    });
+
+    droppable.on('droppable:stop', (evt) => { //this listener is able to know where you dropped it because it's done being dropped
+        console.log("droppable:stop");
+        if(evt.dropzone == draggableOriginLocation) {
+            return; //this exits out of function because the object returned to start
+        }
+
+        if(used_hotspotElements.includes(draggableOriginLocation)) { //if it's start location is in the array, remove it because it's been moved
+            console.log("here");
+            used_hotspotElements.splice(used_hotspotElements.indexOf(draggableOriginLocation), 1);
+        }
+        
+        if(!used_hotspotElements.includes(evt.dropzone) && evt.dropzone.id.toLowerCase().indexOf('origin') == -1) { //if it's not already put in a target, then assign it. Otherwise it was just moved
+            recent_element = evt.dropzone;
+            checkTaskComplete();
+        }    
+    });
+
+    $('#popupModal').on('hidden.bs.modal', function(e) {
+        checkTaskComplete();
+    });
+    
+    droppable.on('droppable:dropped', (evt) => {
+      if (droppableOrigin !== evt.dropzone.dataset.dropzone) {
+        evt.cancel();
+      }
+    });
+}
+
+function buildPESequentialHotspot(pageData) {
+    // what are we working from
+    console.log("PE Sequential Hotspot");
+    console.log(pageData.content.draggables);
+    // build the layout
+    let layout = buildColumns(pageData.layout);
+    // get page container from DOM
+    let page = document.getElementById('page_frame');
+    // clear the page frame
+    page.innerHTML = "";
+    // add layout to page frame
+    page.appendChild(layout);
+    // get right column
+    let rightCol = document.getElementById('full-row');
+    // create div to hold the hot spot
+    let hotspot = document.createElement('div');
+    hotspot.classList.add('dnd');
+    hotspot.id = "hotspot";
+    rightCol.appendChild(hotspot);
+
+
+    let hotspot_img = document.createElement('img');
+    hotspot_img.classList.add('img-fluid');
+    hotspot_img.id = 'hotspot-img';
+    hotspot_img.src = pageData.content.hotspot.image.url;
+    hotspot_img.alt = pageData.content.hotspot.image.alt;
+    hotspot_img.setAttribute('usemap', '#hotspot_map');
+    hotspot.appendChild(hotspot_img);
+    // create hotspot array
+    let hotspot_zones = [];
+    // build hotspots
+    pageData.content.hotspot.droppables.forEach(function (element, index) {
+        let hotspot_item = document.createElement('div');
+        hotspot_item.classList.add('zone', element.shape);
+        hotspot_item.id = 'zone-' + index;
+
+        // add dropzone number
+        hotspot_item.dataset.dropzone = index + 1;
+
+        // send coords to array
+        hotspot_zones.push(element.coords);
+        // append hotspot item to hotspot
+        hotspot.appendChild(hotspot_item);
+
+        hotspot_item.addEventListener('click', function (event) {
+            evaluateSequentialHotspot(hotspot_item.dataset.dropzone, pageData);
+        });
+    });
+
+    console.log("zones:");
+    console.log(hotspot_zones);
+    // eval width and height of all items
+    setTimeout(function () {
+        checkImageItems(hotspot_zones, "hotspot-img");
+        window.onresize = function (event) {
+            checkImageItems(hotspot_zones, "hotspot-img");
+        };
+    }, 100);
+
+    // Get both containers
+    let dndContainers = document.querySelectorAll('.dnd');
+    console.log(dndContainers)
+
+
+    const droppable = new Draggable.Droppable(dndContainers, {
+        draggable: '.draggable',
+        dropzone: '.zone',
+        mirror: {
+            constrainDimensions: true,
+        },
+    });
+}  
+
+function evaluateSequentialHotspot(zoneindex, pageData) {
+    console.log("Zone Index\t" + zoneindex);
+
+    if (zoneindex == pageData.content.hotspot.currentHotspotIndex) {
+        pageData.content.hotspot.currentHotspotIndex++;
+        console.log("Correct Sequence");
+    }
+    else {
+        console.log("Incorrect Sequence");
+    }
+}
+
+function updateTasks(task, taskNum) {
+    console.log(taskNum);
+    let info = []; //used to send info back to main function... may not be needed when all said and done
+    let hotspot_zones = []; //this is used to store coords to make sure hotspots are in correct spot on screen resize
+    let returnInfo = {info: [], zones: []};
+
+    //remove old
+    Array.from(document.getElementsByClassName("draggable")).forEach(
+        function(element, index, array) {
+            element.classList.remove("draggable");
+        }
+    );
+
+    oldZones = document.querySelectorAll('[id^="zone-"]');
+    oldOrigins = document.querySelectorAll('[id^="origin-"]');
+    oldZones.forEach(function(element){
+        element.id = "oldTask-"+taskNum+"-"+element.id;
+    });
+    oldOrigins.forEach(function(element){
+        element.id = "oldTask-"+taskNum+"-"+element.id;
+    });
+
+    document.getElementById("directions").innerHTML = task.promptText;
+
+    //adds tasks to page
+    task.interactable.forEach(function(element, index){
+        element.dropzones.forEach(function(dropElement, dropIndex){
+            if(dropElement.correct == true) {
+                //create drag
+                let dragspot_item = document.createElement('div'); //creates drag object
+                dragspot_item.classList.add('zone', element.dropzones[dropIndex].shape, 'draggable-dropzone--occupied'); //adds classes to drag object
+                dragspot_item.id = 'origin-' + (dropIndex); //assings a unique id to drag object
+        
+                dragspot_item.dataset.dropzone = taskNum + 1;
+        
+                dragspot.appendChild(dragspot_item);
+        
+                let draggable_item = document.createElement('div');
+                draggable_item.classList.add('draggable', element.dropzones[dropIndex].shape);
+                dragspot_item.appendChild(draggable_item);
+        
+                let draggable_img = document.createElement('img');
+                draggable_img.src = pageData.content.stages[1].tasks[dropIndex].interactable[index].url;
+                draggable_img.alt = pageData.content.stages[1].tasks[dropIndex].interactable[index].alt;
+                draggable_item.appendChild(draggable_img);
+            }
+    
+            //create drop
+            let correctCheck = 'notCorrectDestination';
+            if(dropElement.correct == true) {
+                correctCheck = "isCorrectDestination"
+            }
+            let hotspot_item = document.createElement('div'); //creates div for drop zone
+            hotspot_item.classList.add('zone', dropElement.shape, correctCheck); //lets drop zone knw it's class is circle
+            hotspot_item.id = 'zone-' + (dropIndex); //gives drop zone a unique ID
+    
+            // add dropzone number
+            hotspot_item.dataset.dropzone = taskNum + 1;
+            // send coords to array
+            hotspot_zones.push(dropElement.coords); //pushed to array in order to ensure drop zones are correct size and location
+            // append hotspot item to hotspot
+            hotspot.appendChild(hotspot_item);
+            info.push(hotspot_item);
+        });
+    });
+
+    returnInfo.info = info;
+    returnInfo.zones = hotspot_zones;
+
+    return returnInfo;
+}
+
+function checkImageItems(elements, imageId, oldTaskNum = 0){
+    // quick maths
+    let currentWidth = document.getElementById(imageId).offsetWidth;
+    let actualWidth = document.getElementById(imageId).naturalWidth;
+
+    if(oldTaskNum == 0) {
+        // loop through items and resize the elements
+        elements.forEach(function(item, index){
+            // get correct zone
+            let zone = document.getElementById('zone-' + index);
+            let origin = document.getElementById('origin-' + index);
+            let button = document.getElementById('button-' + index);
+            // position hotspot
+            let posX = item[0];
+            let posY = item[1];
+            let itemWidth = item[2];
+            let itemHeight = item[3];
+            // get correct percentage
+            let correctionVal = currentWidth / actualWidth;
+            // update variables
+            posX = posX * correctionVal;
+            posY = posY * correctionVal;
+            itemWidth = itemWidth * correctionVal;
+            itemHeight = itemHeight * correctionVal;
+
+            if(zone != null) {
+                // define postion
+                zone.style.left = posX + 'px';
+                zone.style.top = posY + 'px';
+                // define height/width
+                zone.style.width = itemWidth + 'px';
+                zone.style.height = itemHeight + 'px';
+            }
+            
+            if(origin != null) {
+                origin.style.width = itemWidth + 'px';
+                origin.style.height = itemHeight + 'px';
+            }
+
+            if(button != null) {
+                // define postion
+                button.style.left = posX + 'px';
+                button.style.top = posY + 'px';
+                // define height/width
+                button.style.width = itemWidth + 'px';
+                button.style.height = itemHeight + 'px';
+            }
+        });
+    } else {
+        elements.forEach(function(item, index) {
+            // get correct zone
+            let zone = document.getElementById('oldTask-'+oldTaskNum+'-zone-' + index);
+            let origin = document.getElementById('oldTask-'+oldTaskNum+'-origin-' + index);
+            let button = document.getElementById('oldTask-'+oldTaskNum+'-button-' + index);
+            // position hotspot
+            let posX = item[0];
+            let posY = item[1];
+            let itemWidth = item[2];
+            let itemHeight = item[3];
+            // get correct percentage
+            let correctionVal = currentWidth / actualWidth;
+            // update variables
+            posX = posX * correctionVal;
+            posY = posY * correctionVal;
+            itemWidth = itemWidth * correctionVal;
+            itemHeight = itemHeight * correctionVal;
+                
+            if(zone != null) {
+                // define postion
+                zone.style.left = posX + 'px';
+                zone.style.top = posY + 'px';
+                // define height/width
+                zone.style.width = itemWidth + 'px';
+                zone.style.height = itemHeight + 'px';
+            }
+                
+            if(origin != null) {
+                origin.style.width = itemWidth + 'px';
+                origin.style.height = itemHeight + 'px';
+            }
+
+            if(button != null) {
+                // define postion
+                button.style.left = posX + 'px';
+                button.style.top = posY + 'px';
+                // define height/width
+                button.style.width = itemWidth + 'px';
+                button.style.height = itemHeight + 'px';
+            }
+        });
+    }
+}
+
+
+
+
+
+

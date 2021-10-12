@@ -1,0 +1,7584 @@
+{
+  "glossary": [
+    {
+      "alpha": "अ",
+      "name": "अकल्पनीय",
+      "desc": "The unimaginable",
+      "id": "2927",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अक्षय ऊर्जा",
+      "desc": "Renewable energy",
+      "id": "2584",
+      "module": "4"
+    },
+    {
+      "alpha": "अ",
+      "name": "अक्षय स्रोत",
+      "desc": "Renewable sources",
+      "id": "2585",
+      "module": "4"
+    },
+    {
+      "alpha": "अ",
+      "name": "अक्सर",
+      "desc": "Often",
+      "id": "2928",
+      "module": "6"
+    },
+    {
+      "alpha": "अं",
+      "name": "अंग प्रत्यारोपण",
+      "desc": "Organ transplant",
+      "id": "2950",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अग्नि शमन",
+      "desc": "Fire hydrant",
+      "id": "2109",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अग्रसर",
+      "desc": "Progressive",
+      "id": "2586",
+      "module": "4"
+    },
+    {
+      "alpha": "अ",
+      "name": "अग्रिम",
+      "desc": "Forward, frontline",
+      "id": "2454",
+      "module": "3"
+    },
+    {
+      "alpha": "अं",
+      "name": "अंजाम",
+      "desc": "Result, outcome",
+      "id": "2122",
+      "module": "1"
+    },
+    {
+      "alpha": "अं",
+      "name": "अंजाम",
+      "desc": "Consequences",
+      "id": "2756",
+      "module": "5"
+    },
+    {
+      "alpha": "अं",
+      "name": "अंतरराष्ट्रीय",
+      "desc": "International",
+      "id": "2757",
+      "module": "5"
+    },
+    {
+      "alpha": "अं",
+      "name": "अंतरराष्ट्रीय शांति",
+      "desc": "International peace",
+      "id": "2323",
+      "module": "2"
+    },
+    {
+      "alpha": "अं",
+      "name": "अंतराल",
+      "desc": "Interval, gap",
+      "id": "2590",
+      "module": "4"
+    },
+    {
+      "alpha": "अं",
+      "name": "अंतर्गत",
+      "desc": "Under",
+      "id": "2453",
+      "module": "3"
+    },
+    {
+      "alpha": "अं",
+      "name": "अंतर्राष्‍ट्रीय",
+      "desc": "International",
+      "id": "2951",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अतिक्रमण",
+      "desc": "Encroachment",
+      "id": "2455",
+      "module": "3"
+    },
+    {
+      "alpha": "अ",
+      "name": "अतिरिक्त",
+      "desc": "Additional",
+      "id": "2929",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अतिरिक्त प्रशिक्षण",
+      "desc": "Additional Training",
+      "id": "2456",
+      "module": "3"
+    },
+    {
+      "alpha": "अ",
+      "name": "अतिवादिता",
+      "desc": "Extremism",
+      "id": "2457",
+      "module": "3"
+    },
+    {
+      "alpha": "अ",
+      "name": "अथाह घाटियाँ",
+      "desc": "Bottomless (deep) valleys",
+      "id": "2315",
+      "module": "2"
+    },
+    {
+      "alpha": "अ",
+      "name": "अदला-बदली",
+      "desc": "Mutual Exchange",
+      "id": "2458",
+      "module": "3"
+    },
+    {
+      "alpha": "अ",
+      "name": "अदालत",
+      "desc": "Court",
+      "id": "2930",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अद्भुत",
+      "desc": "Astonishing, wonderful",
+      "id": "2110",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अधिकतर",
+      "desc": "Mostly",
+      "id": "2931",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अधिकाधिक",
+      "desc": "Maximum",
+      "id": "2933",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अधिकाधिक",
+      "desc": "Most",
+      "id": "2747",
+      "module": "5"
+    },
+    {
+      "alpha": "अ",
+      "name": "अधिकारियों",
+      "desc": "Officers",
+      "id": "2748",
+      "module": "5"
+    },
+    {
+      "alpha": "अ",
+      "name": "अधिकारी",
+      "desc": "Officer",
+      "id": "2111",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अधिकारी",
+      "desc": "Officer",
+      "id": "2749",
+      "module": "5"
+    },
+    {
+      "alpha": "अ",
+      "name": "अधिकांश",
+      "desc": "Most",
+      "id": "2932",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अधिभोक्ता",
+      "desc": "Occupant",
+      "id": "2750",
+      "module": "5"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनंतकाल",
+      "desc": "Eternity, forever",
+      "id": "2316",
+      "module": "2"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनन्य",
+      "desc": "Unique, exclusive",
+      "id": "2751",
+      "module": "5"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनशन",
+      "desc": "Hunger protest, fast",
+      "id": "2587",
+      "module": "4"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनिवार्य",
+      "desc": "Mandatory",
+      "id": "2589",
+      "module": "4"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनिवार्य",
+      "desc": "Mandatory",
+      "id": "2934",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुकूलन",
+      "desc": "Adaptation",
+      "id": "2112",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुभव",
+      "desc": "Experience",
+      "id": "2935",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुभव",
+      "desc": "Experience",
+      "id": "2459",
+      "module": "3"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुमान",
+      "desc": "Estimate",
+      "id": "2113",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुमान",
+      "desc": "Estimate",
+      "id": "2936",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुमोदित व्यय",
+      "desc": "Approved expenses",
+      "id": "2937",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुरूप",
+      "desc": "Accordingly",
+      "id": "2752",
+      "module": "5"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुरोध",
+      "desc": "Request",
+      "id": "2317",
+      "module": "2"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुरोध",
+      "desc": "Appeal",
+      "id": "2114",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुवादकों",
+      "desc": "Translators",
+      "id": "2938",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुसंधान",
+      "desc": "Research",
+      "id": "2753",
+      "module": "5"
+    },
+    {
+      "alpha": "अ",
+      "name": "अनुसार",
+      "desc": "In accordance",
+      "id": "2939",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अन्तरराष्ट्रीय",
+      "desc": "International",
+      "id": "2940",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अन्तर्गत",
+      "desc": "Under",
+      "id": "2941",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अपर्याप्त",
+      "desc": "Inadequate",
+      "id": "2460",
+      "module": "3"
+    },
+    {
+      "alpha": "अ",
+      "name": "अप्रत्याशित",
+      "desc": "Unexpected",
+      "id": "2318",
+      "module": "2"
+    },
+    {
+      "alpha": "अ",
+      "name": "अभाव",
+      "desc": "Shortage",
+      "id": "2942",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अभियान",
+      "desc": "Campaign",
+      "id": "2319",
+      "module": "2"
+    },
+    {
+      "alpha": "अ",
+      "name": "अभियान",
+      "desc": "Campaign",
+      "id": "2943",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अभियानों",
+      "desc": "Campaigns",
+      "id": "2944",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अभ्यास",
+      "desc": "Practice",
+      "id": "2115",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अमली जामा",
+      "desc": "Came into practice",
+      "id": "2116",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अमूमन",
+      "desc": "Approximately",
+      "id": "2117",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अराजकता",
+      "desc": "Lawlessness",
+      "id": "2461",
+      "module": "3"
+    },
+    {
+      "alpha": "अ",
+      "name": "अर्थव्यवस्था",
+      "desc": "Economy",
+      "id": "2588",
+      "module": "4"
+    },
+    {
+      "alpha": "अ",
+      "name": "अवलोकन",
+      "desc": "Inspection, scrutiny",
+      "id": "2118",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अवसंरचना",
+      "desc": "Infrastructure",
+      "id": "2119",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अविलंब",
+      "desc": "Unobstructed",
+      "id": "2945",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अवैध",
+      "desc": "Illegal",
+      "id": "2754",
+      "module": "5"
+    },
+    {
+      "alpha": "अ",
+      "name": "अव्यवस्थित",
+      "desc": "Disorderly",
+      "id": "2946",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अशुद्ध",
+      "desc": "Impure",
+      "id": "2947",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "असरदार",
+      "desc": "Effective",
+      "id": "2120",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "असलियत",
+      "desc": "Reality",
+      "id": "2948",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अस्तव्यस्त",
+      "desc": "Scattered, messed up",
+      "id": "2320",
+      "module": "2"
+    },
+    {
+      "alpha": "अ",
+      "name": "अस्तव्यस्त",
+      "desc": "Scattered, in disorder",
+      "id": "2121",
+      "module": "1"
+    },
+    {
+      "alpha": "अ",
+      "name": "अस्थिर",
+      "desc": "Unstable",
+      "id": "2949",
+      "module": "6"
+    },
+    {
+      "alpha": "अ",
+      "name": "अस्थिरता",
+      "desc": "Instability",
+      "id": "2755",
+      "module": "5"
+    },
+    {
+      "alpha": "अ",
+      "name": "अहम",
+      "desc": "Significant",
+      "id": "2462",
+      "module": "3"
+    },
+    {
+      "alpha": "अ",
+      "name": "अहमियत",
+      "desc": "Importance",
+      "id": "2321",
+      "module": "2"
+    },
+    {
+      "alpha": "आं",
+      "name": "आंकड़े",
+      "desc": "Figures, statistics",
+      "id": "2129",
+      "module": "1"
+    },
+    {
+      "alpha": "आं",
+      "name": "आंकड़ों",
+      "desc": "Statistics",
+      "id": "2963",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आकर्षित",
+      "desc": "Attractive",
+      "id": "2952",
+      "module": "6"
+    },
+    {
+      "alpha": "आं",
+      "name": "आंकलन",
+      "desc": "Evaluation",
+      "id": "2130",
+      "module": "1"
+    },
+    {
+      "alpha": "आ",
+      "name": "आकांक्षाओं",
+      "desc": "Aspirations",
+      "id": "2953",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आखिरकार",
+      "desc": "At last,  eventually",
+      "id": "2463",
+      "module": "3"
+    },
+    {
+      "alpha": "आ",
+      "name": "आतंकवाद",
+      "desc": "Terrorism",
+      "id": "2759",
+      "module": "5"
+    },
+    {
+      "alpha": "आं",
+      "name": "आंतरिक",
+      "desc": "Internal",
+      "id": "2324",
+      "module": "2"
+    },
+    {
+      "alpha": "आं",
+      "name": "आंतरिक",
+      "desc": "Internal",
+      "id": "2758",
+      "module": "5"
+    },
+    {
+      "alpha": "आं",
+      "name": "आंतरिक झगड़े",
+      "desc": "Internal conflicts",
+      "id": "2467",
+      "module": "3"
+    },
+    {
+      "alpha": "आं",
+      "name": "आंतरिक सुरक्षा ",
+      "desc": "Internal security",
+      "id": "2325",
+      "module": "2"
+    },
+    {
+      "alpha": "आ",
+      "name": "आत्मनियंत्रण",
+      "desc": "Self control",
+      "id": "2464",
+      "module": "3"
+    },
+    {
+      "alpha": "आ",
+      "name": "आदान-प्रदान",
+      "desc": "Exchange",
+      "id": "2760",
+      "module": "5"
+    },
+    {
+      "alpha": "आ",
+      "name": "आदेश",
+      "desc": "Order",
+      "id": "2591",
+      "module": "4"
+    },
+    {
+      "alpha": "आं",
+      "name": "आंदोलन",
+      "desc": "Movement",
+      "id": "2599",
+      "module": "4"
+    },
+    {
+      "alpha": "आ",
+      "name": "आधार",
+      "desc": "Base",
+      "id": "2123",
+      "module": "1"
+    },
+    {
+      "alpha": "आ",
+      "name": "आधुनिक",
+      "desc": "Modern",
+      "id": "2954",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आधुनिक चिकित्सा",
+      "desc": "Modern medical care, treatment",
+      "id": "2955",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आधुनिकतम",
+      "desc": "Ultramodern",
+      "id": "2956",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आनुपातिक दृष्टि",
+      "desc": "Proportional vision",
+      "id": "2957",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आपदा",
+      "desc": "Disaster",
+      "id": "2124",
+      "module": "1"
+    },
+    {
+      "alpha": "आ",
+      "name": "आपदा मंत्री",
+      "desc": "Disaster minister",
+      "id": "2125",
+      "module": "1"
+    },
+    {
+      "alpha": "आ",
+      "name": "आपराधिक",
+      "desc": "Criminal",
+      "id": "2761",
+      "module": "5"
+    },
+    {
+      "alpha": "आ",
+      "name": "आपात",
+      "desc": "Emergency",
+      "id": "2126",
+      "module": "1"
+    },
+    {
+      "alpha": "आ",
+      "name": "आपूर्ति",
+      "desc": "Supply",
+      "id": "2322",
+      "module": "2"
+    },
+    {
+      "alpha": "आ",
+      "name": "आपूर्ति",
+      "desc": "Supply",
+      "id": "2592",
+      "module": "4"
+    },
+    {
+      "alpha": "आ",
+      "name": "आपूर्ति",
+      "desc": "Supply",
+      "id": "2127",
+      "module": "1"
+    },
+    {
+      "alpha": "आ",
+      "name": "आबादी",
+      "desc": "Population",
+      "id": "2593",
+      "module": "4"
+    },
+    {
+      "alpha": "आ",
+      "name": "आबादी",
+      "desc": "Population",
+      "id": "2958",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आबादी",
+      "desc": "Population",
+      "id": "2762",
+      "module": "5"
+    },
+    {
+      "alpha": "आ",
+      "name": "आभार व्यक्त",
+      "desc": "Express gratitude",
+      "id": "2466",
+      "module": "3"
+    },
+    {
+      "alpha": "आ",
+      "name": "आयात",
+      "desc": "Import",
+      "id": "2959",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आयोजन",
+      "desc": "Events",
+      "id": "2763",
+      "module": "5"
+    },
+    {
+      "alpha": "आ",
+      "name": "आयोजित",
+      "desc": "Organized",
+      "id": "2128",
+      "module": "1"
+    },
+    {
+      "alpha": "आ",
+      "name": "आर्थिक",
+      "desc": "Economic",
+      "id": "2960",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आर्थिक",
+      "desc": "Economic",
+      "id": "2764",
+      "module": "5"
+    },
+    {
+      "alpha": "आ",
+      "name": "आर्थिक राजधानी",
+      "desc": "Financial capital ",
+      "id": "2594",
+      "module": "4"
+    },
+    {
+      "alpha": "आ",
+      "name": "आर्थिक विकास",
+      "desc": "Economic development",
+      "id": "2595",
+      "module": "4"
+    },
+    {
+      "alpha": "आ",
+      "name": "आर्थिक विकास",
+      "desc": "Economic development",
+      "id": "2961",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आशंका",
+      "desc": "Apprehension, fear",
+      "id": "2596",
+      "module": "4"
+    },
+    {
+      "alpha": "आ",
+      "name": "आशवस्त",
+      "desc": "Reassured",
+      "id": "2465",
+      "module": "3"
+    },
+    {
+      "alpha": "आ",
+      "name": "आशावादी",
+      "desc": "Optimistic",
+      "id": "2597",
+      "module": "4"
+    },
+    {
+      "alpha": "आं",
+      "name": "आंशिक",
+      "desc": "Partial",
+      "id": "2964",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आश्चर्य",
+      "desc": "Amazement, astonishment, marvel, miracle, wonder",
+      "id": "2598",
+      "module": "4"
+    },
+    {
+      "alpha": "आ",
+      "name": "आश्वस्त",
+      "desc": "Reassuring",
+      "id": "2962",
+      "module": "6"
+    },
+    {
+      "alpha": "आ",
+      "name": "आश्वासन",
+      "desc": "Promise",
+      "id": "2765",
+      "module": "5"
+    },
+    {
+      "alpha": "इ",
+      "name": "इकलौती",
+      "desc": "Only",
+      "id": "2131",
+      "module": "1"
+    },
+    {
+      "alpha": "इ",
+      "name": "इज़ाफ़ा",
+      "desc": "Enhanced",
+      "id": "2965",
+      "module": "6"
+    },
+    {
+      "alpha": "इ",
+      "name": "इंतज़ामों",
+      "desc": "Arrangements",
+      "id": "2766",
+      "module": "5"
+    },
+    {
+      "alpha": "इ",
+      "name": "इतिहास",
+      "desc": "History",
+      "id": "2966",
+      "module": "6"
+    },
+    {
+      "alpha": "इ",
+      "name": "इरादा",
+      "desc": "Intention",
+      "id": "2326",
+      "module": "2"
+    },
+    {
+      "alpha": "इ",
+      "name": "इरादा",
+      "desc": "Aim",
+      "id": "2767",
+      "module": "5"
+    },
+    {
+      "alpha": "इ",
+      "name": "इलाक़ा",
+      "desc": "Area",
+      "id": "2132",
+      "module": "1"
+    },
+    {
+      "alpha": "इ",
+      "name": "इलाके",
+      "desc": "The areas",
+      "id": "2768",
+      "module": "5"
+    },
+    {
+      "alpha": "इ",
+      "name": "इलाज",
+      "desc": "Treatment",
+      "id": "2967",
+      "module": "6"
+    },
+    {
+      "alpha": "इ",
+      "name": "इस्तेमाल",
+      "desc": "Use",
+      "id": "2600",
+      "module": "4"
+    },
+    {
+      "alpha": "इ",
+      "name": "इस्तेमाल",
+      "desc": "Use",
+      "id": "2968",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उच्च स्तरीय",
+      "desc": "High level",
+      "id": "2969",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उच्च स्तरीय यात्रा",
+      "desc": "High level visit",
+      "id": "2327",
+      "module": "2"
+    },
+    {
+      "alpha": "उ",
+      "name": "उत्तरपूर्वी",
+      "desc": "North east",
+      "id": "2970",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उत्थान",
+      "desc": "Regeneration",
+      "id": "2971",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उत्पादन",
+      "desc": "Output",
+      "id": "2601",
+      "module": "4"
+    },
+    {
+      "alpha": "उ",
+      "name": "उत्पादन",
+      "desc": "Production",
+      "id": "2602",
+      "module": "4"
+    },
+    {
+      "alpha": "उ",
+      "name": "उत्पादन",
+      "desc": "Output, production",
+      "id": "2972",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उत्पादों",
+      "desc": "Products",
+      "id": "2973",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उत्सर्जन",
+      "desc": "Emissions",
+      "id": "2603",
+      "module": "4"
+    },
+    {
+      "alpha": "उ",
+      "name": "उदासीन",
+      "desc": "Sad, depressing",
+      "id": "2604",
+      "module": "4"
+    },
+    {
+      "alpha": "उ",
+      "name": "उदाहरण",
+      "desc": "Example",
+      "id": "2974",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उद्घाटन",
+      "desc": "Opening",
+      "id": "2975",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उद्देश्य",
+      "desc": "Aim",
+      "id": "2328",
+      "module": "2"
+    },
+    {
+      "alpha": "उ",
+      "name": "उद्देश्य",
+      "desc": "Objective, goal",
+      "id": "2605",
+      "module": "4"
+    },
+    {
+      "alpha": "उ",
+      "name": "उन्नत",
+      "desc": "Advanced",
+      "id": "2976",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उन्नयन",
+      "desc": "Upgrade",
+      "id": "2977",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उपकरणों",
+      "desc": "Equipment",
+      "id": "2978",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उपचार",
+      "desc": "Treatment",
+      "id": "2979",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उपभोक्‍ता",
+      "desc": "Consumers",
+      "id": "2606",
+      "module": "4"
+    },
+    {
+      "alpha": "उ",
+      "name": "उपलब्ध",
+      "desc": "Available",
+      "id": "2980",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उपलब्‍धता",
+      "desc": "Availability",
+      "id": "2607",
+      "module": "4"
+    },
+    {
+      "alpha": "उ",
+      "name": "उपलब्धि",
+      "desc": "Accomplishment",
+      "id": "2329",
+      "module": "2"
+    },
+    {
+      "alpha": "उ",
+      "name": "उपलब्धि",
+      "desc": "Achievement",
+      "id": "2468",
+      "module": "3"
+    },
+    {
+      "alpha": "उ",
+      "name": "उबारना",
+      "desc": "To release",
+      "id": "2330",
+      "module": "2"
+    },
+    {
+      "alpha": "उ",
+      "name": "उभर",
+      "desc": "Emerges",
+      "id": "2981",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उम्मीद",
+      "desc": "Hope",
+      "id": "2133",
+      "module": "1"
+    },
+    {
+      "alpha": "उ",
+      "name": "उम्मीद",
+      "desc": "Hope",
+      "id": "2982",
+      "module": "6"
+    },
+    {
+      "alpha": "उ",
+      "name": "उल्लंघन ",
+      "desc": "Violation",
+      "id": "2469",
+      "module": "3"
+    },
+    {
+      "alpha": "ऊ",
+      "name": "ऊर्जा",
+      "desc": "Energy",
+      "id": "2331",
+      "module": "2"
+    },
+    {
+      "alpha": "ऊ",
+      "name": "ऊर्जा",
+      "desc": "Energy",
+      "id": "2983",
+      "module": "6"
+    },
+    {
+      "alpha": "ऊ",
+      "name": "ऊर्जा विभाग",
+      "desc": "The department of Energy",
+      "id": "2608",
+      "module": "4"
+    },
+    {
+      "alpha": "ऊ",
+      "name": "ऊर्जा संरक्षण",
+      "desc": "Energy conservation",
+      "id": "2609",
+      "module": "4"
+    },
+    {
+      "alpha": "ऊ",
+      "name": "ऊर्जा संसाधनों ",
+      "desc": "Energy resources",
+      "id": "2769",
+      "module": "5"
+    },
+    {
+      "alpha": "ए",
+      "name": "एकमात्र उपाय",
+      "desc": "Sole remedy",
+      "id": "2984",
+      "module": "6"
+    },
+    {
+      "alpha": "ए",
+      "name": "एकीकरण",
+      "desc": "Uniting",
+      "id": "2985",
+      "module": "6"
+    },
+    {
+      "alpha": "ए",
+      "name": "एतराज़",
+      "desc": "Objection",
+      "id": "2610",
+      "module": "4"
+    },
+    {
+      "alpha": "ए",
+      "name": "एहतियातन",
+      "desc": "Precautionary",
+      "id": "2134",
+      "module": "1"
+    },
+    {
+      "alpha": "ए",
+      "name": "एहतियाती",
+      "desc": "Precautionary",
+      "id": "2986",
+      "module": "6"
+    },
+    {
+      "alpha": "औ",
+      "name": "औद्योगिकीकरण",
+      "desc": "Industrialization",
+      "id": "2611",
+      "module": "4"
+    },
+    {
+      "alpha": "औ",
+      "name": "औसतन",
+      "desc": "An average",
+      "id": "2987",
+      "module": "6"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कटौती",
+      "desc": "Rebate, reduction, cut",
+      "id": "2612",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कटौती",
+      "desc": "Deduction",
+      "id": "2613",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कट्टरपंथी",
+      "desc": "Radical, extremist",
+      "id": "2770",
+      "module": "5"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कठघरा",
+      "desc": "Bar, box, cage, dock, railing, witness stand ",
+      "id": "2614",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कठिनाई",
+      "desc": "Difficulty",
+      "id": "2988",
+      "module": "6"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कतई",
+      "desc": "Absolutely, completely",
+      "id": "2615",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कबीलों",
+      "desc": "Tribes",
+      "id": "2470",
+      "module": "3"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कराधान",
+      "desc": "Taxation",
+      "id": "2989",
+      "module": "6"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कवायद",
+      "desc": "Drill, Tradition",
+      "id": "2471",
+      "module": "3"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कहानी",
+      "desc": "Story",
+      "id": "2990",
+      "module": "6"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कागज़ात",
+      "desc": "Documents",
+      "id": "2135",
+      "module": "1"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कानून व्यवस्था",
+      "desc": "Law and order",
+      "id": "2472",
+      "module": "3"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कानूनी परामर्श",
+      "desc": "Legal advice, consultation",
+      "id": "2136",
+      "module": "1"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कामयाबी",
+      "desc": "Success",
+      "id": "2991",
+      "module": "6"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कारगर",
+      "desc": "Effective",
+      "id": "2616",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कारगर",
+      "desc": "Effective",
+      "id": "2137",
+      "module": "1"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कारवाई",
+      "desc": "Action ",
+      "id": "2617",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कार्यकारी निदेशक मंडल",
+      "desc": "Temporary executive board",
+      "id": "2138",
+      "module": "1"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कार्यपद्धति",
+      "desc": "Procedure",
+      "id": "2139",
+      "module": "1"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कार्यान्वयन",
+      "desc": "Implementation",
+      "id": "2992",
+      "module": "6"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कार्यालय",
+      "desc": "Office",
+      "id": "2140",
+      "module": "1"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "किफ़ायती",
+      "desc": "Economical",
+      "id": "2993",
+      "module": "6"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "किल्लत",
+      "desc": "Scarcity",
+      "id": "2618",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "किसान",
+      "desc": "Farmer",
+      "id": "2994",
+      "module": "6"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "किस्म",
+      "desc": "Kind",
+      "id": "2332",
+      "module": "2"
+    },
+    {
+      "-name": "क़ीमत",
+      "-desc": "Price",
+      "-id": "2995",
+      "-module": "6"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कुख्यात",
+      "desc": "Infamous",
+      "id": "2473",
+      "module": "3"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कुल क्षेत्र ",
+      "desc": "Total area",
+      "id": "2771",
+      "module": "5"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कुल मिलाकर",
+      "desc": "In total",
+      "id": "2333",
+      "module": "2"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कूटनीति",
+      "desc": "Diplomacy",
+      "id": "2772",
+      "module": "5"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कृत्रिम",
+      "desc": "Artificial",
+      "id": "2334",
+      "module": "2"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "के अलावा",
+      "desc": "Apart from",
+      "id": "2335",
+      "module": "2"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "के आधार पर",
+      "desc": "On the basis of",
+      "id": "2619",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "के तहत",
+      "desc": "Under",
+      "id": "2620",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "के दौरान",
+      "desc": "During",
+      "id": "2336",
+      "module": "2"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "के बजाय",
+      "desc": "Instead of",
+      "id": "2621",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "के सिवाय",
+      "desc": "Other than, except",
+      "id": "2622",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "केन्द्रित",
+      "desc": "Centered",
+      "id": "2623",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "केन्द्रित",
+      "desc": "Focused",
+      "id": "2996",
+      "module": "6"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "केन्द्रीय मंत्री",
+      "desc": "Union minister",
+      "id": "2624",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कोयला",
+      "desc": "Coal, carbon",
+      "id": "2625",
+      "module": "4"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "कोशिश",
+      "desc": "Attempt",
+      "id": "2773",
+      "module": "5"
+    },
+    {
+      "alpha": "क, क़",
+      "name": "क्रम",
+      "desc": "Order",
+      "id": "2626",
+      "module": "4"
+    },
+    {
+      "alpha": "क्ष",
+      "name": "क्षतिग्रस्त",
+      "desc": "Injured, damaged",
+      "id": "2310",
+      "module": "1"
+    },
+    {
+      "alpha": "क्ष",
+      "name": "क्षमता",
+      "desc": "Ability",
+      "id": "2311",
+      "module": "1"
+    },
+    {
+      "alpha": "क्ष",
+      "name": "क्षमता",
+      "desc": "Capability",
+      "id": "2312",
+      "module": "1"
+    },
+    {
+      "alpha": "क्ष",
+      "name": "क्षमता",
+      "desc": "Capability",
+      "id": "2923",
+      "module": "5"
+    },
+    {
+      "alpha": "क्ष",
+      "name": "क्षेत्र",
+      "desc": "Area",
+      "id": "2313",
+      "module": "1"
+    },
+    {
+      "alpha": "क्ष",
+      "name": "क्षेत्र",
+      "desc": "Area",
+      "id": "2924",
+      "module": "5"
+    },
+    {
+      "alpha": "क्ष",
+      "name": "क्षेत्र",
+      "desc": "Area",
+      "id": "3190",
+      "module": "6"
+    },
+    {
+      "alpha": "क्ष",
+      "name": "क्षेत्ररीय",
+      "desc": "Regional",
+      "id": "2926",
+      "module": "5"
+    },
+    {
+      "alpha": "क्ष",
+      "name": "क्षेत्राधिकारों",
+      "desc": "Jurisdictions",
+      "id": "2746",
+      "module": "4"
+    },
+    {
+      "alpha": "क्ष",
+      "name": "क्षेत्रीय",
+      "desc": "Territorial, regional",
+      "id": "2925",
+      "module": "5"
+    },
+    {
+      "alpha": "क्ष",
+      "name": "क्षेत्रीय अखंडता",
+      "desc": "Regional integrity",
+      "id": "2452",
+      "module": "2"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खंगालना",
+      "desc": "To rinse, to probe",
+      "id": "2337",
+      "module": "2"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खटकेगा",
+      "desc": "It will knock, or irritate",
+      "id": "2774",
+      "module": "5"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खतरनाक",
+      "desc": "Dangerous",
+      "id": "2141",
+      "module": "1"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खतरा ",
+      "desc": "Danger",
+      "id": "2142",
+      "module": "1"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खपत",
+      "desc": "Consumption",
+      "id": "2627",
+      "module": "4"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खबर",
+      "desc": "News",
+      "id": "2143",
+      "module": "1"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खाड़ी",
+      "desc": "Bay",
+      "id": "2775",
+      "module": "5"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खास बात",
+      "desc": "Important matter",
+      "id": "2628",
+      "module": "4"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खासकर",
+      "desc": "Especially",
+      "id": "2474",
+      "module": "3"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खिलाफ",
+      "desc": "Against",
+      "id": "2776",
+      "module": "5"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खुफिया जानकारी",
+      "desc": "Intelligence",
+      "id": "2338",
+      "module": "2"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खून",
+      "desc": "Blood",
+      "id": "2997",
+      "module": "6"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खेत खलिहान",
+      "desc": "Agricultural fields",
+      "id": "2144",
+      "module": "1"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "खेप",
+      "desc": "Consignment",
+      "id": "2145",
+      "module": "1"
+    },
+    {
+      "alpha": "ख, ख़",
+      "name": "ख्याति",
+      "desc": "Celebrity",
+      "id": "2998",
+      "module": "6"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गठजोड़",
+      "desc": "Nexus",
+      "id": "2778",
+      "module": "5"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गठित",
+      "desc": "Formed",
+      "id": "2999",
+      "module": "6"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गठिये",
+      "desc": "Gout, rheumatism",
+      "id": "3000",
+      "module": "6"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गड़बड़ झाला",
+      "desc": "Confused state",
+      "id": "2630",
+      "module": "4"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गत",
+      "desc": "Last ",
+      "id": "2147",
+      "module": "1"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गतिविधियाँ",
+      "desc": "Procedure, happenings",
+      "id": "2148",
+      "module": "1"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गंभीर",
+      "desc": "Serious",
+      "id": "2777",
+      "module": "5"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गंभीर संकट",
+      "desc": "Serious trouble",
+      "id": "2629",
+      "module": "4"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गंभीरता",
+      "desc": "Seriousness",
+      "id": "2146",
+      "module": "1"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गम्भीरता",
+      "desc": "Seriousness",
+      "id": "2149",
+      "module": "1"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गर्माना",
+      "desc": "Warmed up",
+      "id": "2631",
+      "module": "4"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गलत",
+      "desc": "Improper, wrong, inaccurate, incorrect, inexact",
+      "id": "2632",
+      "module": "4"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गवाह",
+      "desc": "Witness",
+      "id": "2150",
+      "module": "1"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गायब",
+      "desc": "Lost, disappeared",
+      "id": "2151",
+      "module": "1"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गिरफ़्तारी",
+      "desc": "Arrest",
+      "id": "2779",
+      "module": "5"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गिरावट",
+      "desc": "Collapse, decline",
+      "id": "3001",
+      "module": "6"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गुजरता",
+      "desc": "Passes",
+      "id": "2780",
+      "module": "5"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गुडवत्ता",
+      "desc": "High quality",
+      "id": "3002",
+      "module": "6"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गुणवत्‍ता",
+      "desc": "Class, quality",
+      "id": "2633",
+      "module": "4"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गुणवत्ता",
+      "desc": "Quality",
+      "id": "2634",
+      "module": "4"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गुणवत्ता",
+      "desc": "Quality",
+      "id": "3003",
+      "module": "6"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गुबार",
+      "desc": "Grief, extreme emotion",
+      "id": "2339",
+      "module": "2"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गुमशुदा",
+      "desc": "Lost",
+      "id": "2152",
+      "module": "1"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गृह सचिव",
+      "desc": "Home secretary",
+      "id": "2781",
+      "module": "5"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गृहमंत्री",
+      "desc": "Home minister",
+      "id": "2475",
+      "module": "3"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गैर पारंपरिक",
+      "desc": "Non-conventional, Non-traditional",
+      "id": "2635",
+      "module": "4"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गैर सरकारी",
+      "desc": "Non-government, private",
+      "id": "2153",
+      "module": "1"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "ग़ैर-संचारी",
+      "desc": "Non-communicable",
+      "id": "3004",
+      "module": "6"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गोलाबारी",
+      "desc": "Shelling, artillery exchange",
+      "id": "2340",
+      "module": "2"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गौर",
+      "desc": "Consider, attention",
+      "id": "2341",
+      "module": "2"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गौर",
+      "desc": "Consider",
+      "id": "2342",
+      "module": "2"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "गौर",
+      "desc": "Concentrate, attention",
+      "id": "2782",
+      "module": "5"
+    },
+    {
+      "alpha": "ग, ग़",
+      "name": "ग्रामीण",
+      "desc": "Rural",
+      "id": "2476",
+      "module": "3"
+    },
+    {
+      "alpha": "घ",
+      "name": "घटक",
+      "desc": "Component",
+      "id": "3006",
+      "module": "6"
+    },
+    {
+      "alpha": "घ",
+      "name": "घटनायें",
+      "desc": "Events",
+      "id": "2783",
+      "module": "5"
+    },
+    {
+      "alpha": "घ",
+      "name": "घंटे",
+      "desc": "Hours",
+      "id": "3005",
+      "module": "6"
+    },
+    {
+      "alpha": "घ",
+      "name": "घबराहट",
+      "desc": "Perplexity",
+      "id": "2154",
+      "module": "1"
+    },
+    {
+      "alpha": "घ",
+      "name": "घरेलू उपभोक्ता",
+      "desc": "Domestic consumer",
+      "id": "2636",
+      "module": "4"
+    },
+    {
+      "alpha": "घ",
+      "name": "घरों",
+      "desc": "Homes",
+      "id": "3007",
+      "module": "6"
+    },
+    {
+      "alpha": "घ",
+      "name": "घाटी",
+      "desc": "Valley",
+      "id": "2155",
+      "module": "1"
+    },
+    {
+      "alpha": "घ",
+      "name": "घायल",
+      "desc": "Injured",
+      "id": "2156",
+      "module": "1"
+    },
+    {
+      "alpha": "घ",
+      "name": "घुसपैठ",
+      "desc": "Infiltration",
+      "id": "2343",
+      "module": "2"
+    },
+    {
+      "alpha": "घ",
+      "name": "घुसपैठ",
+      "desc": "Infiltration",
+      "id": "2477",
+      "module": "3"
+    },
+    {
+      "alpha": "घ",
+      "name": "घोषणा",
+      "desc": "Announcement",
+      "id": "3008",
+      "module": "6"
+    },
+    {
+      "alpha": "घ",
+      "name": "घोषित",
+      "desc": "Announced",
+      "id": "2637",
+      "module": "4"
+    },
+    {
+      "alpha": "घ",
+      "name": "घ्यान",
+      "desc": "Attention",
+      "id": "2784",
+      "module": "5"
+    },
+    {
+      "alpha": "च",
+      "name": "चक्रवाती तूफान",
+      "desc": "Cyclonic storm",
+      "id": "2157",
+      "module": "1"
+    },
+    {
+      "alpha": "च",
+      "name": "चमड़ी",
+      "desc": "Skin",
+      "id": "3009",
+      "module": "6"
+    },
+    {
+      "alpha": "च",
+      "name": "चरमराना",
+      "desc": "To crack",
+      "id": "2478",
+      "module": "3"
+    },
+    {
+      "alpha": "च",
+      "name": "चहुँमुखी विकास",
+      "desc": "All-round development",
+      "id": "2638",
+      "module": "4"
+    },
+    {
+      "alpha": "च",
+      "name": "चिकित्सा उपकरण",
+      "desc": "Medical equipment",
+      "id": "3010",
+      "module": "6"
+    },
+    {
+      "alpha": "च",
+      "name": "चिकित्सालय",
+      "desc": "Clinic",
+      "id": "3011",
+      "module": "6"
+    },
+    {
+      "alpha": "च",
+      "name": "चिकित्‍सीय",
+      "desc": "Medical",
+      "id": "3012",
+      "module": "6"
+    },
+    {
+      "alpha": "च",
+      "name": "चिंताजनक",
+      "desc": "Worrisome",
+      "id": "2158",
+      "module": "1"
+    },
+    {
+      "alpha": "च",
+      "name": "चिन्हित",
+      "desc": "Indicated",
+      "id": "3013",
+      "module": "6"
+    },
+    {
+      "alpha": "च",
+      "name": "चिलचिलाती सर्दी",
+      "desc": "Extreme winter",
+      "id": "2344",
+      "module": "2"
+    },
+    {
+      "alpha": "च",
+      "name": "चुनौतियाँ",
+      "desc": "Challenges",
+      "id": "2639",
+      "module": "4"
+    },
+    {
+      "alpha": "च",
+      "name": "चुनौतियों",
+      "desc": "Challenges",
+      "id": "2785",
+      "module": "5"
+    },
+    {
+      "alpha": "च",
+      "name": "चुनौती",
+      "desc": "Challenge",
+      "id": "2345",
+      "module": "2"
+    },
+    {
+      "alpha": "च",
+      "name": "चुनौती",
+      "desc": "Challenge",
+      "id": "2159",
+      "module": "1"
+    },
+    {
+      "alpha": "च",
+      "name": "चुनौती",
+      "desc": "Challenge",
+      "id": "3014",
+      "module": "6"
+    },
+    {
+      "alpha": "च",
+      "name": "चूंकि",
+      "desc": "Because",
+      "id": "2346",
+      "module": "2"
+    },
+    {
+      "alpha": "च",
+      "name": "चौराहा",
+      "desc": "Intersection",
+      "id": "2640",
+      "module": "4"
+    },
+    {
+      "alpha": "छ",
+      "name": "छलांग",
+      "desc": "Leap",
+      "id": "2641",
+      "module": "4"
+    },
+    {
+      "alpha": "छ",
+      "name": "छलावा",
+      "desc": "Phantasm, falsehood",
+      "id": "2347",
+      "module": "2"
+    },
+    {
+      "alpha": "छ",
+      "name": "छूट",
+      "desc": "Concession",
+      "id": "2348",
+      "module": "2"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जंग",
+      "desc": "War",
+      "id": "2349",
+      "module": "2"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जंग",
+      "desc": "War",
+      "id": "2479",
+      "module": "3"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जटिल चुनौती",
+      "desc": "Difficult challenge",
+      "id": "2480",
+      "module": "3"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जटिलताएं",
+      "desc": "Complications",
+      "id": "3015",
+      "module": "6"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जड़",
+      "desc": "Root",
+      "id": "3016",
+      "module": "6"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जनजीवन",
+      "desc": "Life",
+      "id": "2350",
+      "module": "2"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जनजीवन",
+      "desc": "Life, livelihood, lifestyle",
+      "id": "2160",
+      "module": "1"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जनहानि",
+      "desc": "Loss of life",
+      "id": "2161",
+      "module": "1"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जबकि",
+      "desc": "Whereas",
+      "id": "2642",
+      "module": "4"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जबकि",
+      "desc": "Whereas",
+      "id": "2481",
+      "module": "3"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "ज़बरदस्त",
+      "desc": "Strong",
+      "id": "2351",
+      "module": "2"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "ज़ब्त",
+      "desc": "Seizure",
+      "id": "2786",
+      "module": "5"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जरूरत",
+      "desc": "Needed",
+      "id": "3017",
+      "module": "6"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "ज़रूरतमन्द",
+      "desc": "Needy",
+      "id": "3018",
+      "module": "6"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जश्न",
+      "desc": "Celebration",
+      "id": "2482",
+      "module": "3"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जस का तस",
+      "desc": "Status quo",
+      "id": "2352",
+      "module": "2"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जागरूकता",
+      "desc": "Awareness",
+      "id": "3019",
+      "module": "6"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जान-माल",
+      "desc": "Life and property",
+      "id": "2162",
+      "module": "1"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जानकारी",
+      "desc": "Information",
+      "id": "3020",
+      "module": "6"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जानबाज़",
+      "desc": "Intrepid",
+      "id": "2353",
+      "module": "2"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जायजा",
+      "desc": "Scrutiny, examination",
+      "id": "2163",
+      "module": "1"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "ज़ाहिर",
+      "desc": "Obvious",
+      "id": "2164",
+      "module": "1"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "ज़िम्मेदारी",
+      "desc": "Responsibility",
+      "id": "2643",
+      "module": "4"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जिम्मेदारी",
+      "desc": "Responsibility",
+      "id": "2787",
+      "module": "5"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जिला",
+      "desc": "District",
+      "id": "2788",
+      "module": "5"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जीवन यापन",
+      "desc": "Life-style, living",
+      "id": "2165",
+      "module": "1"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जीवाशय ईंधन",
+      "desc": "Fossil fuel",
+      "id": "2644",
+      "module": "4"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जीवाश्‍म ईंधनों",
+      "desc": "Fossil fuels",
+      "id": "2645",
+      "module": "4"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "जुगाड़",
+      "desc": "Manipulator",
+      "id": "3021",
+      "module": "6"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "ज़ेहन",
+      "desc": "Mind, within",
+      "id": "2166",
+      "module": "1"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "ज़ोरदार",
+      "desc": "Powerful",
+      "id": "2646",
+      "module": "4"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "ज्यादातर",
+      "desc": "Mostly, most",
+      "id": "3022",
+      "module": "6"
+    },
+    {
+      "alpha": "ज, ज़",
+      "name": "ज्वारीय ऊर्जा",
+      "desc": "Tidal energy",
+      "id": "2647",
+      "module": "4"
+    },
+    {
+      "alpha": "झ",
+      "name": "झटका",
+      "desc": "Jerk, jolt",
+      "id": "2648",
+      "module": "4"
+    },
+    {
+      "alpha": "झ",
+      "name": "झड़प",
+      "desc": "Confrontation",
+      "id": "2483",
+      "module": "3"
+    },
+    {
+      "alpha": "झ",
+      "name": "झुग्गी-बस्तियों",
+      "desc": "Slum settlements",
+      "id": "2649",
+      "module": "4"
+    },
+    {
+      "alpha": "ट",
+      "name": "टीस",
+      "desc": "Shooting pain",
+      "id": "2167",
+      "module": "1"
+    },
+    {
+      "alpha": "ठ",
+      "name": "ठोस",
+      "desc": "Solid",
+      "id": "2789",
+      "module": "5"
+    },
+    {
+      "alpha": "ड",
+      "name": "डर का माहौल",
+      "desc": "The atmosphere of fear",
+      "id": "2650",
+      "module": "4"
+    },
+    {
+      "alpha": "ढ",
+      "name": "ढाँचा",
+      "desc": "Framework",
+      "id": "3023",
+      "module": "6"
+    },
+    {
+      "alpha": "त",
+      "name": "तकनीक",
+      "desc": "Technology",
+      "id": "3024",
+      "module": "6"
+    },
+    {
+      "alpha": "त",
+      "name": "तकनीकी कर्मी",
+      "desc": "Technical personal",
+      "id": "2484",
+      "module": "3"
+    },
+    {
+      "alpha": "त",
+      "name": "तकनीकी स्थितियाँ",
+      "desc": "Technical conditions",
+      "id": "2354",
+      "module": "2"
+    },
+    {
+      "alpha": "त",
+      "name": "तक़रीबन",
+      "desc": "Approximately",
+      "id": "3025",
+      "module": "6"
+    },
+    {
+      "alpha": "त",
+      "name": "तटरक्षक",
+      "desc": "Coast guard",
+      "id": "2790",
+      "module": "5"
+    },
+    {
+      "alpha": "त",
+      "name": "तटरेखा",
+      "desc": "Coastlines",
+      "id": "2791",
+      "module": "5"
+    },
+    {
+      "alpha": "त",
+      "name": "तटरेखाओं",
+      "desc": "Shoreline",
+      "id": "2792",
+      "module": "5"
+    },
+    {
+      "alpha": "त",
+      "name": "तटवर्ती",
+      "desc": "Coastal",
+      "id": "2793",
+      "module": "5"
+    },
+    {
+      "alpha": "त",
+      "name": "तत्काल",
+      "desc": "Urgent, immediately",
+      "id": "2651",
+      "module": "4"
+    },
+    {
+      "alpha": "त",
+      "name": "तत्काल",
+      "desc": "Instantly",
+      "id": "2168",
+      "module": "1"
+    },
+    {
+      "alpha": "त",
+      "name": "तत्काल",
+      "desc": "Instantly",
+      "id": "2485",
+      "module": "3"
+    },
+    {
+      "alpha": "त",
+      "name": "तत्कालीन",
+      "desc": "Relevant to a specific time",
+      "id": "2486",
+      "module": "3"
+    },
+    {
+      "alpha": "त",
+      "name": "तत्परता",
+      "desc": "Readiness",
+      "id": "2355",
+      "module": "2"
+    },
+    {
+      "alpha": "त",
+      "name": "तत्परता",
+      "desc": "Readiness, eagerness",
+      "id": "2794",
+      "module": "5"
+    },
+    {
+      "alpha": "त",
+      "name": "तनाव",
+      "desc": "Tension ",
+      "id": "2795",
+      "module": "5"
+    },
+    {
+      "alpha": "त",
+      "name": "तपती",
+      "desc": "Hot",
+      "id": "3026",
+      "module": "6"
+    },
+    {
+      "alpha": "त",
+      "name": "तबाही",
+      "desc": "Destruction",
+      "id": "2169",
+      "module": "1"
+    },
+    {
+      "alpha": "त",
+      "name": "तय शर्त",
+      "desc": "Fixed term",
+      "id": "2652",
+      "module": "4"
+    },
+    {
+      "alpha": "त",
+      "name": "तलाश",
+      "desc": "Search",
+      "id": "2170",
+      "module": "1"
+    },
+    {
+      "alpha": "त",
+      "name": "तलाश",
+      "desc": "Search",
+      "id": "2796",
+      "module": "5"
+    },
+    {
+      "alpha": "त",
+      "name": "तस्कर",
+      "desc": "Smugglers",
+      "id": "2797",
+      "module": "5"
+    },
+    {
+      "alpha": "त",
+      "name": "तस्करी",
+      "desc": "Smuggling",
+      "id": "2798",
+      "module": "5"
+    },
+    {
+      "alpha": "त",
+      "name": "तस्वीर",
+      "desc": "Picture",
+      "id": "2171",
+      "module": "1"
+    },
+    {
+      "alpha": "त",
+      "name": "तस्वीरें ",
+      "desc": "Pictures",
+      "id": "2172",
+      "module": "1"
+    },
+    {
+      "alpha": "त",
+      "name": "तहत",
+      "desc": "Under",
+      "id": "2173",
+      "module": "1"
+    },
+    {
+      "alpha": "त",
+      "name": "तादाद",
+      "desc": "Quantity",
+      "id": "2174",
+      "module": "1"
+    },
+    {
+      "alpha": "त",
+      "name": "तालमेल",
+      "desc": "Harmony, agreement",
+      "id": "2356",
+      "module": "2"
+    },
+    {
+      "alpha": "त",
+      "name": "तालमेल",
+      "desc": "Co-ordination",
+      "id": "2175",
+      "module": "1"
+    },
+    {
+      "alpha": "त",
+      "name": "तालमेल",
+      "desc": "Coordination",
+      "id": "3027",
+      "module": "6"
+    },
+    {
+      "alpha": "त",
+      "name": "तालमेल",
+      "desc": "Synergy",
+      "id": "3028",
+      "module": "6"
+    },
+    {
+      "alpha": "त",
+      "name": "तिगुनी",
+      "desc": "Trippled",
+      "id": "2653",
+      "module": "4"
+    },
+    {
+      "alpha": "त",
+      "name": "तीर्थ स्थल",
+      "desc": "Place of pilgrimage",
+      "id": "2176",
+      "module": "1"
+    },
+    {
+      "alpha": "त",
+      "name": "तीव्र",
+      "desc": "Intense",
+      "id": "2177",
+      "module": "1"
+    },
+    {
+      "alpha": "त",
+      "name": "तुलना",
+      "desc": "Compare; comparison; contrast",
+      "id": "3029",
+      "module": "6"
+    },
+    {
+      "alpha": "त",
+      "name": "तैनात",
+      "desc": "Deployed",
+      "id": "2799",
+      "module": "5"
+    },
+    {
+      "alpha": "त्र",
+      "name": "त्रासदी",
+      "desc": "Tragedy",
+      "id": "2314",
+      "module": "1"
+    },
+    {
+      "alpha": "त्र",
+      "name": "त्रिस्तरीय",
+      "desc": "Three tier",
+      "id": "2800",
+      "module": "5"
+    },
+    {
+      "alpha": "थ",
+      "name": "थाह",
+      "desc": "Depth",
+      "id": "2178",
+      "module": "1"
+    },
+    {
+      "alpha": "द",
+      "name": "दक्षता",
+      "desc": "Efficiency",
+      "id": "2654",
+      "module": "4"
+    },
+    {
+      "alpha": "द",
+      "name": "दक्षता",
+      "desc": "Expertise",
+      "id": "3031",
+      "module": "6"
+    },
+    {
+      "alpha": "द",
+      "name": "दक्षतापूर्ण",
+      "desc": "Efficient",
+      "id": "3032",
+      "module": "6"
+    },
+    {
+      "alpha": "द",
+      "name": "दक्षिण",
+      "desc": "South",
+      "id": "3033",
+      "module": "6"
+    },
+    {
+      "alpha": "द",
+      "name": "दंडित",
+      "desc": "Penalized, punished",
+      "id": "3030",
+      "module": "6"
+    },
+    {
+      "alpha": "द",
+      "name": "दबाव",
+      "desc": "Pressure",
+      "id": "2357",
+      "module": "2"
+    },
+    {
+      "alpha": "द",
+      "name": "दबुचने",
+      "desc": "Grab",
+      "id": "2801",
+      "module": "5"
+    },
+    {
+      "alpha": "द",
+      "name": "दमकल",
+      "desc": "Fire-engine",
+      "id": "2179",
+      "module": "1"
+    },
+    {
+      "alpha": "द",
+      "name": "दरअसल",
+      "desc": "Actually",
+      "id": "2358",
+      "module": "2"
+    },
+    {
+      "alpha": "द",
+      "name": "दर्शन",
+      "desc": "Philosophy",
+      "id": "2487",
+      "module": "3"
+    },
+    {
+      "alpha": "द",
+      "name": "दवाई",
+      "desc": "Medicine",
+      "id": "3034",
+      "module": "6"
+    },
+    {
+      "alpha": "द",
+      "name": "दस्तावेज़",
+      "desc": "Document",
+      "id": "2359",
+      "module": "2"
+    },
+    {
+      "alpha": "द",
+      "name": "दस्तावेज़",
+      "desc": "Document",
+      "id": "2802",
+      "module": "5"
+    },
+    {
+      "alpha": "द",
+      "name": "दाखिला",
+      "desc": "Admission",
+      "id": "2180",
+      "module": "1"
+    },
+    {
+      "alpha": "द",
+      "name": "दाल",
+      "desc": "Dal, dhal, lentil, pulse, split pea",
+      "id": "2655",
+      "module": "4"
+    },
+    {
+      "alpha": "द",
+      "name": "दावत",
+      "desc": "Feast",
+      "id": "2181",
+      "module": "1"
+    },
+    {
+      "alpha": "द",
+      "name": "दावेदारी",
+      "desc": "Claim",
+      "id": "2360",
+      "module": "2"
+    },
+    {
+      "alpha": "द",
+      "name": "दिक्कत",
+      "desc": "Difficulty",
+      "id": "2182",
+      "module": "1"
+    },
+    {
+      "alpha": "द",
+      "name": "दिक्कतों",
+      "desc": "Difficulties",
+      "id": "2361",
+      "module": "2"
+    },
+    {
+      "alpha": "द",
+      "name": "दिल से दिल का रिश्ता",
+      "desc": "Relationships that are dear to heart",
+      "id": "2488",
+      "module": "3"
+    },
+    {
+      "alpha": "द",
+      "name": "दिलचस्प",
+      "desc": "Interesting",
+      "id": "2656",
+      "module": "4"
+    },
+    {
+      "alpha": "द",
+      "name": "दिलचस्पी",
+      "desc": "Interested",
+      "id": "3035",
+      "module": "6"
+    },
+    {
+      "alpha": "द",
+      "name": "दीर्घावधि",
+      "desc": "Long term",
+      "id": "2362",
+      "module": "2"
+    },
+    {
+      "alpha": "द",
+      "name": "दीर्ध प्रक्रिया",
+      "desc": "Long process",
+      "id": "2363",
+      "module": "2"
+    },
+    {
+      "alpha": "द",
+      "name": "दुख-दर्द",
+      "desc": "Pain and grief",
+      "id": "2183",
+      "module": "1"
+    },
+    {
+      "alpha": "द",
+      "name": "दुभाषिया",
+      "desc": "Bilingual",
+      "id": "3036",
+      "module": "6"
+    },
+    {
+      "alpha": "द",
+      "name": "दुर्गम",
+      "desc": "Difficult",
+      "id": "2184",
+      "module": "1"
+    },
+    {
+      "alpha": "द",
+      "name": "दुर्घटना",
+      "desc": "Accident",
+      "id": "3037",
+      "module": "6"
+    },
+    {
+      "alpha": "द",
+      "name": "दुर्दशा",
+      "desc": "Plight",
+      "id": "2489",
+      "module": "3"
+    },
+    {
+      "alpha": "द",
+      "name": "दुर्भाग्य",
+      "desc": "Misfortune",
+      "id": "3038",
+      "module": "6"
+    },
+    {
+      "alpha": "द",
+      "name": "दूरदराज",
+      "desc": "Far, very distant",
+      "id": "2185",
+      "module": "1"
+    },
+    {
+      "alpha": "द",
+      "name": "दूरसंचार",
+      "desc": "Telecommunications",
+      "id": "2186",
+      "module": "1"
+    },
+    {
+      "alpha": "द",
+      "name": "दृढ़संकल्प",
+      "desc": "Strong determination",
+      "id": "2490",
+      "module": "3"
+    },
+    {
+      "alpha": "द",
+      "name": "दृश्‍यावली",
+      "desc": "Scenery",
+      "id": "2657",
+      "module": "4"
+    },
+    {
+      "alpha": "द",
+      "name": "देखभाल",
+      "desc": "Care",
+      "id": "3039",
+      "module": "6"
+    },
+    {
+      "alpha": "द",
+      "name": "दोबारा",
+      "desc": "Again, repeat",
+      "id": "2187",
+      "module": "1"
+    },
+    {
+      "alpha": "द",
+      "name": "दोहराई ",
+      "desc": "Repeated",
+      "id": "2364",
+      "module": "2"
+    },
+    {
+      "alpha": "द",
+      "name": "दौरा",
+      "desc": "Tour",
+      "id": "2188",
+      "module": "1"
+    },
+    {
+      "alpha": "द",
+      "name": "दौरे",
+      "desc": "Tour",
+      "id": "2491",
+      "module": "3"
+    },
+    {
+      "alpha": "द",
+      "name": "द्विपक्षीय",
+      "desc": "Bilateral",
+      "id": "2803",
+      "module": "5"
+    },
+    {
+      "alpha": "द",
+      "name": "द्विपक्षीय संबंध",
+      "desc": "Bilateral relations",
+      "id": "2365",
+      "module": "2"
+    },
+    {
+      "alpha": "ध",
+      "name": "धमाकों",
+      "desc": "Blast",
+      "id": "2804",
+      "module": "5"
+    },
+    {
+      "alpha": "ध",
+      "name": "धारक",
+      "desc": "Holder",
+      "id": "3040",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "नकारात्मक",
+      "desc": "Negative",
+      "id": "2805",
+      "module": "5"
+    },
+    {
+      "alpha": "न",
+      "name": "नज़र",
+      "desc": "Visual attention",
+      "id": "2806",
+      "module": "5"
+    },
+    {
+      "alpha": "न",
+      "name": "नतीजों",
+      "desc": "Results",
+      "id": "3041",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "नदारद",
+      "desc": "Absent",
+      "id": "2189",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "नर्क",
+      "desc": "Hell",
+      "id": "2492",
+      "module": "3"
+    },
+    {
+      "alpha": "न",
+      "name": "नवजात",
+      "desc": "Newborn",
+      "id": "3042",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "नवनिर्मित",
+      "desc": "Newly built",
+      "id": "3043",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "नवीकरणीय ऊर्जा",
+      "desc": "Renewable energy",
+      "id": "2658",
+      "module": "4"
+    },
+    {
+      "alpha": "न",
+      "name": "नवीन",
+      "desc": "Modern",
+      "id": "3044",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "नवीनिकरण",
+      "desc": "Renewal, renovation",
+      "id": "3045",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "नवीनीकृत",
+      "desc": "Resewed",
+      "id": "3046",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "नसों",
+      "desc": "Blood vessels",
+      "id": "3047",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "नाकेबंदी",
+      "desc": "Blockade",
+      "id": "2366",
+      "module": "2"
+    },
+    {
+      "alpha": "न",
+      "name": "नागरिकता",
+      "desc": "Citizenship",
+      "id": "2493",
+      "module": "3"
+    },
+    {
+      "alpha": "न",
+      "name": "नामांकन",
+      "desc": "Nomination",
+      "id": "2190",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "निकट भविष्य",
+      "desc": "In the near future",
+      "id": "2367",
+      "module": "2"
+    },
+    {
+      "alpha": "न",
+      "name": "निकट संबंधी",
+      "desc": "Close relatives",
+      "id": "2191",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "निगरानी",
+      "desc": "Monitoring",
+      "id": "2807",
+      "module": "5"
+    },
+    {
+      "alpha": "न",
+      "name": "निगरानी",
+      "desc": "Surveillance",
+      "id": "2808",
+      "module": "5"
+    },
+    {
+      "alpha": "न",
+      "name": "निगाह रखना",
+      "desc": "To watch, observe",
+      "id": "2192",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "निचले इलाके",
+      "desc": "Low lying areas",
+      "id": "2193",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "निजी भागीदारी",
+      "desc": "Private partnerships",
+      "id": "3048",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "निधन",
+      "desc": "Death",
+      "id": "2368",
+      "module": "2"
+    },
+    {
+      "alpha": "न",
+      "name": "निपटना",
+      "desc": "To tackle",
+      "id": "2369",
+      "module": "2"
+    },
+    {
+      "alpha": "न",
+      "name": "निपटना",
+      "desc": "To deal with",
+      "id": "2194",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "निपुण",
+      "desc": "Accomplished",
+      "id": "2370",
+      "module": "2"
+    },
+    {
+      "alpha": "न",
+      "name": "नियंत्रण ",
+      "desc": "Control",
+      "id": "2809",
+      "module": "5"
+    },
+    {
+      "alpha": "न",
+      "name": "नियमित",
+      "desc": "Regular",
+      "id": "2810",
+      "module": "5"
+    },
+    {
+      "alpha": "न",
+      "name": "नियामकीय",
+      "desc": "Regulatory",
+      "id": "2659",
+      "module": "4"
+    },
+    {
+      "alpha": "न",
+      "name": "नियुक्त",
+      "desc": "Appointed",
+      "id": "2371",
+      "module": "2"
+    },
+    {
+      "alpha": "न",
+      "name": "निरंतरता",
+      "desc": "Continuity",
+      "id": "2660",
+      "module": "4"
+    },
+    {
+      "alpha": "न",
+      "name": "निरंतरता",
+      "desc": "Continuity",
+      "id": "2195",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "निर्धारक",
+      "desc": "Deciding",
+      "id": "2661",
+      "module": "4"
+    },
+    {
+      "alpha": "न",
+      "name": "निर्धारित",
+      "desc": "Pre-determined",
+      "id": "2196",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "निर्भर",
+      "desc": "Dependent",
+      "id": "2372",
+      "module": "2"
+    },
+    {
+      "alpha": "न",
+      "name": "निर्भर",
+      "desc": "Dependent",
+      "id": "2662",
+      "module": "4"
+    },
+    {
+      "alpha": "न",
+      "name": "निर्भर",
+      "desc": "Dependent",
+      "id": "3049",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "निर्भर",
+      "desc": "Dependent",
+      "id": "2811",
+      "module": "5"
+    },
+    {
+      "alpha": "न",
+      "name": "निर्भरता",
+      "desc": "Dependency",
+      "id": "2663",
+      "module": "4"
+    },
+    {
+      "alpha": "न",
+      "name": "निर्भरता",
+      "desc": "Dependency",
+      "id": "3050",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "निर्वासन",
+      "desc": "Banishment, expulsion",
+      "id": "2197",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "निवासी",
+      "desc": "Native",
+      "id": "2494",
+      "module": "3"
+    },
+    {
+      "alpha": "न",
+      "name": "निवेश",
+      "desc": "Investment",
+      "id": "2664",
+      "module": "4"
+    },
+    {
+      "alpha": "न",
+      "name": "निवेश",
+      "desc": "Investment",
+      "id": "3051",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "निश्चितायुकत",
+      "desc": "Determined",
+      "id": "3052",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "निष्ठावान ",
+      "desc": "Loyal",
+      "id": "2373",
+      "module": "2"
+    },
+    {
+      "alpha": "न",
+      "name": "नीति",
+      "desc": "Policy",
+      "id": "2198",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "नीति निर्धारक",
+      "desc": "Policy maker",
+      "id": "2665",
+      "module": "4"
+    },
+    {
+      "alpha": "न",
+      "name": "नीतिगत",
+      "desc": "Policy",
+      "id": "3053",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "नीतियों",
+      "desc": "Policies",
+      "id": "3054",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "नुकसान",
+      "desc": "Harm, damage",
+      "id": "2199",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "नौकाएं",
+      "desc": "Boats",
+      "id": "2200",
+      "module": "1"
+    },
+    {
+      "alpha": "न",
+      "name": "न्यायसंगत",
+      "desc": "Justifiable",
+      "id": "3055",
+      "module": "6"
+    },
+    {
+      "alpha": "न",
+      "name": "न्योछावर",
+      "desc": "Sacrifice",
+      "id": "2495",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "पखवाड़ा",
+      "desc": "Fortnight",
+      "id": "2202",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "पंजीकरण",
+      "desc": "Registration",
+      "id": "2201",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "पंजीकरण",
+      "desc": "Registration",
+      "id": "2812",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "पड़ताल",
+      "desc": "Check, inquiry, investigation, examination",
+      "id": "2666",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "पणधारियों",
+      "desc": "Stakeholders",
+      "id": "2813",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "पदार्पण",
+      "desc": "Setting foot, Arrival",
+      "id": "2667",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "पद्धति",
+      "desc": "Method",
+      "id": "3056",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "पनडुब्बी",
+      "desc": "Submarine",
+      "id": "2814",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "परंपरागत",
+      "desc": "Traditional",
+      "id": "3057",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "परमाणु",
+      "desc": "Nuclear",
+      "id": "2815",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "परम्परागत",
+      "desc": "Traditional",
+      "id": "2203",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "परस्पर",
+      "desc": "Reciprocal",
+      "id": "3058",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "परिक्रिया",
+      "desc": "Consequently",
+      "id": "2816",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "परिचय पत्र",
+      "desc": "Introductory letter",
+      "id": "2817",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "परिचर्चा",
+      "desc": "Discussion",
+      "id": "3059",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "परिचालन",
+      "desc": "Operations",
+      "id": "2818",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "परिणाम स्‍वरूप",
+      "desc": "As a result",
+      "id": "2668",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "परिणामजनक",
+      "desc": "Result-oriented",
+      "id": "3060",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "परिणामों",
+      "desc": "Results",
+      "id": "2819",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "परिभाषित",
+      "desc": "Define",
+      "id": "2820",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "परिवर्तन",
+      "desc": "Changes",
+      "id": "3061",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "परिवार",
+      "desc": "Family",
+      "id": "3062",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "परिषद",
+      "desc": "Council",
+      "id": "2821",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "परेशान",
+      "desc": "Disturbed",
+      "id": "2204",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "पर्यटक",
+      "desc": "Tourist",
+      "id": "2205",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "पर्यटक",
+      "desc": "Tourist",
+      "id": "3063",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "पर्यटन ",
+      "desc": "Tourism",
+      "id": "2206",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "पर्यटन",
+      "desc": "Tourism",
+      "id": "3064",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "पर्यावरण",
+      "desc": "Ecology, environmental",
+      "id": "2669",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "पर्यावरणविद",
+      "desc": "Environmentalist",
+      "id": "2670",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "पर्यावरणीय",
+      "desc": "Environmental",
+      "id": "2671",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "पर्वतारोहण",
+      "desc": "Mountaineering",
+      "id": "2374",
+      "module": "2"
+    },
+    {
+      "alpha": "प",
+      "name": "पवन ऊर्जा",
+      "desc": "Wind power",
+      "id": "2672",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "पसंद",
+      "desc": "Like",
+      "id": "3065",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "पारदर्शिता",
+      "desc": "Transparency",
+      "id": "2673",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "पारदर्शी",
+      "desc": "Transparent",
+      "id": "2375",
+      "module": "2"
+    },
+    {
+      "alpha": "प",
+      "name": "पारंपरिक",
+      "desc": "Traditional",
+      "id": "2822",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "पारस्परिक",
+      "desc": "Mutual",
+      "id": "2823",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "पुन:पूर्ति",
+      "desc": "Replenishment",
+      "id": "2674",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "पुनरावृति",
+      "desc": "Repetition",
+      "id": "2376",
+      "module": "2"
+    },
+    {
+      "alpha": "प",
+      "name": "पुनर्निमाण",
+      "desc": "Reconstruction, renewal",
+      "id": "2207",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "पुनर्वास",
+      "desc": "Resettlement, rehabilitation",
+      "id": "2208",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "पुनर्वास",
+      "desc": "Rehabilitation",
+      "id": "2496",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "पुलिसकर्मी",
+      "desc": "Police officers",
+      "id": "2209",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "पूछताछ",
+      "desc": "Enquiry",
+      "id": "2824",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "पूछताछ",
+      "desc": "Account, enquiry, inquiry, interrogation, query, questioning",
+      "id": "2676",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "पूंजी",
+      "desc": "Capital",
+      "id": "3066",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "पूंजी निवेश",
+      "desc": "Financial Investment",
+      "id": "2675",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "पूरक आहार",
+      "desc": "Supplements",
+      "id": "2210",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "पूरी जानकारी",
+      "desc": "Complete information",
+      "id": "2677",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "पूर्व चेतावनी संचार प्रणाली",
+      "desc": "Early warning communication system",
+      "id": "2211",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "पूर्वोत्तर राज्य",
+      "desc": "North eastern states",
+      "id": "2377",
+      "module": "2"
+    },
+    {
+      "alpha": "प",
+      "name": "पृष्ठभूमि",
+      "desc": "Background",
+      "id": "2497",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "पौष्टिक",
+      "desc": "Nourishing",
+      "id": "3067",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रक्रिया",
+      "desc": "Process",
+      "id": "2825",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रक्रिया",
+      "desc": "Process",
+      "id": "2498",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रक्रिया",
+      "desc": "Process",
+      "id": "3068",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रगाढ़ ",
+      "desc": "Strong",
+      "id": "2826",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रजनन",
+      "desc": "Breeding",
+      "id": "3069",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रणालियों",
+      "desc": "Methodologies ",
+      "id": "2827",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रणाली",
+      "desc": "System",
+      "id": "2828",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रणाली",
+      "desc": "System",
+      "id": "3070",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिकूल",
+      "desc": "Adverse",
+      "id": "2212",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिक्रिया",
+      "desc": "Response, counteraction, counterstand, impedance, notice, reactance",
+      "id": "2678",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिक्रिया",
+      "desc": "Reaction",
+      "id": "2213",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिदिन",
+      "desc": "Daily",
+      "id": "3071",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिनिधि",
+      "desc": "Representative",
+      "id": "2829",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिनिधित्व",
+      "desc": "Representation",
+      "id": "2499",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिबद्धता",
+      "desc": "Commitment",
+      "id": "2500",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिशत",
+      "desc": "Percentage",
+      "id": "3072",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिश्त",
+      "desc": "Percentage",
+      "id": "2214",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिष्ठा",
+      "desc": "Reputation, prestige, dignity",
+      "id": "2679",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिष्ठान",
+      "desc": "Establishment",
+      "id": "2215",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिस्पर्धा",
+      "desc": "Competition",
+      "id": "3073",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रतिस्‍पर्धा",
+      "desc": "Competition",
+      "id": "2680",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रत्यक्ष",
+      "desc": "Direct",
+      "id": "3074",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रत्यय पत्र",
+      "desc": "Credit letter",
+      "id": "2830",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रत्यारोपण",
+      "desc": "Implants",
+      "id": "3075",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रथा",
+      "desc": "Tradition, ritual",
+      "id": "3076",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रधान सचिव",
+      "desc": "Chief secretary",
+      "id": "2681",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रबंध",
+      "desc": "Arrangement",
+      "id": "2216",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रबंधन",
+      "desc": "Management",
+      "id": "2682",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रबंधन",
+      "desc": "Organizing",
+      "id": "2217",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रबंधन",
+      "desc": "Arranging",
+      "id": "2218",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रबल",
+      "desc": "Strong",
+      "id": "3077",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रभावशीलता",
+      "desc": "Effectiveness",
+      "id": "2501",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रभावित",
+      "desc": "Affected",
+      "id": "3078",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रभावित",
+      "desc": "Affected",
+      "id": "2831",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रभाविता",
+      "desc": "Effectiveness",
+      "id": "3079",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रभावी",
+      "desc": "Effective",
+      "id": "3080",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रभावी",
+      "desc": "Effective",
+      "id": "2832",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रभावी",
+      "desc": "Effective",
+      "id": "2502",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रमाणित",
+      "desc": "Certified",
+      "id": "2378",
+      "module": "2"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रमुख",
+      "desc": "Major",
+      "id": "3081",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रयासों",
+      "desc": "Efforts",
+      "id": "2833",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रवर्तक",
+      "desc": "Initiator",
+      "id": "2683",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रशिक्षण",
+      "desc": "Training",
+      "id": "2219",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रशिक्षण",
+      "desc": "Training",
+      "id": "2503",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रशिक्षित",
+      "desc": "Trained",
+      "id": "2834",
+      "module": "5"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रसारित",
+      "desc": "Broadcast",
+      "id": "2379",
+      "module": "2"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रस्तावित",
+      "desc": "Proposed",
+      "id": "2504",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "प्राकृतिक",
+      "desc": "Natural",
+      "id": "3082",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्राकृतिक",
+      "desc": "Natural",
+      "id": "2220",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "प्राकृतिक आपदा",
+      "desc": "Natural disaster",
+      "id": "2221",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "प्राकृतिक संसाधन",
+      "desc": "Natural resources",
+      "id": "2684",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "प्राकृतिक संसाधन",
+      "desc": "Natural Resources",
+      "id": "2505",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "प्राण गंवाना",
+      "desc": "Losing life",
+      "id": "2506",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "प्राथमिक",
+      "desc": "Primary",
+      "id": "3083",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्राधिकरण",
+      "desc": "Authority",
+      "id": "2222",
+      "module": "1"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रावधान",
+      "desc": "Provision",
+      "id": "3084",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रासंगिकता",
+      "desc": "Relevance",
+      "id": "2507",
+      "module": "3"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रेरणा",
+      "desc": "Inspiration, motivation",
+      "id": "2685",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रोत्‍साहन",
+      "desc": "Incentives",
+      "id": "2686",
+      "module": "4"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रोत्साहित",
+      "desc": "Encourage",
+      "id": "3085",
+      "module": "6"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रोत्साहित",
+      "desc": "Encouraging",
+      "id": "2380",
+      "module": "2"
+    },
+    {
+      "alpha": "प",
+      "name": "प्रौद्योगिकियों",
+      "desc": "Technologies",
+      "id": "3086",
+      "module": "6"
+    },
+    {
+      "alpha": "फ, फ़",
+      "name": "फलस्वरूप",
+      "desc": "Consequently",
+      "id": "2687",
+      "module": "4"
+    },
+    {
+      "alpha": "फ, फ़",
+      "name": "फिलहाल",
+      "desc": "For the time being",
+      "id": "2223",
+      "module": "1"
+    },
+    {
+      "alpha": "फ, फ़",
+      "name": "फीसदी",
+      "desc": "Percent",
+      "id": "2688",
+      "module": "4"
+    },
+    {
+      "alpha": "फ, फ़",
+      "name": "फैसला",
+      "desc": "Decision ",
+      "id": "2689",
+      "module": "4"
+    },
+    {
+      "alpha": "फ, फ़",
+      "name": "फैसले",
+      "desc": "Decisions",
+      "id": "2381",
+      "module": "2"
+    },
+    {
+      "alpha": "फ, फ़",
+      "name": "फौरन",
+      "desc": "Immediately",
+      "id": "2224",
+      "module": "1"
+    },
+    {
+      "alpha": "ब",
+      "name": "बकाया",
+      "desc": "Balence",
+      "id": "2690",
+      "module": "4"
+    },
+    {
+      "alpha": "ब",
+      "name": "बकाया",
+      "desc": "Balance, remainder",
+      "id": "2508",
+      "module": "3"
+    },
+    {
+      "alpha": "ब",
+      "name": "बचाव",
+      "desc": "Safety",
+      "id": "2225",
+      "module": "1"
+    },
+    {
+      "alpha": "ब",
+      "name": "बड़े तौर पर",
+      "desc": "Largely, mainly",
+      "id": "2226",
+      "module": "1"
+    },
+    {
+      "alpha": "ब",
+      "name": "बढ़ावा",
+      "desc": "Boost",
+      "id": "3087",
+      "module": "6"
+    },
+    {
+      "alpha": "ब",
+      "name": "बढ़ोतरी",
+      "desc": "Increase",
+      "id": "2691",
+      "module": "4"
+    },
+    {
+      "alpha": "ब",
+      "name": "बढ़ोतरी",
+      "desc": "Increase",
+      "id": "2227",
+      "module": "1"
+    },
+    {
+      "alpha": "ब",
+      "name": "बढ़ोतरी",
+      "desc": "Growth",
+      "id": "2509",
+      "module": "3"
+    },
+    {
+      "alpha": "ब",
+      "name": "बदइंतज़ामी",
+      "desc": "Mismanagement",
+      "id": "2228",
+      "module": "1"
+    },
+    {
+      "alpha": "ब",
+      "name": "बयान",
+      "desc": "Representation, depiction, say, statement, deposition",
+      "id": "2692",
+      "module": "4"
+    },
+    {
+      "alpha": "ब",
+      "name": "बराबर",
+      "desc": "Equal",
+      "id": "2382",
+      "module": "2"
+    },
+    {
+      "alpha": "ब",
+      "name": "बर्बाद",
+      "desc": "Waste",
+      "id": "3088",
+      "module": "6"
+    },
+    {
+      "alpha": "ब",
+      "name": "बलिदान",
+      "desc": "Sacrifice",
+      "id": "2510",
+      "module": "3"
+    },
+    {
+      "alpha": "ब",
+      "name": "बहस",
+      "desc": "Debate",
+      "id": "2693",
+      "module": "4"
+    },
+    {
+      "alpha": "ब",
+      "name": "बहाल",
+      "desc": "Restored",
+      "id": "2511",
+      "module": "3"
+    },
+    {
+      "alpha": "ब",
+      "name": "बहाव",
+      "desc": "Flow",
+      "id": "3089",
+      "module": "6"
+    },
+    {
+      "alpha": "ब",
+      "name": "बाकायदा",
+      "desc": "By rule, as required",
+      "id": "2835",
+      "module": "5"
+    },
+    {
+      "alpha": "ब",
+      "name": "बाधायें",
+      "desc": "Hurdles",
+      "id": "2694",
+      "module": "4"
+    },
+    {
+      "alpha": "ब",
+      "name": "बाधित",
+      "desc": "Interrupted",
+      "id": "2229",
+      "module": "1"
+    },
+    {
+      "alpha": "ब",
+      "name": "बावजूद",
+      "desc": "Despite of",
+      "id": "2512",
+      "module": "3"
+    },
+    {
+      "alpha": "ब",
+      "name": "बिगड़",
+      "desc": "Worse",
+      "id": "2836",
+      "module": "5"
+    },
+    {
+      "alpha": "ब",
+      "name": "बिजली की दर",
+      "desc": "Power rate, electricity rates",
+      "id": "2695",
+      "module": "4"
+    },
+    {
+      "alpha": "ब",
+      "name": "बिजली वितरण",
+      "desc": "Power distribution",
+      "id": "2696",
+      "module": "4"
+    },
+    {
+      "alpha": "ब",
+      "name": "बिलकुल",
+      "desc": "For sure, certain",
+      "id": "2383",
+      "module": "2"
+    },
+    {
+      "alpha": "ब",
+      "name": "बीमा",
+      "desc": "Insurance",
+      "id": "3090",
+      "module": "6"
+    },
+    {
+      "alpha": "ब",
+      "name": "बीमारी",
+      "desc": "Disease",
+      "id": "3091",
+      "module": "6"
+    },
+    {
+      "alpha": "ब",
+      "name": "बुनियाद",
+      "desc": "Foundation",
+      "id": "2513",
+      "module": "3"
+    },
+    {
+      "alpha": "ब",
+      "name": "बुनियादी ",
+      "desc": "Basic",
+      "id": "2384",
+      "module": "2"
+    },
+    {
+      "alpha": "ब",
+      "name": "बुनियादी खतरा",
+      "desc": "Primary risk",
+      "id": "2230",
+      "module": "1"
+    },
+    {
+      "alpha": "ब",
+      "name": "बुनियादी ढांचा",
+      "desc": "Infrastructure",
+      "id": "2385",
+      "module": "2"
+    },
+    {
+      "alpha": "ब",
+      "name": "बेमानी",
+      "desc": "Meaningless",
+      "id": "2231",
+      "module": "1"
+    },
+    {
+      "alpha": "ब",
+      "name": "बेहतर",
+      "desc": "Better",
+      "id": "2232",
+      "module": "1"
+    },
+    {
+      "alpha": "ब",
+      "name": "बेहतर",
+      "desc": "Better",
+      "id": "2514",
+      "module": "3"
+    },
+    {
+      "alpha": "भ",
+      "name": "भनक ",
+      "desc": "Inkling ",
+      "id": "2837",
+      "module": "5"
+    },
+    {
+      "alpha": "भ",
+      "name": "भयंकर",
+      "desc": "Dangerous, fearsome",
+      "id": "2233",
+      "module": "1"
+    },
+    {
+      "alpha": "भ",
+      "name": "भयानक",
+      "desc": "Fearsome, dangerous",
+      "id": "2234",
+      "module": "1"
+    },
+    {
+      "alpha": "भ",
+      "name": "भलाई",
+      "desc": "Wellbeing",
+      "id": "3092",
+      "module": "6"
+    },
+    {
+      "alpha": "भ",
+      "name": "भवन",
+      "desc": "Public building",
+      "id": "2235",
+      "module": "1"
+    },
+    {
+      "alpha": "भ",
+      "name": "भविष्य",
+      "desc": "Future",
+      "id": "3093",
+      "module": "6"
+    },
+    {
+      "alpha": "भ",
+      "name": "भविष्य",
+      "desc": "Future",
+      "id": "2236",
+      "module": "1"
+    },
+    {
+      "alpha": "भ",
+      "name": "भव्य",
+      "desc": "Gorgeous",
+      "id": "3094",
+      "module": "6"
+    },
+    {
+      "alpha": "भ",
+      "name": "भव्य स्वागत",
+      "desc": "Grand welcome",
+      "id": "2386",
+      "module": "2"
+    },
+    {
+      "alpha": "भ",
+      "name": "भागीदार",
+      "desc": "Partner, share-holder",
+      "id": "2237",
+      "module": "1"
+    },
+    {
+      "alpha": "भ",
+      "name": "भागीदारी",
+      "desc": "Partnership",
+      "id": "2838",
+      "module": "5"
+    },
+    {
+      "alpha": "भ",
+      "name": "भारी कमी",
+      "desc": "A drastic reduction",
+      "id": "2697",
+      "module": "4"
+    },
+    {
+      "alpha": "भ",
+      "name": "भारी गोलाबारी",
+      "desc": "Heavy shelling",
+      "id": "2515",
+      "module": "3"
+    },
+    {
+      "alpha": "भ",
+      "name": "भारी तादाद",
+      "desc": "Large number, quantity",
+      "id": "2387",
+      "module": "2"
+    },
+    {
+      "alpha": "भ",
+      "name": "भावनात्मक",
+      "desc": "Emotional",
+      "id": "2516",
+      "module": "3"
+    },
+    {
+      "alpha": "भ",
+      "name": "भावी",
+      "desc": "Prospective, would be",
+      "id": "2698",
+      "module": "4"
+    },
+    {
+      "alpha": "भ",
+      "name": "भाषण",
+      "desc": "Speech, spiel, address, allocution, declamation, lecture",
+      "id": "2699",
+      "module": "4"
+    },
+    {
+      "alpha": "भ",
+      "name": "भीषण परिस्थिति",
+      "desc": "Testing conditions",
+      "id": "2517",
+      "module": "3"
+    },
+    {
+      "alpha": "भ",
+      "name": "भुगतान",
+      "desc": "Payment",
+      "id": "3095",
+      "module": "6"
+    },
+    {
+      "alpha": "भ",
+      "name": "भूतकाल ",
+      "desc": "Past tense",
+      "id": "2839",
+      "module": "5"
+    },
+    {
+      "alpha": "भ",
+      "name": "भूमि सीमा करार",
+      "desc": "Land Boundary Agreement",
+      "id": "2518",
+      "module": "3"
+    },
+    {
+      "alpha": "भ",
+      "name": "भूमिका",
+      "desc": "Role",
+      "id": "2840",
+      "module": "5"
+    },
+    {
+      "alpha": "भ",
+      "name": "भूमिका",
+      "desc": "Role",
+      "id": "2238",
+      "module": "1"
+    },
+    {
+      "alpha": "भ",
+      "name": "भूस्खलन",
+      "desc": "Landslide",
+      "id": "2239",
+      "module": "1"
+    },
+    {
+      "alpha": "भ",
+      "name": "भोजन",
+      "desc": "Food",
+      "id": "2519",
+      "module": "3"
+    },
+    {
+      "alpha": "भ",
+      "name": "भौगोलिक",
+      "desc": "Geographic",
+      "id": "2841",
+      "module": "5"
+    },
+    {
+      "alpha": "भ",
+      "name": "भौगोलिक",
+      "desc": "Geographic",
+      "id": "2388",
+      "module": "2"
+    },
+    {
+      "alpha": "म",
+      "name": "मकसद",
+      "desc": "Motive",
+      "id": "2389",
+      "module": "2"
+    },
+    {
+      "alpha": "म",
+      "name": "मजबूत",
+      "desc": "Strong",
+      "id": "3096",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मज़बूत",
+      "desc": "Strong",
+      "id": "2843",
+      "module": "5"
+    },
+    {
+      "alpha": "म",
+      "name": "मजमून",
+      "desc": "Contents, subject matter",
+      "id": "2390",
+      "module": "2"
+    },
+    {
+      "alpha": "म",
+      "name": "मंज़ूरी",
+      "desc": "Approval",
+      "id": "2520",
+      "module": "3"
+    },
+    {
+      "alpha": "म",
+      "name": "मंत्रिमंडल",
+      "desc": "Cabinet of ministers",
+      "id": "2700",
+      "module": "4"
+    },
+    {
+      "alpha": "म",
+      "name": "मत्स्यपालन",
+      "desc": "Fish farming",
+      "id": "2240",
+      "module": "1"
+    },
+    {
+      "alpha": "म",
+      "name": "मद्देनजर",
+      "desc": "In view of",
+      "id": "2844",
+      "module": "5"
+    },
+    {
+      "alpha": "म",
+      "name": "मद्देनज़र",
+      "desc": "In view of",
+      "id": "2241",
+      "module": "1"
+    },
+    {
+      "alpha": "म",
+      "name": "मध्यम तथा लघु उद्यम",
+      "desc": "Medium and small enterprises",
+      "id": "2242",
+      "module": "1"
+    },
+    {
+      "alpha": "म",
+      "name": "मध्यस्तता",
+      "desc": "Mediation",
+      "id": "2391",
+      "module": "2"
+    },
+    {
+      "alpha": "म",
+      "name": "मनमानी",
+      "desc": "Arbitrary",
+      "id": "3097",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मनोनीत",
+      "desc": "Designated",
+      "id": "2845",
+      "module": "5"
+    },
+    {
+      "alpha": "म",
+      "name": "मरम्मत",
+      "desc": "Repair",
+      "id": "2243",
+      "module": "1"
+    },
+    {
+      "alpha": "म",
+      "name": "मरीज़ों",
+      "desc": "Patients",
+      "id": "3098",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मलबा",
+      "desc": "Rubble",
+      "id": "2244",
+      "module": "1"
+    },
+    {
+      "alpha": "म",
+      "name": "मसला",
+      "desc": "Issue",
+      "id": "2392",
+      "module": "2"
+    },
+    {
+      "alpha": "म",
+      "name": "मंसूबो",
+      "desc": "Planning",
+      "id": "2842",
+      "module": "5"
+    },
+    {
+      "alpha": "म",
+      "name": "महंगे",
+      "desc": "Expensive",
+      "id": "3099",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "महत्त्वकांशी",
+      "desc": "Ambitious",
+      "id": "3100",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "महत्व",
+      "desc": "Importance, significance",
+      "id": "2846",
+      "module": "5"
+    },
+    {
+      "alpha": "म",
+      "name": "महत्वकांक्षाएं",
+      "desc": "Ambitions",
+      "id": "2521",
+      "module": "3"
+    },
+    {
+      "alpha": "म",
+      "name": "महत्वपूर्ण",
+      "desc": "Important",
+      "id": "3101",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "महत्वपूर्ण",
+      "desc": "Important",
+      "id": "2847",
+      "module": "5"
+    },
+    {
+      "alpha": "म",
+      "name": "महत्वाकांक्षी",
+      "desc": "Ambitious",
+      "id": "2522",
+      "module": "3"
+    },
+    {
+      "alpha": "म",
+      "name": "महसूस",
+      "desc": "See, feel, perceive",
+      "id": "2701",
+      "module": "4"
+    },
+    {
+      "alpha": "म",
+      "name": "महाद्वीप",
+      "desc": "Continent",
+      "id": "2523",
+      "module": "3"
+    },
+    {
+      "alpha": "म",
+      "name": "महामहिम",
+      "desc": "Majesty",
+      "id": "2524",
+      "module": "3"
+    },
+    {
+      "alpha": "म",
+      "name": "महिला",
+      "desc": "Woman",
+      "id": "3102",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मांग",
+      "desc": "Demand",
+      "id": "2702",
+      "module": "4"
+    },
+    {
+      "alpha": "म",
+      "name": "मांग करना",
+      "desc": "To demand",
+      "id": "2393",
+      "module": "2"
+    },
+    {
+      "alpha": "म",
+      "name": "मातृ",
+      "desc": "Maternal",
+      "id": "3103",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मानक",
+      "desc": "Standard",
+      "id": "2848",
+      "module": "5"
+    },
+    {
+      "alpha": "म",
+      "name": "मानव",
+      "desc": "Human",
+      "id": "3104",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मानवीय",
+      "desc": "Humanitarian",
+      "id": "2245",
+      "module": "1"
+    },
+    {
+      "alpha": "म",
+      "name": "मानवीय वातावरण",
+      "desc": "Humanitarian environment",
+      "id": "2525",
+      "module": "3"
+    },
+    {
+      "alpha": "म",
+      "name": "मानवोचित",
+      "desc": "Humane",
+      "id": "2526",
+      "module": "3"
+    },
+    {
+      "alpha": "म",
+      "name": "मान्यता",
+      "desc": "Validation",
+      "id": "3105",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मिली भगत",
+      "desc": "Connivance, collusion",
+      "id": "2703",
+      "module": "4"
+    },
+    {
+      "alpha": "म",
+      "name": "मिश्रित उर्जा",
+      "desc": "Mixed energy",
+      "id": "2704",
+      "module": "4"
+    },
+    {
+      "alpha": "म",
+      "name": "मिसाल",
+      "desc": "Precedent",
+      "id": "3106",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मिसाल",
+      "desc": "Example",
+      "id": "2394",
+      "module": "2"
+    },
+    {
+      "alpha": "म",
+      "name": "मिसाल",
+      "desc": "Example",
+      "id": "2246",
+      "module": "1"
+    },
+    {
+      "alpha": "म",
+      "name": "मुकाबला",
+      "desc": "Competition",
+      "id": "2705",
+      "module": "4"
+    },
+    {
+      "alpha": "म",
+      "name": "मुकाबले",
+      "desc": "Compared",
+      "id": "3107",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मुख्यत:",
+      "desc": "Primarily",
+      "id": "3108",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मुद्दे",
+      "desc": "Issues",
+      "id": "2395",
+      "module": "2"
+    },
+    {
+      "alpha": "म",
+      "name": "मुनाफे",
+      "desc": "Profits",
+      "id": "3109",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मुसीबत",
+      "desc": "Difficulty",
+      "id": "2247",
+      "module": "1"
+    },
+    {
+      "alpha": "म",
+      "name": "मुहैया",
+      "desc": "Procured",
+      "id": "2248",
+      "module": "1"
+    },
+    {
+      "alpha": "म",
+      "name": "मु्द्‌दा",
+      "desc": "Issue",
+      "id": "2706",
+      "module": "4"
+    },
+    {
+      "alpha": "म",
+      "name": "मूलभूत आवश्यकता",
+      "desc": "Basic need",
+      "id": "2707",
+      "module": "4"
+    },
+    {
+      "alpha": "म",
+      "name": "मूल्यांकन",
+      "desc": "Evaluation",
+      "id": "3110",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मूल्यांकन",
+      "desc": "Evaluation",
+      "id": "2249",
+      "module": "1"
+    },
+    {
+      "alpha": "म",
+      "name": "मोर्चे",
+      "desc": "Front",
+      "id": "3111",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मोर्चे",
+      "desc": "An entrenched position",
+      "id": "2396",
+      "module": "2"
+    },
+    {
+      "alpha": "म",
+      "name": "मौजूदा",
+      "desc": "Current",
+      "id": "3112",
+      "module": "6"
+    },
+    {
+      "alpha": "म",
+      "name": "मौजूदा",
+      "desc": "Current",
+      "id": "2397",
+      "module": "2"
+    },
+    {
+      "alpha": "य",
+      "name": "यादगार",
+      "desc": "Memorable",
+      "id": "2398",
+      "module": "2"
+    },
+    {
+      "alpha": "य",
+      "name": "युद्ध",
+      "desc": "War",
+      "id": "2399",
+      "module": "2"
+    },
+    {
+      "alpha": "य",
+      "name": "युद्धपोत",
+      "desc": "Warship",
+      "id": "2849",
+      "module": "5"
+    },
+    {
+      "alpha": "य",
+      "name": "युद्धाभ्यास",
+      "desc": "Trail for military exercise",
+      "id": "2850",
+      "module": "5"
+    },
+    {
+      "alpha": "य",
+      "name": "योगदान",
+      "desc": "Contributions",
+      "id": "2851",
+      "module": "5"
+    },
+    {
+      "alpha": "य",
+      "name": "योगदान",
+      "desc": "Contribution",
+      "id": "2250",
+      "module": "1"
+    },
+    {
+      "alpha": "य",
+      "name": "योग्यता",
+      "desc": "Qualification",
+      "id": "2400",
+      "module": "2"
+    },
+    {
+      "alpha": "य",
+      "name": "योजना",
+      "desc": "Plan",
+      "id": "3113",
+      "module": "6"
+    },
+    {
+      "alpha": "य",
+      "name": "योजनाएँ",
+      "desc": "Schemes",
+      "id": "3114",
+      "module": "6"
+    },
+    {
+      "alpha": "र",
+      "name": "रखरखाव",
+      "desc": "Maintenance",
+      "id": "2401",
+      "module": "2"
+    },
+    {
+      "alpha": "र",
+      "name": "रणनीति",
+      "desc": "Strategy",
+      "id": "2852",
+      "module": "5"
+    },
+    {
+      "alpha": "र",
+      "name": "रणनीतिक",
+      "desc": "Strategic",
+      "id": "3115",
+      "module": "6"
+    },
+    {
+      "alpha": "र",
+      "name": "रणनीतिक ",
+      "desc": "Strategic",
+      "id": "2402",
+      "module": "2"
+    },
+    {
+      "alpha": "र",
+      "name": "रफ्तार",
+      "desc": "Speed",
+      "id": "2708",
+      "module": "4"
+    },
+    {
+      "alpha": "र",
+      "name": "रस्ते",
+      "desc": "Way out",
+      "id": "2853",
+      "module": "5"
+    },
+    {
+      "alpha": "र",
+      "name": "राजनीतिक नेतृत्व",
+      "desc": "Political leadership",
+      "id": "2709",
+      "module": "4"
+    },
+    {
+      "alpha": "र",
+      "name": "राजनैतिक",
+      "desc": "Political",
+      "id": "3116",
+      "module": "6"
+    },
+    {
+      "alpha": "र",
+      "name": "राजी",
+      "desc": "Agreed",
+      "id": "2403",
+      "module": "2"
+    },
+    {
+      "alpha": "र",
+      "name": "राशि",
+      "desc": "Amount",
+      "id": "3117",
+      "module": "6"
+    },
+    {
+      "alpha": "र",
+      "name": "राष्ट्र",
+      "desc": "Nation",
+      "id": "2854",
+      "module": "5"
+    },
+    {
+      "alpha": "र",
+      "name": "राष्ट्रीय",
+      "desc": "National",
+      "id": "2251",
+      "module": "1"
+    },
+    {
+      "alpha": "र",
+      "name": "राष्ट्रीय नीति",
+      "desc": "National policy",
+      "id": "2252",
+      "module": "1"
+    },
+    {
+      "alpha": "र",
+      "name": "राष्ट्रीय संप्रभुता ",
+      "desc": "National sovereignty",
+      "id": "2404",
+      "module": "2"
+    },
+    {
+      "alpha": "र",
+      "name": "राहत",
+      "desc": "Relief",
+      "id": "2253",
+      "module": "1"
+    },
+    {
+      "alpha": "र",
+      "name": "रिहाइशी",
+      "desc": "Housing",
+      "id": "2527",
+      "module": "3"
+    },
+    {
+      "alpha": "र",
+      "name": "रूख",
+      "desc": "Opinion",
+      "id": "2405",
+      "module": "2"
+    },
+    {
+      "alpha": "र",
+      "name": "रेखांकित ",
+      "desc": "Underscore",
+      "id": "2406",
+      "module": "2"
+    },
+    {
+      "alpha": "र",
+      "name": "रेल संपर्क",
+      "desc": "Rail connections",
+      "id": "2407",
+      "module": "2"
+    },
+    {
+      "alpha": "र",
+      "name": "रोकथाम",
+      "desc": "Prevention ",
+      "id": "2254",
+      "module": "1"
+    },
+    {
+      "alpha": "र",
+      "name": "रोज़गार",
+      "desc": "Employment",
+      "id": "2528",
+      "module": "3"
+    },
+    {
+      "alpha": "ल",
+      "name": "लक्ष्य",
+      "desc": "Target",
+      "id": "3119",
+      "module": "6"
+    },
+    {
+      "alpha": "ल",
+      "name": "लक्ष्य",
+      "desc": "Aim",
+      "id": "2710",
+      "module": "4"
+    },
+    {
+      "alpha": "ल",
+      "name": "लगातार ",
+      "desc": "Continuous",
+      "id": "2855",
+      "module": "5"
+    },
+    {
+      "alpha": "ल",
+      "name": "लगातार",
+      "desc": "Continuously, continuous",
+      "id": "2255",
+      "module": "1"
+    },
+    {
+      "alpha": "ल",
+      "name": "लगाम पुल",
+      "desc": "Bridle bridge",
+      "id": "2256",
+      "module": "1"
+    },
+    {
+      "alpha": "ल",
+      "name": "लचीला रवैया",
+      "desc": "Flexible approach",
+      "id": "2408",
+      "module": "2"
+    },
+    {
+      "alpha": "ल",
+      "name": "लड़ाकू",
+      "desc": "Combatant",
+      "id": "2856",
+      "module": "5"
+    },
+    {
+      "alpha": "ल",
+      "name": "लंबित",
+      "desc": "Pending",
+      "id": "3118",
+      "module": "6"
+    },
+    {
+      "alpha": "ल",
+      "name": "लंबित कार्य",
+      "desc": "Pending work",
+      "id": "2529",
+      "module": "3"
+    },
+    {
+      "alpha": "ल",
+      "name": "लागत",
+      "desc": "Expenditure, investment",
+      "id": "2257",
+      "module": "1"
+    },
+    {
+      "alpha": "ल",
+      "name": "लागत प्रभावी विधि",
+      "desc": "Cost-effective method",
+      "id": "2711",
+      "module": "4"
+    },
+    {
+      "alpha": "ल",
+      "name": "लागू होना",
+      "desc": "To become applicable, operational",
+      "id": "2530",
+      "module": "3"
+    },
+    {
+      "alpha": "ल",
+      "name": "लापता",
+      "desc": "Missing (a person)",
+      "id": "2258",
+      "module": "1"
+    },
+    {
+      "alpha": "ल",
+      "name": "लाभप्रदता",
+      "desc": "Profitability",
+      "id": "2712",
+      "module": "4"
+    },
+    {
+      "alpha": "ल",
+      "name": "लायक",
+      "desc": "Capable, worthy ",
+      "id": "2857",
+      "module": "5"
+    },
+    {
+      "alpha": "ल",
+      "name": "लिहाज़",
+      "desc": "Perspective",
+      "id": "2858",
+      "module": "5"
+    },
+    {
+      "alpha": "ल",
+      "name": "लिहाज़",
+      "desc": "Consideration, regard, in this respect",
+      "id": "2259",
+      "module": "1"
+    },
+    {
+      "alpha": "ल",
+      "name": "लिहाज़ा",
+      "desc": "Hence, therefore",
+      "id": "2409",
+      "module": "2"
+    },
+    {
+      "alpha": "ल",
+      "name": "लिहाजा",
+      "desc": "So, therefore, thus, hence",
+      "id": "2713",
+      "module": "4"
+    },
+    {
+      "alpha": "ल",
+      "name": "लुभाने",
+      "desc": "Tempting, temptation",
+      "id": "3120",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "वरिष्ठ",
+      "desc": "Senior",
+      "id": "2859",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "वरिष्ठ",
+      "desc": "Senior",
+      "id": "2260",
+      "module": "1"
+    },
+    {
+      "alpha": "व",
+      "name": "वरिष्ठ प्रबंधन",
+      "desc": "Senior management",
+      "id": "2531",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "वर्गीकरण",
+      "desc": "Classification",
+      "id": "3121",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "वर्चस्व",
+      "desc": "Domination",
+      "id": "3122",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "वर्णित",
+      "desc": "Described",
+      "id": "3123",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "वर्षगांठ",
+      "desc": "Anniversary",
+      "id": "2532",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "वसुधैव कुटुंबकम",
+      "desc": "Global village, globe as a family",
+      "id": "2533",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "वाजिब",
+      "desc": "Rational",
+      "id": "3124",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "वाणिज्यिक",
+      "desc": "Commercial",
+      "id": "2860",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "वातावरण",
+      "desc": "Environment",
+      "id": "3125",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "वार्ता",
+      "desc": "Talk",
+      "id": "2410",
+      "module": "2"
+    },
+    {
+      "alpha": "व",
+      "name": "विकरालता",
+      "desc": "Ghastliness, dreadful ",
+      "id": "2261",
+      "module": "1"
+    },
+    {
+      "alpha": "व",
+      "name": "विकल्प",
+      "desc": "Options",
+      "id": "3126",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विकसित",
+      "desc": "Developed",
+      "id": "2262",
+      "module": "1"
+    },
+    {
+      "alpha": "व",
+      "name": "विकास",
+      "desc": "Development",
+      "id": "2861",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विकास",
+      "desc": "Development",
+      "id": "3127",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विकासशील",
+      "desc": "Developing",
+      "id": "2714",
+      "module": "4"
+    },
+    {
+      "alpha": "व",
+      "name": "विकेन्‍द्रीकृत",
+      "desc": "Decentralized",
+      "id": "2715",
+      "module": "4"
+    },
+    {
+      "alpha": "व",
+      "name": "विख्यात",
+      "desc": "Famous",
+      "id": "2534",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "विचारधारा",
+      "desc": "Ideology",
+      "id": "2862",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विज्ञप्ति",
+      "desc": "Announcement",
+      "id": "2411",
+      "module": "2"
+    },
+    {
+      "alpha": "व",
+      "name": "वित्त पोषण",
+      "desc": "Financing",
+      "id": "2263",
+      "module": "1"
+    },
+    {
+      "alpha": "व",
+      "name": "वित्तपोषण",
+      "desc": "Financing",
+      "id": "3128",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "वित्तीय",
+      "desc": "Financial",
+      "id": "3129",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "वित्तीय",
+      "desc": "Financial",
+      "id": "2535",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "वित्तीय योग्यता",
+      "desc": "Financial capability",
+      "id": "2412",
+      "module": "2"
+    },
+    {
+      "alpha": "व",
+      "name": "विदेशी",
+      "desc": "Foreign",
+      "id": "2863",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विद्रोही",
+      "desc": "Rebel",
+      "id": "2536",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "विनियमित",
+      "desc": "Regulated",
+      "id": "3130",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विनिर्माण",
+      "desc": "Manufacturing",
+      "id": "3131",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विपदा",
+      "desc": "Disaster",
+      "id": "2264",
+      "module": "1"
+    },
+    {
+      "alpha": "व",
+      "name": "विभाजन",
+      "desc": "Division",
+      "id": "2413",
+      "module": "2"
+    },
+    {
+      "alpha": "व",
+      "name": "विभिन्न",
+      "desc": "Diverse",
+      "id": "2864",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विमान",
+      "desc": "Aircraft",
+      "id": "2865",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विमानों",
+      "desc": "Planes",
+      "id": "2866",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विरासत",
+      "desc": "Inheritance",
+      "id": "2537",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "विरोध प्रदर्शन ",
+      "desc": "Remonstrance, protest, demonstration",
+      "id": "2716",
+      "module": "4"
+    },
+    {
+      "alpha": "व",
+      "name": "विरोधी कार्यवाहियां",
+      "desc": "Adverse activities",
+      "id": "2867",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विवरण",
+      "desc": "Description",
+      "id": "3132",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विवरण",
+      "desc": "Description",
+      "id": "2538",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "विवाद ",
+      "desc": "Conflict",
+      "id": "2868",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विवाद",
+      "desc": "Debate",
+      "id": "2265",
+      "module": "1"
+    },
+    {
+      "alpha": "व",
+      "name": "विवाद",
+      "desc": "Dispute",
+      "id": "2539",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "विवादास्पद",
+      "desc": "Controversial",
+      "id": "3133",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विवादों",
+      "desc": "Disputes",
+      "id": "2869",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विविधता",
+      "desc": "Diversity",
+      "id": "2414",
+      "module": "2"
+    },
+    {
+      "alpha": "व",
+      "name": "विवेकपूर्ण",
+      "desc": "Prudent",
+      "id": "2540",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "विशालकाय",
+      "desc": "Enormous",
+      "id": "2266",
+      "module": "1"
+    },
+    {
+      "alpha": "व",
+      "name": "विशिष्ट",
+      "desc": "Special",
+      "id": "3134",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विशेष",
+      "desc": "Special ",
+      "id": "2870",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विशेषकर",
+      "desc": "Especially ",
+      "id": "2871",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विशेषकर",
+      "desc": "Especially",
+      "id": "3135",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विशेषज्ञ",
+      "desc": "Expert",
+      "id": "3136",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विशेषज्ञता",
+      "desc": "Expertise",
+      "id": "2872",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विशेषज्ञों",
+      "desc": "Experts",
+      "id": "3137",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विश्वसनीय",
+      "desc": "Reliable",
+      "id": "3138",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विश्वस्तरीय",
+      "desc": "World class",
+      "id": "3139",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विश्वास",
+      "desc": "Trust",
+      "id": "3140",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विश्वासपात्र",
+      "desc": "Confidante, trustworthy, trusted",
+      "id": "2873",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विस्तार",
+      "desc": "Expansion",
+      "id": "2874",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "विस्तार",
+      "desc": "Expansion",
+      "id": "3141",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विस्तारवादी",
+      "desc": "Expansionist",
+      "id": "2541",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "विस्तारित",
+      "desc": "Extended ",
+      "id": "2415",
+      "module": "2"
+    },
+    {
+      "alpha": "व",
+      "name": "विस्तृत",
+      "desc": "Detailed",
+      "id": "3142",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "विस्थापित",
+      "desc": "Displaced",
+      "id": "2542",
+      "module": "3"
+    },
+    {
+      "alpha": "व",
+      "name": "विस्फोटकों",
+      "desc": "Explosives",
+      "id": "2875",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "वृद्ध",
+      "desc": "Old",
+      "id": "3143",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "वृद्धि",
+      "desc": "Increase",
+      "id": "2267",
+      "module": "1"
+    },
+    {
+      "alpha": "व",
+      "name": "वैकल्पिक स्रोत",
+      "desc": "Alternative sources",
+      "id": "2717",
+      "module": "4"
+    },
+    {
+      "alpha": "व",
+      "name": "वैज्ञानिक",
+      "desc": "Scientific",
+      "id": "3144",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "वैश्विक",
+      "desc": "Global",
+      "id": "3145",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "व्यक्त",
+      "desc": "Express",
+      "id": "2876",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "व्यक्त",
+      "desc": "Express",
+      "id": "2416",
+      "module": "2"
+    },
+    {
+      "alpha": "व",
+      "name": "व्यक्त",
+      "desc": "Express",
+      "id": "2268",
+      "module": "1"
+    },
+    {
+      "alpha": "व",
+      "name": "व्‍यवहार्य",
+      "desc": "Viable",
+      "id": "2718",
+      "module": "4"
+    },
+    {
+      "alpha": "व",
+      "name": "व्यापक",
+      "desc": "Extensive, pervasive",
+      "id": "2269",
+      "module": "1"
+    },
+    {
+      "alpha": "व",
+      "name": "व्यापकता",
+      "desc": "Comprehensive",
+      "id": "3146",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "व्यापारिक मार्ग",
+      "desc": "Tarde route",
+      "id": "2417",
+      "module": "2"
+    },
+    {
+      "alpha": "व",
+      "name": "व्यापारिक संगठन",
+      "desc": "Business organization",
+      "id": "3147",
+      "module": "6"
+    },
+    {
+      "alpha": "व",
+      "name": "व्यापारियों",
+      "desc": "Traders",
+      "id": "2877",
+      "module": "5"
+    },
+    {
+      "alpha": "व",
+      "name": "व्यावसायिक",
+      "desc": "Professional",
+      "id": "3148",
+      "module": "6"
+    },
+    {
+      "alpha": "श",
+      "name": "शरणार्थी",
+      "desc": "Refugee",
+      "id": "2270",
+      "module": "1"
+    },
+    {
+      "alpha": "श",
+      "name": "शर्मसार",
+      "desc": "Shaming",
+      "id": "2418",
+      "module": "2"
+    },
+    {
+      "alpha": "श",
+      "name": "शर्मिंदगी",
+      "desc": "Embarrassment",
+      "id": "3149",
+      "module": "6"
+    },
+    {
+      "alpha": "श",
+      "name": "शर्मिंदगी",
+      "desc": "Shame, disgrace, embarrassment",
+      "id": "2719",
+      "module": "4"
+    },
+    {
+      "alpha": "श",
+      "name": "शहरीकरण",
+      "desc": "Urbanization",
+      "id": "2271",
+      "module": "1"
+    },
+    {
+      "alpha": "श",
+      "name": "शांति स्थापना",
+      "desc": "Peace keeping",
+      "id": "2543",
+      "module": "3"
+    },
+    {
+      "alpha": "श",
+      "name": "शांतिप्रिय ",
+      "desc": "Peace loving",
+      "id": "2544",
+      "module": "3"
+    },
+    {
+      "alpha": "श",
+      "name": "शामिल",
+      "desc": "Includes",
+      "id": "2878",
+      "module": "5"
+    },
+    {
+      "alpha": "श",
+      "name": "शामिल",
+      "desc": "Include",
+      "id": "3150",
+      "module": "6"
+    },
+    {
+      "alpha": "श",
+      "name": "शामिल",
+      "desc": "Included",
+      "id": "2419",
+      "module": "2"
+    },
+    {
+      "alpha": "श",
+      "name": "शामिल",
+      "desc": "Included",
+      "id": "2272",
+      "module": "1"
+    },
+    {
+      "alpha": "श",
+      "name": "शासित",
+      "desc": "Governed",
+      "id": "2879",
+      "module": "5"
+    },
+    {
+      "alpha": "श",
+      "name": "शिकारियों",
+      "desc": "Hunters",
+      "id": "2880",
+      "module": "5"
+    },
+    {
+      "alpha": "श",
+      "name": "शिक्षा और संस्कृति",
+      "desc": "Education and culture",
+      "id": "2420",
+      "module": "2"
+    },
+    {
+      "alpha": "श",
+      "name": "शिखर सम्मेलन",
+      "desc": "Summit",
+      "id": "2545",
+      "module": "3"
+    },
+    {
+      "alpha": "श",
+      "name": "शिशुओं",
+      "desc": "Babies",
+      "id": "3151",
+      "module": "6"
+    },
+    {
+      "alpha": "श",
+      "name": "शुद्धिकरण",
+      "desc": "Purification",
+      "id": "2720",
+      "module": "4"
+    },
+    {
+      "alpha": "श",
+      "name": "शुभारंभ",
+      "desc": "Inauguration",
+      "id": "3152",
+      "module": "6"
+    },
+    {
+      "alpha": "श्र",
+      "name": "श्रद्धांजलि",
+      "desc": "Tribute",
+      "id": "2583",
+      "module": "3"
+    },
+    {
+      "alpha": "श्र",
+      "name": "श्रृंखला",
+      "desc": "Series",
+      "id": "3191",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सकल घरेलू उत्पाद",
+      "desc": "Gross domestic product",
+      "id": "3153",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "संकल्प",
+      "desc": "Resolution",
+      "id": "3164",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "संकल्‍पना ",
+      "desc": "Concept, conception",
+      "id": "2730",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "संकेत",
+      "desc": "Signal",
+      "id": "2421",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सक्रिय",
+      "desc": "Active",
+      "id": "3154",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सक्षम",
+      "desc": "Competent",
+      "id": "2280",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सक्षमता",
+      "desc": "Competencies",
+      "id": "2721",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "संख्‍या",
+      "desc": "Number",
+      "id": "3165",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "संगठन",
+      "desc": "Organization",
+      "id": "3166",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "संगठन",
+      "desc": "Organization",
+      "id": "2273",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "संघ",
+      "desc": "Union",
+      "id": "2895",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संघटित ",
+      "desc": "Integrated",
+      "id": "2422",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "संचालन",
+      "desc": "Automatic",
+      "id": "2896",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संचालित",
+      "desc": "Manage, administered",
+      "id": "2555",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सच्चाई",
+      "desc": "Truth",
+      "id": "2722",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "संजीदगी",
+      "desc": "Seriousness",
+      "id": "2274",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सतर्क",
+      "desc": "Alert",
+      "id": "2281",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सत्ता",
+      "desc": "Power, rule",
+      "id": "2546",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सत्यापित",
+      "desc": "Verified",
+      "id": "2881",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संदर्भित क्षेत्र",
+      "desc": "Referenced field",
+      "id": "2556",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "संदेह ",
+      "desc": "Suspicion",
+      "id": "2897",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संप्रभुता ",
+      "desc": "Sovereignty",
+      "id": "2898",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सफल",
+      "desc": "Successful",
+      "id": "2882",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सफलता",
+      "desc": "Success",
+      "id": "3155",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सबक",
+      "desc": "Lesson, custom",
+      "id": "2723",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "संबंध",
+      "desc": "Relation",
+      "id": "2557",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "संबंधों",
+      "desc": "Relations",
+      "id": "2899",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संबोधित",
+      "desc": "Addressing",
+      "id": "2900",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संबोधित",
+      "desc": "Addressed",
+      "id": "2558",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "संभावना",
+      "desc": "Possibility",
+      "id": "2423",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "संभावना",
+      "desc": "Possibility",
+      "id": "2275",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "संभावनाएं",
+      "desc": "Possibilities",
+      "id": "3167",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "संभावित",
+      "desc": "Possible",
+      "id": "3168",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "संभावित",
+      "desc": "Possible",
+      "id": "2276",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "संभाव्‍यता",
+      "desc": "Probability, feasibility",
+      "id": "2731",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "समकक्ष",
+      "desc": "Equivalent",
+      "id": "2883",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "समग्र",
+      "desc": "Overall",
+      "id": "3156",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "समग्र समीक्षा",
+      "desc": "Overall review",
+      "id": "2426",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "समझौता",
+      "desc": "Agreement",
+      "id": "2427",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "समझौता ",
+      "desc": "Agreement",
+      "id": "2547",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "समझौते",
+      "desc": "Agreements",
+      "id": "2428",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "समन्वय",
+      "desc": "Coordination",
+      "id": "2884",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "समन्वय",
+      "desc": "Union",
+      "id": "2282",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "समन्वय",
+      "desc": "Coordination",
+      "id": "2548",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "समयसीमा",
+      "desc": "Time limit",
+      "id": "2429",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "समर्थन ",
+      "desc": "Support",
+      "id": "2430",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "समस्या",
+      "desc": "Problem",
+      "id": "2283",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "समाई ",
+      "desc": "Content, retention, holding capacity, capacitance",
+      "id": "2885",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "समांतर व्यवस्था",
+      "desc": "Parallel system",
+      "id": "2724",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "समाधान",
+      "desc": "Solution",
+      "id": "2549",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "समानता",
+      "desc": "Similarity",
+      "id": "3157",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "समारोह",
+      "desc": "Function",
+      "id": "2550",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "समावेशी माहौल",
+      "desc": "Inclusive environment",
+      "id": "2431",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "समिति",
+      "desc": "Committee",
+      "id": "2886",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "समीकरण",
+      "desc": "Equalization",
+      "id": "2725",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "समीक्षा",
+      "desc": "Review",
+      "id": "2887",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "समुचित",
+      "desc": "Appropriate, suitable",
+      "id": "2284",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "समुद्र",
+      "desc": "Ocean, sea",
+      "id": "2888",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "समुद्रतटीय",
+      "desc": "Coastal",
+      "id": "2889",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "समृद्ध",
+      "desc": "Prosperous",
+      "id": "2551",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "समेत",
+      "desc": "Including",
+      "id": "2552",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सम्पन्न",
+      "desc": "Wealthy",
+      "id": "2285",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सम्पर्क",
+      "desc": "Contact",
+      "id": "2286",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सम्मान और गरिमा",
+      "desc": "Respect and dignity",
+      "id": "2553",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सम्मिलित",
+      "desc": "Included",
+      "id": "2890",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संयुक्त",
+      "desc": "Joint",
+      "id": "2901",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संयुक्त",
+      "desc": "United",
+      "id": "2902",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संयुक्त राष्ट्र",
+      "desc": "United Nations",
+      "id": "2559",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "संयुक्त राष्ट्र शांति अभियान",
+      "desc": "UN Peacekeeping Mission",
+      "id": "2560",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "संयुक्त सर्वे",
+      "desc": "Joint survey",
+      "id": "2561",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "संयोग",
+      "desc": "Coincidence",
+      "id": "2424",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सरकार",
+      "desc": "Government",
+      "id": "3158",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सरकार",
+      "desc": "Government",
+      "id": "2287",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "संरक्षित",
+      "desc": "Protected",
+      "id": "2562",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सरहद",
+      "desc": "Border",
+      "id": "2891",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सरहद",
+      "desc": "Border",
+      "id": "2288",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सराहा",
+      "desc": "Appreciated",
+      "id": "2289",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सरीखे",
+      "desc": "Like, similar",
+      "id": "2432",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सर्वश्रेष्ठ",
+      "desc": "Best, ultimate",
+      "id": "3159",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सर्वसम्मति",
+      "desc": "Consensus",
+      "id": "2433",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सर्वाधिक",
+      "desc": "Most",
+      "id": "3160",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सर्वेक्षण",
+      "desc": "General survey",
+      "id": "2290",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सर्वोच्च",
+      "desc": "Highest",
+      "id": "2434",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सर्वोच्च बलिदान",
+      "desc": "Supreme sacrifice",
+      "id": "2554",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सर्वोत्तम मार्ग",
+      "desc": "Best route",
+      "id": "2726",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "सर्वोत्तम वैश्विक मानक",
+      "desc": "Best global standard",
+      "id": "3161",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सलाहकार",
+      "desc": "Consultant",
+      "id": "2892",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संवर्धित भविष्यवाणियाँ",
+      "desc": "Enhanced prophecies",
+      "id": "2277",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सवा छह गुना",
+      "desc": "Twenty-six times",
+      "id": "2727",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "संवाद",
+      "desc": "Dialog",
+      "id": "2903",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संवाददाता",
+      "desc": "Correspondent",
+      "id": "2563",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सवाल",
+      "desc": "Interrogation, problem, query, question ",
+      "id": "2728",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "सवाल",
+      "desc": "Question",
+      "id": "2291",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "संविधान संशोधन",
+      "desc": "Constitutional Amendment",
+      "id": "2564",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "संवेदनशीलता",
+      "desc": "Sensitivity",
+      "id": "2904",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "संवेदनशीलता",
+      "desc": "Sensitivity",
+      "id": "2278",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सशक्त",
+      "desc": "Empowered ",
+      "id": "2567",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सशक्त",
+      "desc": "Empowered",
+      "id": "2729",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "सशक्तियुकत",
+      "desc": "Fully empowered",
+      "id": "3162",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सशस्त्र",
+      "desc": "Armed",
+      "id": "2893",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सशस्त्र बल",
+      "desc": "Armed forces",
+      "id": "2292",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "संशोधन",
+      "desc": "Amendments ",
+      "id": "2732",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "संशोधन प्रक्रिया",
+      "desc": "Review, amendment process",
+      "id": "2425",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "संसद",
+      "desc": "Parliament",
+      "id": "2565",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "संसाधन",
+      "desc": "Resources",
+      "id": "2566",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "संसाधन",
+      "desc": "Resources",
+      "id": "2279",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "संसाधनों",
+      "desc": "Resources",
+      "id": "3169",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सहनशीलता",
+      "desc": "Tolerance",
+      "id": "2293",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सहमत",
+      "desc": "Agreeing",
+      "id": "2435",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सहयोग",
+      "desc": "Cooperation",
+      "id": "2894",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सहयोगी",
+      "desc": "Colleague",
+      "id": "2294",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सहायता",
+      "desc": "Help, support",
+      "id": "3163",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सहायता",
+      "desc": "Help",
+      "id": "2295",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "साजिश",
+      "desc": "Conspiracy",
+      "id": "2905",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "साझा",
+      "desc": "Share",
+      "id": "2568",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "साझा",
+      "desc": "Common, joint",
+      "id": "2906",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "साझा",
+      "desc": "Share",
+      "id": "2296",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "साझेदारी",
+      "desc": "Partnership",
+      "id": "2907",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "साझेदारों",
+      "desc": "Partners",
+      "id": "2908",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "साधन",
+      "desc": "Instrument",
+      "id": "3170",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "साधु-संत",
+      "desc": "Saints",
+      "id": "2569",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सामंजस्य",
+      "desc": "Harmony",
+      "id": "2909",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सामना",
+      "desc": "To face",
+      "id": "2436",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सामयिक",
+      "desc": "Topical",
+      "id": "2570",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सामयिक विवाद",
+      "desc": "Topical debate",
+      "id": "2571",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सामरिक",
+      "desc": "Tactical",
+      "id": "2910",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सामरिक",
+      "desc": "Strategic",
+      "id": "2437",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सामाजिक",
+      "desc": "Social",
+      "id": "3171",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सामार्थ्य",
+      "desc": "Adequacy",
+      "id": "2734",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "सामुदायिक",
+      "desc": "Communal",
+      "id": "3172",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सार्वजनिक",
+      "desc": "Public",
+      "id": "3173",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सार्वजनिक के अनुसार",
+      "desc": "According to the public",
+      "id": "3174",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सार्वजनिक जागरूकता",
+      "desc": "Public awareness",
+      "id": "2735",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "सार्वभौमिक",
+      "desc": "Universal",
+      "id": "3175",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सालाना",
+      "desc": "Annually",
+      "id": "3176",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सांसद",
+      "desc": "Member of parliament, parliamentarian",
+      "id": "2733",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "सिफारिश ",
+      "desc": "Recommendation",
+      "id": "2572",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सियासत",
+      "desc": "Politics",
+      "id": "2438",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सीमा विवाद",
+      "desc": "Boundary disputes",
+      "id": "2573",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सीमाए",
+      "desc": "Boundaries",
+      "id": "2911",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सीमित",
+      "desc": "Limited",
+      "id": "2912",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सुचारू",
+      "desc": "Satisfactorily, conveniently",
+      "id": "2297",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सुदृढ़",
+      "desc": "Strong",
+      "id": "2913",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सुदृढ़",
+      "desc": "Very firm",
+      "id": "2298",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सुधार वार्ता",
+      "desc": "Reform talks",
+      "id": "2439",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सुनवाई",
+      "desc": "Hearing, trail",
+      "id": "2736",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "सुनिश्चित",
+      "desc": "Pre-determined",
+      "id": "2914",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सुनिश्चित",
+      "desc": "Make sure, assured, pre-determined",
+      "id": "2915",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सुनिश्चित",
+      "desc": "Decided, positive, predetermined",
+      "id": "2737",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "सुरक्षा",
+      "desc": "Security",
+      "id": "2916",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सुरक्षा",
+      "desc": "Security",
+      "id": "3177",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सुरक्षा परिषद",
+      "desc": "Security council",
+      "id": "2440",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सुरक्षित",
+      "desc": "Secure, safe",
+      "id": "2299",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सुलह",
+      "desc": "Reconciliation",
+      "id": "2574",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सुविधा",
+      "desc": "Facility, benefits",
+      "id": "3178",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सुविधा उपलब्ध",
+      "desc": "Feature available",
+      "id": "3179",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सुव्यवस्थित",
+      "desc": "Organized nicely",
+      "id": "2300",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सूचक",
+      "desc": "Indicator",
+      "id": "2301",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "सूचना",
+      "desc": "Information",
+      "id": "2917",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सृजन",
+      "desc": "Creation",
+      "id": "2738",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "सेना प्रमुख",
+      "desc": "Army chief",
+      "id": "2441",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सैकड़ों",
+      "desc": "Hundreds",
+      "id": "3180",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "सैद्धांतिक",
+      "desc": "Ideological",
+      "id": "2442",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सैन्य ",
+      "desc": "Military",
+      "id": "2918",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "सैन्य वृद्धि",
+      "desc": "Military growth",
+      "id": "2443",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "सौंदर्य",
+      "desc": "Beauty",
+      "id": "2575",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "सौर ऊर्जा",
+      "desc": "Solar energy",
+      "id": "2739",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "स्तरीय दक्षता",
+      "desc": "Level of efficiency",
+      "id": "3181",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "स्थानीय",
+      "desc": "Local",
+      "id": "2576",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "स्थानीय एकीकरण",
+      "desc": "Local-integration",
+      "id": "2302",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "स्थापना",
+      "desc": "Establishment",
+      "id": "3182",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "स्थापित",
+      "desc": "Install",
+      "id": "2919",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "स्थायी प्रतिनिधि",
+      "desc": "Permanent representative",
+      "id": "2444",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "स्‍थायी मार्ग ",
+      "desc": "Permanent way",
+      "id": "2740",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "स्थित",
+      "desc": "Located",
+      "id": "2920",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "स्थिति",
+      "desc": "Situation",
+      "id": "2577",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "स्थिति",
+      "desc": "Situation",
+      "id": "2445",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "स्थिति",
+      "desc": "Condition",
+      "id": "2303",
+      "module": "1"
+    },
+    {
+      "alpha": "स",
+      "name": "स्थिरता",
+      "desc": "Stability",
+      "id": "2921",
+      "module": "5"
+    },
+    {
+      "alpha": "स",
+      "name": "स्थिरता",
+      "desc": "Stability",
+      "id": "2741",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "स्‍मरण",
+      "desc": "Remembrance",
+      "id": "3183",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "स्वच्छ ऊर्जा",
+      "desc": "Clean energy",
+      "id": "2742",
+      "module": "4"
+    },
+    {
+      "alpha": "स",
+      "name": "स्वच्छता",
+      "desc": "Hygiene",
+      "id": "3184",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "स्वतंत्रता",
+      "desc": "Independence",
+      "id": "2446",
+      "module": "2"
+    },
+    {
+      "alpha": "स",
+      "name": "स्वंयसेवी बल",
+      "desc": "Voluntary force",
+      "id": "2578",
+      "module": "3"
+    },
+    {
+      "alpha": "स",
+      "name": "स्वास्थ",
+      "desc": "Condition, health",
+      "id": "3185",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "स्वास्थ्य",
+      "desc": "Health, wellness",
+      "id": "3186",
+      "module": "6"
+    },
+    {
+      "alpha": "स",
+      "name": "स्वीकृति",
+      "desc": "Acceptance",
+      "id": "2304",
+      "module": "1"
+    },
+    {
+      "alpha": "ह",
+      "name": "हज़ार",
+      "desc": "Thousand",
+      "id": "2305",
+      "module": "1"
+    },
+    {
+      "alpha": "ह",
+      "name": "हडक़म्प",
+      "desc": "State of confusion",
+      "id": "2306",
+      "module": "1"
+    },
+    {
+      "alpha": "ह",
+      "name": "हड़बड़ाना",
+      "desc": "To be confused",
+      "id": "2307",
+      "module": "1"
+    },
+    {
+      "alpha": "ह",
+      "name": "हथियार बंध",
+      "desc": "Armed",
+      "id": "2579",
+      "module": "3"
+    },
+    {
+      "alpha": "ह",
+      "name": "हल",
+      "desc": "Solution",
+      "id": "2580",
+      "module": "3"
+    },
+    {
+      "alpha": "ह",
+      "name": "हल",
+      "desc": "Solution",
+      "id": "2447",
+      "module": "2"
+    },
+    {
+      "alpha": "ह",
+      "name": "हवाला देना",
+      "desc": "To refer",
+      "id": "2448",
+      "module": "2"
+    },
+    {
+      "alpha": "ह",
+      "name": "हस्ताक्षर",
+      "desc": "Signature",
+      "id": "2449",
+      "module": "2"
+    },
+    {
+      "alpha": "ह",
+      "name": "हस्ताक्षेप",
+      "desc": "Intervention",
+      "id": "2581",
+      "module": "3"
+    },
+    {
+      "alpha": "ह",
+      "name": "हादसा",
+      "desc": "Accident",
+      "id": "2308",
+      "module": "1"
+    },
+    {
+      "alpha": "ह",
+      "name": "हाल ही में",
+      "desc": "Recently",
+      "id": "2450",
+      "module": "2"
+    },
+    {
+      "alpha": "ह",
+      "name": "हालाँकि",
+      "desc": "However",
+      "id": "2743",
+      "module": "4"
+    },
+    {
+      "alpha": "ह",
+      "name": "हालात",
+      "desc": "Situation",
+      "id": "2309",
+      "module": "1"
+    },
+    {
+      "alpha": "ह",
+      "name": "हालात",
+      "desc": "Condition",
+      "id": "2744",
+      "module": "4"
+    },
+    {
+      "alpha": "ह",
+      "name": "हासिल",
+      "desc": "Achieved",
+      "id": "2451",
+      "module": "2"
+    },
+    {
+      "alpha": "ह",
+      "name": "हासिल",
+      "desc": "Achieved",
+      "id": "2745",
+      "module": "4"
+    },
+    {
+      "alpha": "ह",
+      "name": "हितधारकों",
+      "desc": "Stakeholders",
+      "id": "3187",
+      "module": "6"
+    },
+    {
+      "alpha": "ह",
+      "name": "हिरासत",
+      "desc": "Custody",
+      "id": "2922",
+      "module": "5"
+    },
+    {
+      "alpha": "ह",
+      "name": "हिंसक",
+      "desc": "Violent",
+      "id": "2582",
+      "module": "3"
+    },
+    {
+      "alpha": "ह",
+      "name": "हुनर",
+      "desc": "Skill",
+      "id": "3188",
+      "module": "6"
+    },
+    {
+      "alpha": "ह",
+      "name": "हृदय-विशेषज्ञों",
+      "desc": "Heart specialists, heart-experts",
+      "id": "3189",
+      "module": "6"
+    }
+  ]
+}
